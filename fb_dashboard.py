@@ -1,5 +1,6 @@
 
 import streamlit as st
+import plotly.express as px
 import pandas as pd
 from utils import fbref
 
@@ -8,11 +9,11 @@ st.caption("All data comes from FBRef this dashboard is purely educational and n
 
 prem_table_ha = pd.read_csv("data/data/fbref_dashboard/prem_table_ha.csv")
 team_list = set(prem_table_ha.Squad)
-set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece.takers.csv")
-
+set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece_takers_fbref.csv")
 set_piece_takers = set_piece_takers[set_piece_takers["season"] == 2024]
 
-st.dataframe(set_piece_takers)
+st.dataframe(set_piece_takers.head())
+
 
 prem_table_unformatted = prem_table_ha.copy()
 prem_table_ha = prem_table_ha.rename(columns={"Rk": "Position"})
@@ -21,8 +22,6 @@ prem_table_ha = prem_table_ha.loc[:, ~prem_table_ha.columns.str.contains('^Unnam
 prem_table_ha.columns = pd.MultiIndex.from_tuples(
     [col.split("_",1) if "_" in col else ("",col) for col in prem_table_ha.columns]
 )
-
-
 
 with st.sidebar:
 
@@ -49,14 +48,14 @@ with st.sidebar:
     away_spt_list = list(away_spt_list.player_name)
 
     if home_team:
-        set_piece_player = st.selectbox(
+        home_set_piece_player = st.selectbox(
             "Home Set Piece Taker",
             home_spt_list,
             index=None,
             placeholder = "Select Home Set Piece Taker..."
         )
     if away_team:
-        set_piece_player = st.selectbox(
+        away_set_piece_player = st.selectbox(
             "Away Set Piece Taker",
             away_spt_list,
             index=None,
@@ -64,6 +63,56 @@ with st.sidebar:
         )
 
 
+import plotly.express as px
+
+def radar_spts(df, player):
+    # Select relevant columns
+    keep_columns = df.columns[5:10].tolist()
+
+    # Normalise metrics using Min-Max scaling
+    df_norm = df.copy()
+    df_norm[keep_columns] = (df[keep_columns] - df[keep_columns].min()) / (df[keep_columns].max() - df[keep_columns].min())
+
+    # Filter for the specified player
+    player_row = df_norm[df_norm["player_name"] == player]
+    
+    if player_row.empty:
+        raise ValueError(f"No data found for player: {player}")
+    
+    # Extract the normalised values
+    values = player_row[keep_columns].iloc[0].tolist()
+
+    # Create a temporary DataFrame for plotting
+    radar_df = {
+        "Metric": keep_columns,
+        "Value": values
+    }
+
+    fig = px.line_polar(radar_df, r="Value", theta="Metric", line_close=True)
+    fig.update_traces(fill='toself')
+
+        # Make background transparent
+    fig.update_layout(
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        polar=dict(
+            bgcolor='rgba(0,0,0,0)'
+        )
+    )
+    return fig
+
+
+plot1, plot2 = st.columns([1,1])
+
+with plot1:
+    if home_set_piece_player:
+        home_set_piece_radar_chart = radar_spts(set_piece_takers, home_set_piece_player)
+        st.plotly_chart(home_set_piece_radar_chart)
+
+with plot2:
+    if away_set_piece_player:
+        away_set_piece_radar_chart = radar_spts(set_piece_takers, away_set_piece_player)
+        st.plotly_chart(away_set_piece_radar_chart)
 
 st.subheader("League Form")
 
