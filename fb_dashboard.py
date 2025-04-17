@@ -22,7 +22,7 @@ away_set_piece_player = None
 
 
 defender_stats = player_stats[player_stats["Pos"].fillna("").astype(str).str.contains("DF")]
-st.dataframe(defender_stats)
+#st.dataframe(defender_stats)
 
 
 prem_table_unformatted = prem_table_ha.copy()
@@ -108,14 +108,18 @@ with plot2:
         away_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, away_set_piece_player, plot_average = True)
         st.plotly_chart(away_set_piece_radar_chart)
 
-if home_team and away_team:
-    both_stats = prem_table_ha[prem_table_ha[("","Squad")].isin([home_team,away_team])]
-    st.dataframe(both_stats.iloc[:,1:])
+# if home_team and away_team:
+#     both_stats = prem_table_ha[prem_table_ha[("","Squad")].isin([home_team,away_team])]
+#     st.dataframe(both_stats.iloc[:,1:])
 
 home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_team]
 away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_team]
 
-
+if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
+    test_df = fbref.team_rating_cols(prem_table_unformatted)
+    lamba_home, lambda_away = fbref.poisson_rating(test_df, home_team, away_team)
+    poisson_fig = fbref.poisson_plots(lamba_home, lambda_away)
+    st.plotly_chart(poisson_fig)
 
 
 # st.subheader("Probability Output")
