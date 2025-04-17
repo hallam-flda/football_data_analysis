@@ -127,13 +127,34 @@ away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_te
 lower_left, lower_right = st.columns([1,1])
 
 with lower_left:
-
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-        test_df = fbref.team_rating_cols(prem_table_unformatted)
-        lamba_home, lambda_away = fbref.poisson_rating(test_df, home_team, away_team)
-        poisson_fig = fbref.poisson_plots(lamba_home, lambda_away)
+        rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
+        lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
+        poisson_fig = fbref.poisson_plots(lambda_home, lambda_away)
         st.plotly_chart(poisson_fig)
 
 with lower_right:
-    st.write("dgwgefgdf")
+    if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
+        spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken in Game (%)",0.0,1.0,0.5,0.01)
+        home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
+        home_team_df = home_team_df.iloc[0]
+        home_player_df = defender_stats[defender_stats['Player'] == home_defender]
+        home_player_df['player_xG_contr'] = home_player_df['p90_xG']/home_team_df['Home_xGp90']
+        home_player_df = home_player_df.iloc[0]
+        home_defender_cont = home_player_df['player_xG_contr']
+        home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
+        st.write(f'There is a {home_prob*100:.4f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player}')
+        st.write(f'This implies a fair betting price of {1/home_prob:.2f} ')
+        st.divider()
 
+    if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
+        spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken in Game (%)",0.0,1.0,0.5,0.01)
+        away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
+        away_team_df = away_team_df.iloc[0]
+        away_player_df = defender_stats[defender_stats['Player'] == away_defender]
+        away_player_df['player_xG_contr'] = away_player_df['p90_xG']/away_team_df['Away_xGp90']
+        away_player_df = away_player_df.iloc[0]
+        away_defender_cont = away_player_df['player_xG_contr']
+        away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
+        st.write(f'There is a {away_prob*100:.4f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player}')
+        st.write(f'This implies a fair betting price of {1/away_prob:.2f} ')

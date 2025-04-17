@@ -40,6 +40,11 @@ def poisson_rating(df, home_team, away_team):
 
     return lambda_home, lambda_away
 
+def cb_score_spt_assist(team_lambda, cb_goal_contr, spt_assist_contr = 0.47, spt_taker_prop = 0.8):
+    pct_chance = 1-np.exp(-team_lambda*cb_goal_contr*spt_assist_contr*spt_taker_prop)
+    return pct_chance
+    
+
 def poisson_plots(lambda_home, lambda_away):
     x = np.arange(0, 10)
 
