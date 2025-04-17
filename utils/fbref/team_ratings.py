@@ -91,7 +91,7 @@ def poisson_plots(lambda_home, lambda_away):
         line=dict(color='tomato', width=1, dash='dash')
     )
     fig.add_annotation(
-        x=lambda_away, y=max_y,
+        x=lambda_away, y=max_y-0.05,
         text=f"Expected xG = {lambda_away:.2f}",
         showarrow=False,
         font=dict(color='tomato'),
