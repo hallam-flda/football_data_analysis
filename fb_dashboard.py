@@ -14,7 +14,6 @@ player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
 set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece_takers_fbref.csv")
 fixture_list = pd.read_csv("data/data/fbref_dashboard/fixture_list.csv")
 
-st.dataframe(fixture_list.head())
 
 team_list = set(prem_table_ha.Squad)
 team_list = sorted(list(team_list))
@@ -50,8 +49,12 @@ with fixture_sel:
             index=None,
             placeholder="Select Fixture..."
         )
-        home_team = fixture_list["Home"].iloc[0]
-        away_team = fixture_list["Away"].iloc[0]
+        if fixture:
+            # Split off the datetime part
+            _, teams_part = fixture.split(" - ", 1)
+            # Now split again to get the team names
+            teams_string = teams_part.split(" ", 1)[1]  # remove the time (e.g. "16:30")
+            home_team, away_team = teams_string.split(" vs ")
 
 
 
@@ -141,15 +144,14 @@ with st.sidebar:
 plot1, plot2 = st.columns([1,1])
 
 with plot1:
-    if home_set_piece_player:
-        home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, plot_average = True)
-        st.plotly_chart(home_set_piece_radar_chart)
+    st.write("placeholder")
+
 
 
 with plot2:
-    if away_set_piece_player:
-        away_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, away_set_piece_player, plot_average = True)
-        st.plotly_chart(away_set_piece_radar_chart)
+    if home_set_piece_player:
+    home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
+    st.plotly_chart(home_set_piece_radar_chart)
 
 
 home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_team]

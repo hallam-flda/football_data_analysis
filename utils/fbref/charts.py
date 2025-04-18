@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 
-def radar_spts(df, player=None, plot_average=False):
+def radar_spts(df, home_player=None, away_player=None, plot_average=False):
     # Select relevant columns
     keep_columns = df.columns[5:10].tolist()
 
@@ -13,13 +13,22 @@ def radar_spts(df, player=None, plot_average=False):
 
     radar_data = []
 
-    if player:
-        player_row = df_norm[df_norm["player_name"] == player]
-        player_values = player_row[keep_columns].iloc[0].tolist()
+    if home_player:
+        home_player_row = df_norm[df_norm["player_name"] == home_player]
+        home_player_values = home_player_row[keep_columns].iloc[0].tolist()
         radar_data.append({
             "Metric": chart_col_names,
-            "Value": player_values,
-            "Label": [player] * len(keep_columns)
+            "Value": home_player_values,
+            "Label": [home_player] * len(keep_columns)
+        })
+
+    if away_player:
+        awa_player_row = df_norm[df_norm["player_name"] == away_player]
+        away_player_values = awa_player_row[keep_columns].iloc[0].tolist()  
+        radar_data.append({
+            "Metric": chart_col_names,
+            "Value": away_player_values,
+            "Label": [away_player] * len(keep_columns)
         })
 
     # Averages for all players
@@ -35,11 +44,11 @@ def radar_spts(df, player=None, plot_average=False):
     radar_df = pd.concat([pd.DataFrame(d) for d in radar_data], ignore_index=True)
 
     # Plot
-    fig = px.line_polar(radar_df, r="Value", theta="Metric", color="Label", title=player, line_close=True)
+    fig = px.line_polar(radar_df, r="Value", theta="Metric", color="Label", title=f"{home_player} vs {away_player}", line_close=True)
     fig.update_traces(fill='toself')
     fig.update_layout(
         title=dict(
-            text=player,
+            text=f"{home_player} vs {away_player}",
             x=0.2,          
             y=0.85,         
             xanchor='center',
