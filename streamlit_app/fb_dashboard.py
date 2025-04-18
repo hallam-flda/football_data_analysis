@@ -22,9 +22,9 @@ player_team_list = sorted(list(player_team_list))
 team_mapping = zip(team_list, player_team_list)
 team_mapping = dict(team_mapping)
 
+
 prem_table_ha['Squad'] = prem_table_ha['Squad'].replace(team_mapping)
 
-team_list = set(prem_table_ha.Squad)
 
 set_piece_takers = set_piece_takers[set_piece_takers["season"] == 2024]
 
@@ -49,14 +49,14 @@ with st.sidebar:
 
     home_team = st.selectbox(
         "Home Team",
-        team_list,
+        player_team_list,
         index=None,
         placeholder="Select Home Team..."
     )
 
     away_team = st.selectbox(
         "Away Team",
-        team_list,
+        player_team_list,
         index=None,
         placeholder="Select Away Team..."
     )
@@ -130,12 +130,12 @@ with lower_left:
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
         rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
         lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
-        poisson_fig = fbref.poisson_plots(lambda_home, lambda_away)
+        poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
         st.plotly_chart(poisson_fig)
 
 with lower_right:
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-        spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken in Game (%)",0.0,1.0,0.5,0.01)
+        spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
         home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
         home_team_df = home_team_df.iloc[0]
         home_player_df = defender_stats[defender_stats['Player'] == home_defender]
@@ -148,7 +148,7 @@ with lower_right:
         st.divider()
 
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-        spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken in Game (%)",0.0,1.0,0.5,0.01)
+        spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken by {away_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
         away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
         away_team_df = away_team_df.iloc[0]
         away_player_df = defender_stats[defender_stats['Player'] == away_defender]

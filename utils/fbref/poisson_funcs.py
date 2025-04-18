@@ -45,7 +45,7 @@ def cb_score_spt_assist(team_lambda, cb_goal_contr, spt_assist_contr = 0.47, spt
     return pct_chance
     
 
-def poisson_plots(lambda_home, lambda_away):
+def poisson_plots(home_team, away_team, lambda_home, lambda_away):
     x = np.arange(0, 10)
 
     poisson_home = poisson.pmf(x, mu=lambda_home)
@@ -59,7 +59,7 @@ def poisson_plots(lambda_home, lambda_away):
     fig.add_trace(go.Scatter(
         x=x, y=poisson_home,
         mode='lines+markers',
-        name='Home Team',
+        name=home_team,
         line=dict(color='dodgerblue', width=2),
         marker=dict(symbol='circle', size=6)
     ))
@@ -68,7 +68,7 @@ def poisson_plots(lambda_home, lambda_away):
     fig.add_trace(go.Scatter(
         x=x, y=poisson_away,
         mode='lines+markers',
-        name='Away Team',
+        name=away_team,
         line=dict(color='tomato', width=2),
         marker=dict(symbol='circle', size=6)
     ))
@@ -81,8 +81,8 @@ def poisson_plots(lambda_home, lambda_away):
         line=dict(color='dodgerblue', width=1, dash='dash')
     )
     fig.add_annotation(
-        x=lambda_home, y=max_y,
-        text=f"Expected xG = {lambda_home:.2f}",
+        x=lambda_home-0.3, y=max_y-0.025,
+        text=f"Expected Home Goals = {lambda_home:.2f}",
         showarrow=False,
         font=dict(color='dodgerblue'),
         yshift=10
@@ -96,8 +96,8 @@ def poisson_plots(lambda_home, lambda_away):
         line=dict(color='tomato', width=1, dash='dash')
     )
     fig.add_annotation(
-        x=lambda_away, y=max_y-0.05,
-        text=f"Expected xG = {lambda_away:.2f}",
+        x=lambda_away+0.3, y=max_y-0.05,
+        text=f"Expected Away Goals = {lambda_away:.2f}",
         showarrow=False,
         font=dict(color='tomato'),
         yshift=10
