@@ -14,6 +14,8 @@ player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
 set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece_takers_fbref.csv")
 fixture_list = pd.read_csv("data/data/fbref_dashboard/fixture_list.csv")
 
+st.dataframe(fixture_list.head())
+
 team_list = set(prem_table_ha.Squad)
 team_list = sorted(list(team_list))
 
@@ -25,6 +27,32 @@ team_mapping = dict(team_mapping)
 
 
 prem_table_ha['Squad'] = prem_table_ha['Squad'].replace(team_mapping)
+fixture_list['Home'] = fixture_list['Home'].replace(team_mapping)
+fixture_list['Away'] = fixture_list['Away'].replace(team_mapping)
+
+
+game_week_sel, fixture_sel = st.columns([1,6])
+
+with game_week_sel:
+    game_week = st.selectbox(
+        "Game Week",
+        fixture_list["Wk"].unique().astype(int),
+        index = None,
+        placeholder="Select Game Week..."
+    )
+with fixture_sel:
+    if game_week:
+        fixture_list = fixture_list[fixture_list["Wk"] == game_week]
+        options_list = fixture_list["Date"] + " - " + fixture_list["Time"] + " " + fixture_list["Home"] + " vs " + fixture_list["Away"]
+        fixture = st.selectbox(
+            "Fixture",
+            options_list,
+            index=None,
+            placeholder="Select Fixture..."
+        )
+        home_team = fixture_list["Home"].iloc[0]
+        away_team = fixture_list["Away"].iloc[0]
+
 
 
 set_piece_takers = set_piece_takers[set_piece_takers["season"] == 2024]
@@ -48,19 +76,21 @@ with st.sidebar:
 
     update_dashboard = st.button("Click Here To Update Dashboard")
 
-    home_team = st.selectbox(
-        "Home Team",
-        player_team_list,
-        index=None,
-        placeholder="Select Home Team..."
-    )
 
-    away_team = st.selectbox(
-        "Away Team",
-        player_team_list,
-        index=None,
-        placeholder="Select Away Team..."
-    )
+
+    # home_team = st.selectbox(
+    #     "Home Team",
+    #     player_team_list,
+    #     index=None,
+    #     placeholder="Select Home Team..."
+    # )
+
+    # away_team = st.selectbox(
+    #     "Away Team",
+    #     player_team_list,
+    #     index=None,
+    #     placeholder="Select Away Team..."
+    # )
 
     set_piece_takers["player_club"] = set_piece_takers["player_club"].replace(team_mapping)
 
