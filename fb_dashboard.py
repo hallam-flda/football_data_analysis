@@ -12,6 +12,7 @@ st.set_page_config(layout="wide")
 prem_table_ha = pd.read_csv("data/data/fbref_dashboard/prem_table_ha.csv")
 player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
 set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece_takers_fbref.csv")
+fixture_list = pd.read_csv("data/data/fbref_dashboard/fixture_list.csv")
 
 team_list = set(prem_table_ha.Squad)
 team_list = sorted(list(team_list))

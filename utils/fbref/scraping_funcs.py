@@ -7,6 +7,16 @@ import random
 
 headers = {'User-Agent': 'Mozilla/5.0'}
 
+def get_league_data(url):
+  # home and away form
+  league_table_ha_df = pd.read_html(url, header = [0,1])[1]
+  league_table_ha_df.columns = [
+    f"{parent.strip()}_{child.strip()}" if "Unnamed" not in str(parent) else child.strip()
+    for parent, child in league_table_ha_df.columns
+  ]
+
+  return league_table_ha_df
+
 def get_team_data(url):
     time.sleep(10)
     print(f"trying URL {url}")
