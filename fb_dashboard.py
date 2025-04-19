@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 
 #st.caption("All data comes from FBRef this dashboard is purely educational and not intended for any commercial purpose.")
+home_tab, test_tab = st.tabs(["Home", "Test"])
 
 prem_table_ha = pd.read_csv("data/data/fbref_dashboard/prem_table_ha.csv")
 player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
@@ -136,74 +137,88 @@ with st.sidebar:
 home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_team]
 away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_team]
 
-spt_plot, pitch_plot = st.columns([1,1])
 
-with spt_plot:
-    if home_set_piece_player:
-        home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
-        st.plotly_chart(home_set_piece_radar_chart)
 
-    if home_team and away_team:
-        rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
+
+
+
+######### Home Tab
+with home_tab:
+
+    spt_plot, pitch_plot = st.columns([1,1])
+
+    with spt_plot:
+        if home_set_piece_player:
+            home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
+            st.plotly_chart(home_set_piece_radar_chart)
+
+        if home_team and away_team:
+            rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
+            lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
+            poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
+            st.plotly_chart(poisson_fig)
+
+
+
+    with pitch_plot:
+        pitch = VerticalPitch(pitch_color='grass', line_color='white', stripe = True, corner_arcs=True, pitch_type='statsbomb',
+                            axis=True, label=True, tick=True) # delete once plotting funcs done
+        fig, ax = pitch.draw(figsize=(6, 9))
+
+        if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
+            players = [
+            {'name': home_defender, 'x': 40, 'y': 105},
+            {'name': home_set_piece_player, 'x': 75, 'y': 115}
+            ]
+
+            # Plot circles
+            x_coords = [p['x'] for p in players]
+            y_coords = [p['y'] for p in players]
+            pitch.scatter(x_coords, y_coords, s=300, color='blue', ax=ax)#, zorder=3)
+
+            # Add names below the circles
+            for player in players:
+                ax.text(player['x'], player['y'] + 3, player['name'],
+                        ha='center', va='top', fontsize=10, color='black')
+
+
+        st.pyplot(fig)
+
+
+
+
+    if use_spreadex:
+        lambda_home = home_goals
+        lambda_away = away_goals
+    else:
         lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
-        poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
-        st.plotly_chart(poisson_fig)
 
-
-
-with pitch_plot:
-    pitch = VerticalPitch(pitch_color='grass', line_color='white', stripe = True, corner_arcs=True, pitch_type='statsbomb',
-                          axis=True, label=True, tick=True) # delete once plotting funcs done
-    fig, ax = pitch.draw(figsize=(6, 9))
 
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-        players = [
-        {'name': home_defender, 'x': 40, 'y': 105},
-        {'name': home_set_piece_player, 'x': 75, 'y': 115}
-        ]
-
-        # Plot circles
-        x_coords = [p['x'] for p in players]
-        y_coords = [p['y'] for p in players]
-        pitch.scatter(x_coords, y_coords, s=300, color='blue', ax=ax)#, zorder=3)
-
-        # Add names below the circles
-        for player in players:
-            ax.text(player['x'], player['y'] + 3, player['name'],
-                    ha='center', va='top', fontsize=10, color='black')
+        spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
+        home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
+        home_team_df = home_team_df.iloc[0]
+        home_player_df = defender_stats[defender_stats['Player'] == home_defender]
+        home_player_df['player_xG_contr'] = home_player_df['p90_xG']/home_team_df['Home_xGp90']
+        home_player_df = home_player_df.iloc[0]
+        home_defender_cont = home_player_df['player_xG_contr']
+        home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
+        st.write(f'There is a {home_prob*100:.4f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
 
 
-    st.pyplot(fig)
+    if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
+        spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken by {away_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
+        away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
+        away_team_df = away_team_df.iloc[0]
+        away_player_df = defender_stats[defender_stats['Player'] == away_defender]
+        away_player_df['player_xG_contr'] = away_player_df['p90_xG']/away_team_df['Away_xGp90']
+        away_player_df = away_player_df.iloc[0]
+        away_defender_cont = away_player_df['player_xG_contr']
+        away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
+        st.write(f'There is a {away_prob*100:.4f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
 
 
+## Test Tab
 
-
-if use_spreadex:
-    lambda_home = home_goals
-    lambda_away = away_goals
-else:
-    lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
-
-
-if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-    spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
-    home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
-    home_team_df = home_team_df.iloc[0]
-    home_player_df = defender_stats[defender_stats['Player'] == home_defender]
-    home_player_df['player_xG_contr'] = home_player_df['p90_xG']/home_team_df['Home_xGp90']
-    home_player_df = home_player_df.iloc[0]
-    home_defender_cont = home_player_df['player_xG_contr']
-    home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
-    st.write(f'There is a {home_prob*100:.4f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
-
-
-if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-    spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken by {away_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
-    away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
-    away_team_df = away_team_df.iloc[0]
-    away_player_df = defender_stats[defender_stats['Player'] == away_defender]
-    away_player_df['player_xG_contr'] = away_player_df['p90_xG']/away_team_df['Away_xGp90']
-    away_player_df = away_player_df.iloc[0]
-    away_defender_cont = away_player_df['player_xG_contr']
-    away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
-    st.write(f'There is a {away_prob*100:.4f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
+with test_tab:
+    st.dataframe(away_player_df)
