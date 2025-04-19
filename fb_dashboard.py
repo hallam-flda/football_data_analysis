@@ -6,7 +6,6 @@ from utils import fbref
 
 st.set_page_config(layout="wide")
 
-
 #st.caption("All data comes from FBRef this dashboard is purely educational and not intended for any commercial purpose.")
 
 prem_table_ha = pd.read_csv("data/data/fbref_dashboard/prem_table_ha.csv")
@@ -30,35 +29,11 @@ fixture_list['Home'] = fixture_list['Home'].replace(team_mapping)
 fixture_list['Away'] = fixture_list['Away'].replace(team_mapping)
 
 
-game_week_sel, fixture_sel = st.columns([1,6])
-
-with game_week_sel:
-    game_week = st.selectbox(
-        "Game Week",
-        fixture_list["Wk"].unique().astype(int),
-        index = None,
-        placeholder="Select Game Week..."
-    )
-with fixture_sel:
-    if game_week:
-        fixture_list = fixture_list[fixture_list["Wk"] == game_week]
-        options_list = fixture_list["Date"] + " - " + fixture_list["Time"] + " " + fixture_list["Home"] + " vs " + fixture_list["Away"]
-        fixture = st.selectbox(
-            "Fixture",
-            options_list,
-            index=None,
-            placeholder="Select Fixture..."
-        )
-        if fixture:
-            # Split off the datetime part
-            _, teams_part = fixture.split(" - ", 1)
-            # Now split again to get the team names
-            teams_string = teams_part.split(" ", 1)[1]  # remove the time (e.g. "16:30")
-            home_team, away_team = teams_string.split(" vs ")
-
-
 
 set_piece_takers = set_piece_takers[set_piece_takers["season"] == 2024]
+
+home_team = None
+away_team = None
 
 home_set_piece_player = None
 away_set_piece_player = None
@@ -80,20 +55,28 @@ with st.sidebar:
     update_dashboard = st.button("Click Here To Update Dashboard")
 
 
+    game_week = st.selectbox(
+        "Game Week",
+        fixture_list["Wk"].unique().astype(int),
+        index = None,
+        placeholder="Select Game Week..."
+    )
 
-    # home_team = st.selectbox(
-    #     "Home Team",
-    #     player_team_list,
-    #     index=None,
-    #     placeholder="Select Home Team..."
-    # )
-
-    # away_team = st.selectbox(
-    #     "Away Team",
-    #     player_team_list,
-    #     index=None,
-    #     placeholder="Select Away Team..."
-    # )
+    if game_week:
+        fixture_list = fixture_list[fixture_list["Wk"] == game_week]
+        options_list = fixture_list["Date"] + " - " + fixture_list["Time"] + " " + fixture_list["Home"] + " vs " + fixture_list["Away"]
+        fixture = st.selectbox(
+            "Fixture",
+            options_list,
+            index=None,
+            placeholder="Select Fixture..."
+        )
+        if fixture:
+            # Split off the datetime part
+            _, teams_part = fixture.split(" - ", 1)
+            # Now split again to get the team names
+            teams_string = teams_part.split(" ", 1)[1]  # remove the time (e.g. "16:30")
+            home_team, away_team = teams_string.split(" vs ")
 
     set_piece_takers["player_club"] = set_piece_takers["player_club"].replace(team_mapping)
 
@@ -139,34 +122,51 @@ with st.sidebar:
             placeholder = "Select Away Defender..."
         )
 
-
-
-plot1, plot2 = st.columns([1,1])
-
-with plot1:
-    st.write("placeholder")
-
-
-
-with plot2:
-    if home_set_piece_player:
-    home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
-    st.plotly_chart(home_set_piece_radar_chart)
-
+    st.write("Spreadex Override",help = "Use this to override the home and away team ratings with your own values. This is useful if you have a strong opinion on a game and want to adjust the ratings accordingly.")
+    home_suprem = st.slider("Home Team Supremacy", -4.0, 4.0, 0.0, 0.05)
+    total_goals = st.slider("Total Goals", 0.0, 6.0, 2.0, 0.05)
+    home_goals = home_suprem/2 + total_goals/2
+    away_goals = total_goals - home_goals
+    st.write(f"Home Goals: {home_goals:.2f}")  
+    st.write(f"Away Goals: {away_goals:.2f}")
+    use_spreadex = st.toggle("Use Spreadex Supremacies", value=False)
 
 home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_team]
 away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_team]
 
-lower_left, lower_right = st.columns([1,1])
+plot1, plot2 = st.columns([1,1])
 
-with lower_left:
-    if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
+with plot1:
+    if home_team and away_team:
         rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
         lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
         poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
         st.plotly_chart(poisson_fig)
 
+
+
+with plot2:
+    if home_set_piece_player:
+        home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
+        st.plotly_chart(home_set_piece_radar_chart)
+
+
+
+
+lower_left, lower_right = st.columns([1,1])
+
+with lower_left:
+    st.write("A")
+
+
+if use_spreadex:
+    lambda_home = home_goals
+    lambda_away = away_goals
+else:
+    lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
+
 with lower_right:
+    st.subheader("Probabilties")
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
         spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
         home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
@@ -176,9 +176,7 @@ with lower_right:
         home_player_df = home_player_df.iloc[0]
         home_defender_cont = home_player_df['player_xG_contr']
         home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
-        st.write(f'There is a {home_prob*100:.4f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player}')
-        st.write(f'This implies a fair betting price of {1/home_prob:.2f} ')
-        st.divider()
+        st.write(f'There is a {home_prob*100:.4f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
 
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
         spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken by {away_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
@@ -189,5 +187,4 @@ with lower_right:
         away_player_df = away_player_df.iloc[0]
         away_defender_cont = away_player_df['player_xG_contr']
         away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
-        st.write(f'There is a {away_prob*100:.4f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player}')
-        st.write(f'This implies a fair betting price of {1/away_prob:.2f} ')
+        st.write(f'There is a {away_prob*100:.4f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')

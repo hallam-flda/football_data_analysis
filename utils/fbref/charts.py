@@ -49,7 +49,7 @@ def radar_spts(df, home_player=None, away_player=None, plot_average=False):
     fig.update_layout(
         title=dict(
             text=f"{home_player} vs {away_player}",
-            x=0.2,          
+            x=0.3,          
             y=0.85,         
             xanchor='center',
             yanchor='top',
