@@ -5,6 +5,7 @@ import pandas as pd
 from utils import fbref
 from mplsoccer import Pitch, VerticalPitch
 import matplotlib.pyplot as plt
+import json
 
 st.set_page_config(layout="wide")
 
@@ -138,53 +139,22 @@ home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_te
 away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_team]
 
 
-
-
-
-
 ######### Home Tab
 with home_tab:
 
-    spt_plot, pitch_plot = st.columns([1,1])
+    possion_plot, spt_plot = st.columns([1,1])
 
-    with spt_plot:
-        if home_set_piece_player:
-            home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
-            st.plotly_chart(home_set_piece_radar_chart)
-
+    with possion_plot:
         if home_team and away_team:
             rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
             lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
             poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
             st.plotly_chart(poisson_fig)
 
-
-
-    with pitch_plot:
-        pitch = VerticalPitch(pitch_color='grass', line_color='white', stripe = True, corner_arcs=True, pitch_type='statsbomb',
-                            axis=True, label=True, tick=True) # delete once plotting funcs done
-        fig, ax = pitch.draw(figsize=(6, 9))
-
-        if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-            players = [
-            {'name': home_defender, 'x': 40, 'y': 105},
-            {'name': home_set_piece_player, 'x': 75, 'y': 115}
-            ]
-
-            # Plot circles
-            x_coords = [p['x'] for p in players]
-            y_coords = [p['y'] for p in players]
-            pitch.scatter(x_coords, y_coords, s=300, color='blue', ax=ax)#, zorder=3)
-
-            # Add names below the circles
-            for player in players:
-                ax.text(player['x'], player['y'] + 3, player['name'],
-                        ha='center', va='top', fontsize=10, color='black')
-
-
-        st.pyplot(fig)
-
-
+    with spt_plot:
+        if home_set_piece_player:
+            home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
+            st.plotly_chart(home_set_piece_radar_chart)
 
 
     if use_spreadex:
@@ -221,4 +191,17 @@ with home_tab:
 ## Test Tab
 
 with test_tab:
-    st.dataframe(away_player_df)
+
+    with open("data/data/fbref_dashboard/data.json", "r") as f:
+        api_json = json.load(f)
+    lineups = api_json['response'][0]["lineups"]
+    lineup_df = pd.DataFrame(lineups)
+
+    output_df = fbref.join_players_and_subs(lineup_df)
+    #st.dataframe(output_df)
+
+    test_df = output_df[(output_df["team_name"] == "Aldosivi") & (output_df["role"] == "starter")]
+
+    fig, ax = fbref.plot_pitch_with_players(test_df)
+    st.pyplot(fig)
+
