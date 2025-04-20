@@ -74,18 +74,36 @@ def radar_spts(df, home_player=None, away_player=None, plot_average=False):
 
     return fig
 
-def cb_butterfly(home_player=None, away_player=None):
-    # Example data
-    metrics = ['Goals', 'Assists', 'Pass Accuracy', 'Tackles', 'Dribbles']
-    player_a_stats = np.array([1, 7, 24, 30, 20])
-    player_b_stats = np.array([6, 3, 84, 25, 22])
+def butterfly_plot_prep(player_df):
+    
+    player_df = player_df[['ptime_Starts', 'p90_xG', 'p90_Gls', 'player_xG_contr']]
+    player_df['player_xG_contr'] = round(player_df['player_xG_contr'],3)
+    return player_df
 
-    # Normalise each metric (0-1 range)
+def apply_min_bar(val, raw, min_val=0.05):
+    if pd.isna(raw) or pd.isna(val):
+        return min_val  # You could also return 0 or skip entirely
+    if raw == 0:
+        return min_val
+    return max(val, min_val)
+
+def cb_butterfly(home_player_df = None, away_player_df = None, home_player=None, away_player=None):
+    # Example data
+    metrics = ['Starts', 'xG Per 90', 'Goals Per 90', 'Avg Team xG Prop']
+    player_a_stats = home_player_df
+    player_b_stats = away_player_df
+
+    # Normalise
     max_vals = np.maximum(player_a_stats, player_b_stats)
     player_a_norm = player_a_stats / max_vals
     player_b_norm = player_b_stats / max_vals
 
-    # Reverse order for top-to-bottom plot
+    # Apply min bar width
+    MIN_BAR_WIDTH = 0.2
+    player_a_norm = [apply_min_bar(val, raw) for val, raw in zip(player_a_norm, player_a_stats)]
+    player_b_norm = [apply_min_bar(val, raw) for val, raw in zip(player_b_norm, player_b_stats)]
+
+    # Reverse for top-down display
     metrics = metrics[::-1]
     player_a_stats = player_a_stats[::-1]
     player_b_stats = player_b_stats[::-1]
@@ -94,59 +112,92 @@ def cb_butterfly(home_player=None, away_player=None):
 
     fig = go.Figure()
 
-    # Player A bars (left side)
+    # Left (Player A)
     fig.add_trace(go.Bar(
         y=metrics,
-        x=[-x for x in player_a_norm],
-        orientation='h',
+        x=player_a_norm,
         name=home_player,
-        marker=dict(color='blue', line=dict(width=0), pattern_shape="", opacity=0.9),
+        orientation='h',
+        marker=dict(color='blue', opacity=0.9),
         width=0.4,
         hoverinfo='skip',
-        text=[str(v) for v in player_a_stats],
-        textposition='outside',
-        textangle=0,
-        insidetextanchor='start',
+        cliponaxis=False,
+        xaxis='x1'
     ))
 
-    # Player B bars (right side)
+    # Right (Player B)
     fig.add_trace(go.Bar(
         y=metrics,
         x=player_b_norm,
-        orientation='h',
         name=away_player,
-        marker=dict(color='red', line=dict(width=0), opacity=0.9),
+        orientation='h',
+        marker=dict(color='red', opacity=0.9),
         width=0.4,
-        hoverinfo='skip',
-        text=[str(v) for v in player_b_stats],
-        textposition='outside',
-        insidetextanchor='start',
+        cliponaxis=False,
+        xaxis='x2'
     ))
 
-    # Add metric labels in the middle
+    # Add metric names in the centre
     for i, metric in enumerate(metrics):
-        fig.add_annotation(x=0, y=i, text=metric, showarrow=False,
-                        font=dict(color='white', size=12, family="Arial"),
-                        xanchor='center', yanchor='middle')
+        fig.add_annotation(
+            x=0.5, y=i, xref='paper', yref='y',
+            text=metric,
+            showarrow=False,
+            font=dict(color='white', size=12),
+            xanchor='center',
+            yanchor='middle'
+        )
+    
+    for i, val in enumerate(player_a_stats):
+        fig.add_annotation(
+            x=-0.05,
+            y=i,
+            xref='x1',
+            yref='y',
+            text=str(val),
+            showarrow=False,
+            font=dict(color='white', size=12),
+            xanchor='right',
+            yanchor='middle'
+        )
+    
+    for i, val in enumerate(player_b_stats):
+        fig.add_annotation(
+            x=player_b_norm[i] + 0.01,
+            y=i,
+            xref='x2',
+            yref='y',
+            text=str(val),
+            showarrow=False,
+            font=dict(color='white', size=12),
+            xanchor='left',
+            yanchor='middle'
+        )
 
-    # Layout config
+    # Layout with two side-by-side axes
     fig.update_layout(
-        title='Player A vs Player B Comparison (Normalised)',
-        barmode='relative',
+        title=f'{home_player} vs {away_player}',
+        barmode='overlay',
         xaxis=dict(
+            domain=[0, 0.38],
+            showticklabels=False,
             showgrid=False,
-            zeroline=True,
-            zerolinewidth=2,
-            tickvals=[],
-            showticklabels=False
+            zeroline=False
+        ),
+        xaxis2=dict(
+            domain=[0.62, 1],
+            showticklabels=False,
+            showgrid=False,
+            zeroline=False
         ),
         yaxis=dict(showticklabels=False),
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)',
         font=dict(color='white'),
-        height=400,
-        margin=dict(l=40, r=40, t=50, b=40),
-        bargap=0.2,
+        height=200,
+        margin=dict(l=40, r=40, t=20, b=20),
+        bargap=0.8,
+        legend=dict(orientation='h', x=0.7, xanchor='center', y=1.5)
     )
-    return fig
 
+    return fig

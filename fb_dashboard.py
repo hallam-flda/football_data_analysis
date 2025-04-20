@@ -26,6 +26,7 @@ rated_team_table = None
 lambda_home, lambda_away = None, None
 poisson_fig = None
 radar_fig = None
+butterfly_fig = None
 home_stas = None
 away_stats = None
 home_defender = None
@@ -161,7 +162,27 @@ if home_set_piece_player and home_team and away_team:
     radar_fig = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
 
 
+if home_defender and away_defender:
 
+    home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
+    home_team_df = home_team_df.iloc[0]
+    home_player_df = defender_stats[defender_stats['Player'] == home_defender]
+    home_player_df['player_xG_contr'] = home_player_df['p90_xG']/home_team_df['Home_xGp90']
+    home_player_df = home_player_df.iloc[0]
+    home_defender_cont = home_player_df['player_xG_contr']
+
+    away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
+    away_team_df = away_team_df.iloc[0]
+    away_player_df = defender_stats[defender_stats['Player'] == away_defender]
+    away_player_df['player_xG_contr'] = away_player_df['p90_xG']/away_team_df['Away_xGp90']
+    away_player_df = away_player_df.iloc[0]
+    away_defender_cont = away_player_df['player_xG_contr']
+    home_cb_butterfly_df = fbref.butterfly_plot_prep(home_player_df)
+    away_cb_butterfly_df = fbref.butterfly_plot_prep(away_player_df)
+
+    butterfly_fig = fbref.cb_butterfly(home_cb_butterfly_df, away_cb_butterfly_df, home_player = home_defender, away_player = away_defender)
+
+    
 ######### Home Tab
 with home_tab:
         
@@ -186,32 +207,31 @@ with home_tab:
     butterly_plot, prob_output = st.columns([1, 1])
 
     with butterly_plot:
-        fig = fbref.cb_butterfly()
-        st.plotly_chart(fig)  
+        if butterfly_fig:
+            st.plotly_chart(butterfly_fig) 
+        elif radar_fig:
+            st.info("ℹ️ Select Defenders.")
+        else:
+            st.write(" ")
 
     with prob_output:
-        if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-            spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
-            home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
-            home_team_df = home_team_df.iloc[0]
-            home_player_df = defender_stats[defender_stats['Player'] == home_defender]
-            home_player_df['player_xG_contr'] = home_player_df['p90_xG']/home_team_df['Home_xGp90']
-            home_player_df = home_player_df.iloc[0]
-            home_defender_cont = home_player_df['player_xG_contr']
-            home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
-            st.write(f'There is a {home_prob*100:.2f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
-
+        st.subheader("CB to Score from Set Piece Taker",divider=True)
+        slider_col1, slider_col2 = st.columns([1,1])
 
         if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-            spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken by {away_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
-            away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
-            away_team_df = away_team_df.iloc[0]
-            away_player_df = defender_stats[defender_stats['Player'] == away_defender]
-            away_player_df['player_xG_contr'] = away_player_df['p90_xG']/away_team_df['Away_xGp90']
-            away_player_df = away_player_df.iloc[0]
-            away_defender_cont = away_player_df['player_xG_contr']
-            away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
-            st.write(f'There is a {away_prob*100:.2f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
+            
+
+            with slider_col1:
+                spt_home_dead_ball_prop = st.slider(f"Prop of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
+                st.divider()
+                spt_away_dead_ball_prop = st.slider(f"Prop of {away_team} Set Pieces Taken by {away_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
+
+            with slider_col2:
+                home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
+                st.write(f'There is a {home_prob*100:.2f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
+                st.divider()
+                away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
+                st.write(f'There is a {away_prob*100:.2f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
 
 
 ## Test Tab
@@ -230,4 +250,3 @@ with test_tab:
 
     fig, ax = fbref.plot_pitch_with_players(test_df)
     st.pyplot(fig)
-
