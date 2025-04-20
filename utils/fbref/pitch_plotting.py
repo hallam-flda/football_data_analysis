@@ -3,6 +3,8 @@ from mplsoccer import Pitch
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from matplotlib import pyplot as plt
+from matplotlib.patches import Circle
 
 X_MIN = 10
 Y_MIN = 10
@@ -47,21 +49,11 @@ def join_players_and_subs(df):
 
     return tidy
 
-# def plot_pitch():
-#     pitch = Pitch(pitch_color='grass', line_color='white', stripe = True, corner_arcs=True, pitch_type='statsbomb',
-#                         axis=True, label=True, tick=True) # delete once plotting funcs done
-#     fig, ax = pitch.draw()
-
-#     return fig
-
-from matplotlib import pyplot as plt
-from matplotlib.patches import Circle
-
 def plot_pitch_with_players(df):
     pitch = Pitch(
         pitch_color='grass', line_color='white', stripe=True,
-        corner_arcs=True, pitch_type='statsbomb',
-        axis=True, label=True, tick=True
+        corner_arcs=True, pitch_type='statsbomb'#,
+        # axis=True, label=True, tick=True
     )
     fig, ax = pitch.draw()
 

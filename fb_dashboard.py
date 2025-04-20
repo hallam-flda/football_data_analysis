@@ -7,17 +7,31 @@ from mplsoccer import Pitch, VerticalPitch
 import matplotlib.pyplot as plt
 import json
 
-st.set_page_config(layout="wide")
 
-#st.caption("All data comes from FBRef this dashboard is purely educational and not intended for any commercial purpose.")
-home_tab, test_tab = st.tabs(["Home", "Test"])
-
+## DATA ##
+# Load data - this can be moved to another file
 prem_table_ha = pd.read_csv("data/data/fbref_dashboard/prem_table_ha.csv")
 player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
 set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece_takers_fbref.csv")
 fixture_list = pd.read_csv("data/data/fbref_dashboard/fixture_list.csv")
 
+## VARIABLES ##
+# Default variables values to be defined later
+home_team = None
+away_team = None
+home_set_piece_player = None
+away_set_piece_player = None
+rated_team_table = None
+lambda_home, lambda_away = None, None
+poisson_fig = None
+radar_fig = None
+home_stas = None
+away_stats = None
+home_defender = None
+away_defender = None
 
+## DATA MANIPULATION ##
+# Can also be moved to another file
 team_list = set(prem_table_ha.Squad)
 team_list = sorted(list(team_list))
 
@@ -27,24 +41,12 @@ player_team_list = sorted(list(player_team_list))
 team_mapping = zip(team_list, player_team_list)
 team_mapping = dict(team_mapping)
 
-
 prem_table_ha['Squad'] = prem_table_ha['Squad'].replace(team_mapping)
 fixture_list['Home'] = fixture_list['Home'].replace(team_mapping)
 fixture_list['Away'] = fixture_list['Away'].replace(team_mapping)
 
-
-
 set_piece_takers = set_piece_takers[set_piece_takers["season"] == 2024]
-
-home_team = None
-away_team = None
-
-home_set_piece_player = None
-away_set_piece_player = None
-
-
 defender_stats = player_stats[player_stats["Pos"].fillna("").astype(str).str.contains("DF")]
-
 
 prem_table_unformatted = prem_table_ha.copy()
 prem_table_ha = prem_table_ha.rename(columns={"Rk": "Position"})
@@ -54,6 +56,10 @@ prem_table_ha.columns = pd.MultiIndex.from_tuples(
     [col.split("_",1) if "_" in col else ("",col) for col in prem_table_ha.columns]
 )
 
+## LAYOUT ##
+st.set_page_config(layout="wide")
+home_tab, test_tab = st.tabs(["Home", "Test"])
+
 with st.sidebar:
 
     update_dashboard = st.button("Click Here To Update Dashboard")
@@ -61,7 +67,7 @@ with st.sidebar:
 
     game_week = st.selectbox(
         "Game Week",
-        fixture_list["Wk"].unique().astype(int),
+        [33,34,35,36,37,38],
         index = None,
         placeholder="Select Game Week..."
     )
@@ -135,33 +141,49 @@ with st.sidebar:
     st.write(f"Away Goals: {away_goals:.2f}")
     use_spreadex = st.toggle("Use Spreadex Supremacies", value=False)
 
-home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_team]
-away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_team]
 
 
-######### Home Tab
-with home_tab:
 
-    possion_plot, spt_plot = st.columns([1,1])
-
-    with possion_plot:
-        if home_team and away_team:
-            rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
-            lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
-            poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
-            st.plotly_chart(poisson_fig)
-
-    with spt_plot:
-        if home_set_piece_player:
-            home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
-            st.plotly_chart(home_set_piece_radar_chart)
-
-
+if home_team and away_team and prem_table_unformatted is not None:
+    rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
+    lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
+    poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
+    home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_team]
+    away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_team]
     if use_spreadex:
         lambda_home = home_goals
         lambda_away = away_goals
     else:
         lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
+
+if home_set_piece_player and home_team and away_team:
+    radar_fig = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
+
+
+
+######### Home Tab
+with home_tab:
+        
+    possion_plot, spt_plot = st.columns([1, 1])
+    with possion_plot:
+        if poisson_fig:
+            st.plotly_chart(poisson_fig)
+        else:
+            st.info("ℹ️ Select a Fixture.")
+    
+    
+    with spt_plot:
+        if radar_fig:
+            st.plotly_chart(radar_fig)
+        elif home_team:
+            st.info("ℹ️ Select a Set Piece Taker.")
+        else:
+            st.write(" ")
+            
+
+
+
+
 
 
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
@@ -173,7 +195,7 @@ with home_tab:
         home_player_df = home_player_df.iloc[0]
         home_defender_cont = home_player_df['player_xG_contr']
         home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
-        st.write(f'There is a {home_prob*100:.4f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
+        st.write(f'There is a {home_prob*100:.2f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
 
 
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
@@ -185,7 +207,7 @@ with home_tab:
         away_player_df = away_player_df.iloc[0]
         away_defender_cont = away_player_df['player_xG_contr']
         away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
-        st.write(f'There is a {away_prob*100:.4f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
+        st.write(f'There is a {away_prob*100:.2f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
 
 
 ## Test Tab
