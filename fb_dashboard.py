@@ -3,10 +3,14 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from utils import fbref
+from mplsoccer import Pitch, VerticalPitch
+import matplotlib.pyplot as plt
+import json
 
 st.set_page_config(layout="wide")
 
 #st.caption("All data comes from FBRef this dashboard is purely educational and not intended for any commercial purpose.")
+home_tab, test_tab = st.tabs(["Home", "Test"])
 
 prem_table_ha = pd.read_csv("data/data/fbref_dashboard/prem_table_ha.csv")
 player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
@@ -134,39 +138,32 @@ with st.sidebar:
 home_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == home_team]
 away_stats = prem_table_unformatted[prem_table_unformatted[("Squad")] == away_team]
 
-plot1, plot2 = st.columns([1,1])
 
-with plot1:
-    if home_team and away_team:
-        rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
+######### Home Tab
+with home_tab:
+
+    possion_plot, spt_plot = st.columns([1,1])
+
+    with possion_plot:
+        if home_team and away_team:
+            rated_team_table = fbref.team_rating_cols(prem_table_unformatted)
+            lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
+            poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
+            st.plotly_chart(poisson_fig)
+
+    with spt_plot:
+        if home_set_piece_player:
+            home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
+            st.plotly_chart(home_set_piece_radar_chart)
+
+
+    if use_spreadex:
+        lambda_home = home_goals
+        lambda_away = away_goals
+    else:
         lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
-        poisson_fig = fbref.poisson_plots(home_team, away_team, lambda_home, lambda_away)
-        st.plotly_chart(poisson_fig)
 
 
-
-with plot2:
-    if home_set_piece_player:
-        home_set_piece_radar_chart = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
-        st.plotly_chart(home_set_piece_radar_chart)
-
-
-
-
-lower_left, lower_right = st.columns([1,1])
-
-with lower_left:
-    st.write("A")
-
-
-if use_spreadex:
-    lambda_home = home_goals
-    lambda_away = away_goals
-else:
-    lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
-
-with lower_right:
-    st.subheader("Probabilties")
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
         spt_home_dead_ball_prop = st.slider(f"Proportion of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
         home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
@@ -178,6 +175,7 @@ with lower_right:
         home_prob = fbref.cb_score_spt_assist(lambda_home, home_defender_cont, spt_taker_prop = spt_home_dead_ball_prop)
         st.write(f'There is a {home_prob*100:.4f}% chance that {home_defender} will score from a set piece taken by {home_set_piece_player} This implies a fair betting price of {1/home_prob:.2f} ')
 
+
     if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
         spt_away_dead_ball_prop = st.slider(f"Proportion of {away_team} Set Pieces Taken by {away_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
         away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
@@ -188,3 +186,22 @@ with lower_right:
         away_defender_cont = away_player_df['player_xG_contr']
         away_prob = fbref.cb_score_spt_assist(lambda_away, away_defender_cont, spt_taker_prop = spt_away_dead_ball_prop)
         st.write(f'There is a {away_prob*100:.4f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
+
+
+## Test Tab
+
+with test_tab:
+
+    with open("data/data/fbref_dashboard/data.json", "r") as f:
+        api_json = json.load(f)
+    lineups = api_json['response'][0]["lineups"]
+    lineup_df = pd.DataFrame(lineups)
+
+    output_df = fbref.join_players_and_subs(lineup_df)
+    #st.dataframe(output_df)
+
+    test_df = output_df[(output_df["team_name"] == "Aldosivi") & (output_df["role"] == "starter")]
+
+    fig, ax = fbref.plot_pitch_with_players(test_df)
+    st.pyplot(fig)
+
