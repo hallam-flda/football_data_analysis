@@ -1,5 +1,8 @@
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
+import numpy as np
+
 
 def radar_spts(df, home_player=None, away_player=None, plot_average=False):
     # Select relevant columns
@@ -71,4 +74,79 @@ def radar_spts(df, home_player=None, away_player=None, plot_average=False):
 
     return fig
 
- 
+def cb_butterfly(home_player=None, away_player=None):
+    # Example data
+    metrics = ['Goals', 'Assists', 'Pass Accuracy', 'Tackles', 'Dribbles']
+    player_a_stats = np.array([1, 7, 24, 30, 20])
+    player_b_stats = np.array([6, 3, 84, 25, 22])
+
+    # Normalise each metric (0-1 range)
+    max_vals = np.maximum(player_a_stats, player_b_stats)
+    player_a_norm = player_a_stats / max_vals
+    player_b_norm = player_b_stats / max_vals
+
+    # Reverse order for top-to-bottom plot
+    metrics = metrics[::-1]
+    player_a_stats = player_a_stats[::-1]
+    player_b_stats = player_b_stats[::-1]
+    player_a_norm = player_a_norm[::-1]
+    player_b_norm = player_b_norm[::-1]
+
+    fig = go.Figure()
+
+    # Player A bars (left side)
+    fig.add_trace(go.Bar(
+        y=metrics,
+        x=[-x for x in player_a_norm],
+        orientation='h',
+        name=home_player,
+        marker=dict(color='blue', line=dict(width=0), pattern_shape="", opacity=0.9),
+        width=0.4,
+        hoverinfo='skip',
+        text=[str(v) for v in player_a_stats],
+        textposition='outside',
+        textangle=0,
+        insidetextanchor='start',
+    ))
+
+    # Player B bars (right side)
+    fig.add_trace(go.Bar(
+        y=metrics,
+        x=player_b_norm,
+        orientation='h',
+        name=away_player,
+        marker=dict(color='red', line=dict(width=0), opacity=0.9),
+        width=0.4,
+        hoverinfo='skip',
+        text=[str(v) for v in player_b_stats],
+        textposition='outside',
+        insidetextanchor='start',
+    ))
+
+    # Add metric labels in the middle
+    for i, metric in enumerate(metrics):
+        fig.add_annotation(x=0, y=i, text=metric, showarrow=False,
+                        font=dict(color='white', size=12, family="Arial"),
+                        xanchor='center', yanchor='middle')
+
+    # Layout config
+    fig.update_layout(
+        title='Player A vs Player B Comparison (Normalised)',
+        barmode='relative',
+        xaxis=dict(
+            showgrid=False,
+            zeroline=True,
+            zerolinewidth=2,
+            tickvals=[],
+            showticklabels=False
+        ),
+        yaxis=dict(showticklabels=False),
+        plot_bgcolor='rgba(0,0,0,0)',
+        paper_bgcolor='rgba(0,0,0,0)',
+        font=dict(color='white'),
+        height=400,
+        margin=dict(l=40, r=40, t=50, b=40),
+        bargap=0.2,
+    )
+    return fig
+
