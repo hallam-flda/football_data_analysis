@@ -215,11 +215,9 @@ with home_tab:
             st.write(" ")
 
     with prob_output:
-        st.subheader("CB to Score from Set Piece Taker",divider=True)
-        slider_col1, slider_col2 = st.columns([1,1])
-
         if home_team and away_team and home_set_piece_player and away_set_piece_player and home_defender and away_defender:
-            
+            st.subheader("CB to Score from Set Piece Taker",divider=True)
+            slider_col1, slider_col2 = st.columns([1,1])
 
             with slider_col1:
                 spt_home_dead_ball_prop = st.slider(f"Prop of {home_team} Set Pieces Taken by {home_set_piece_player} in game (%)",0.0,1.0,0.5,0.01)
