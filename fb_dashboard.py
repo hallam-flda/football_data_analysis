@@ -63,13 +63,11 @@ st.set_page_config(layout="wide")
 home_tab, test_tab = st.tabs(["Home", "Test"])
 
 with st.sidebar:
-
-    update_dashboard = st.button("Click Here To Update Dashboard")
-
+    update_dashboard = st.button("Click Here To Update Dashboard (placeholder)")
 
     game_week = st.selectbox(
         "Game Week",
-        [33,34,35,36,37,38],
+        [34,35,36,37,38],
         index = None,
         placeholder="Select Game Week..."
     )
@@ -159,7 +157,8 @@ if home_team and away_team and prem_table_unformatted is not None:
         lambda_home, lambda_away = fbref.poisson_rating(rated_team_table, home_team, away_team)
 
 if home_set_piece_player and home_team and away_team:
-    radar_fig = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = True)
+    radar_fig = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = False)
+    radar_fig_mpl = fbref.mpl_radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player)
 
 
 if home_defender and away_defender:
@@ -235,6 +234,11 @@ with home_tab:
 ## Test Tab
 
 with test_tab:
+
+    if radar_fig:
+        st.pyplot(radar_fig_mpl)
+    else:
+        st.write(" ")
 
     with open("data/data/fbref_dashboard/data.json", "r") as f:
         api_json = json.load(f)

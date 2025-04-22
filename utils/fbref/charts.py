@@ -2,6 +2,69 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
+from mplsoccer import Radar, FontManager, grid
+import matplotlib as plt
+
+
+## fonts from mpl soccer docs walkthrough
+
+URL1 = ('https://raw.githubusercontent.com/googlefonts/SourceSerifProGFVersion/main/fonts/'
+        'SourceSerifPro-Regular.ttf')
+serif_regular = FontManager(URL1)
+URL2 = ('https://raw.githubusercontent.com/googlefonts/SourceSerifProGFVersion/main/fonts/'
+        'SourceSerifPro-ExtraLight.ttf')
+serif_extra_light = FontManager(URL2)
+URL3 = ('https://raw.githubusercontent.com/google/fonts/main/ofl/rubikmonoone/'
+        'RubikMonoOne-Regular.ttf')
+rubik_regular = FontManager(URL3)
+URL4 = 'https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Thin.ttf'
+robotto_thin = FontManager(URL4)
+URL5 = ('https://raw.githubusercontent.com/google/fonts/main/apache/robotoslab/'
+        'RobotoSlab%5Bwght%5D.ttf')
+robotto_bold = FontManager(URL5)
+
+
+
+def mpl_radar_spts(df, home_player=None, away_player=None):
+    # Select relevant columns
+    keep_columns = df.columns[5:10].tolist()
+    params = ["Live Ball SCAs", "Dead Ball % Taken", "Dead Ball SCAs", "Dead Ball GCAs", "Dead Ball SCA Efficiency"]
+    low = [0.0, 0.0, 0.0, 0.0, 0.0]
+    high = [3, 1, 2, 0.5, 0.25]
+
+    radar = Radar(
+        params, low, high,
+        round_int=[False] * len(params),
+        num_rings=4,
+        ring_width=1,
+        center_circle_radius=1
+    )
+    
+    # Extract values
+    try:
+        home_vals = df.loc[df["player_name"] == home_player, keep_columns].iloc[0].astype(float).tolist()
+    except IndexError:
+        raise ValueError(f"No data for home player {home_player!r}")
+
+    try:
+        away_vals = df.loc[df["player_name"] == away_player, keep_columns].iloc[0].astype(float).tolist()
+    except IndexError:
+        raise ValueError(f"No data for away player {away_player!r}")
+
+    fig, ax = radar.setup_axis()
+    rings_inner = radar.draw_circles(ax=ax, facecolor='#ffb2b2', edgecolor='#fc5f5f')
+    radar_output = radar.draw_radar_compare(home_vals, away_vals, ax=ax,
+                                            kwargs_radar={'facecolor': '#00f2c1', 'alpha': 0.6},
+                                            kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
+    radar_poly, radar_poly2, vertices1, vertices2 = radar_output
+    range_labels = radar.draw_range_labels(ax=ax, fontsize=15,
+                                        fontproperties=robotto_thin.prop)
+    param_labels = radar.draw_param_labels(ax=ax, fontsize=15,
+                                        fontproperties=robotto_thin.prop)
+    
+    return fig
+
+
 
 
 def radar_spts(df, home_player=None, away_player=None, plot_average=False):
@@ -26,8 +89,8 @@ def radar_spts(df, home_player=None, away_player=None, plot_average=False):
         })
 
     if away_player:
-        awa_player_row = df_norm[df_norm["player_name"] == away_player]
-        away_player_values = awa_player_row[keep_columns].iloc[0].tolist()  
+        away_player_row = df_norm[df_norm["player_name"] == away_player]
+        away_player_values = away_player_row[keep_columns].iloc[0].tolist()  
         radar_data.append({
             "Metric": chart_col_names,
             "Value": away_player_values,
@@ -112,10 +175,10 @@ def cb_butterfly(home_player_df = None, away_player_df = None, home_player=None,
 
     fig = go.Figure()
 
-    # Left (Player A)
+    # Left (Player A) – use negative x
     fig.add_trace(go.Bar(
         y=metrics,
-        x=player_a_norm,
+        x=[-v for v in player_a_norm],   # ← negate
         name=home_player,
         orientation='h',
         marker=dict(color='blue', opacity=0.9),
@@ -150,7 +213,7 @@ def cb_butterfly(home_player_df = None, away_player_df = None, home_player=None,
     
     for i, val in enumerate(player_a_stats):
         fig.add_annotation(
-            x=-0.05,
+            x=-player_a_norm[i] - 0.02,   # just outside the bar
             y=i,
             xref='x1',
             yref='y',
@@ -160,6 +223,7 @@ def cb_butterfly(home_player_df = None, away_player_df = None, home_player=None,
             xanchor='right',
             yanchor='middle'
         )
+
     
     for i, val in enumerate(player_b_stats):
         fig.add_annotation(
