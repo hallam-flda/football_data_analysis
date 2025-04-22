@@ -132,7 +132,7 @@ with st.sidebar:
             placeholder = "Select Away Defender..."
         )
 
-    st.write("Spreadex Override",help = "Use this to override the home and away team ratings with your own values. This is useful if you have a strong opinion on a game and want to adjust the ratings accordingly.")
+    st.write("Spreadex Override")#,help = "Use this to override the home and away team ratings with your own values. This is useful if you have a strong opinion on a game and want to adjust the ratings accordingly.")
     home_suprem = st.slider("Home Team Supremacy", -4.0, 4.0, 0.0, 0.05)
     total_goals = st.slider("Total Goals", 0.0, 6.0, 2.0, 0.05)
     home_goals = home_suprem/2 + total_goals/2
@@ -196,7 +196,8 @@ with home_tab:
     
     with spt_plot:
         if radar_fig:
-            st.plotly_chart(radar_fig)
+            #st.plotly_chart(radar_fig)
+            st.plotly_chart(radar_fig_mpl)
         elif home_team:
             st.info("ℹ️ Select a Set Piece Taker.")
         else:

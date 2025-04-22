@@ -3,8 +3,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
 from mplsoccer import Radar, FontManager, grid
-import matplotlib as plt
-
+import matplotlib.pyplot as plt
+import streamlit as st
 
 ## fonts from mpl soccer docs walkthrough
 
@@ -24,47 +24,195 @@ URL5 = ('https://raw.githubusercontent.com/google/fonts/main/apache/robotoslab/'
 robotto_bold = FontManager(URL5)
 
 
+import plotly.graph_objects as go
+import numpy as np
 
-def mpl_radar_spts(df, home_player=None, away_player=None):
-    # Select relevant columns
-    keep_columns = df.columns[5:10].tolist()
-    params = ["Live Ball SCAs", "Dead Ball % Taken", "Dead Ball SCAs", "Dead Ball GCAs", "Dead Ball SCA Efficiency"]
-    low = [0.0, 0.0, 0.0, 0.0, 0.0]
-    high = [3, 1, 2, 0.5, 0.25]
+def mpl_radar_spts(df, home_player, away_player):
+    # 1) your raw metric columns
+    stats = [
+        "live_ball_scas_p90",
+        "dead_ball_taken_p90",
+        "dead_ball_scas_p90",
+        "dead_ball_gcas_p90",
+        "dead_ball_sca_eff_p90"
+    ]
+    # 2) human‑friendly labels (in the same order)
+    labels = [
+        "Live Ball SCAs",
+        "Dead Balls Taken",
+        "Dead Ball SCAs",
+        "Dead Ball GCAs",
+        "Dead Ball SCA Efficiency"
+    ]
 
-    radar = Radar(
-        params, low, high,
-        round_int=[False] * len(params),
-        num_rings=4,
-        ring_width=1,
-        center_circle_radius=1
+    # 3) percentile ceiling for the axis
+    vals = df[stats].astype(float).values
+    high = np.percentile(vals, 95, axis=0).max()
+
+    # 4) extract each player’s values
+    home_vals = df.loc[df.player_name == home_player, stats].iloc[0].tolist()
+    away_vals = df.loc[df.player_name == away_player, stats].iloc[0].tolist()
+
+    # 5) close the loop
+    labels_c = labels + labels[:1]
+    home_c  = home_vals  + home_vals[:1]
+    away_c  = away_vals  + away_vals[:1]
+
+    # 6) build the figure
+    fig = go.Figure()
+
+    fig.add_trace(go.Scatterpolar(
+        r=home_c,
+        theta=labels_c,
+        fill='toself',
+        name=home_player,
+        marker_color='#00f2c1',  # teal
+        opacity=0.6
+    ))
+    fig.add_trace(go.Scatterpolar(
+        r=away_c,
+        theta=labels_c,
+        fill='toself',
+        name=away_player,
+        marker_color='#d80499',  # magenta
+        opacity=0.6
+    ))
+
+    # 7) layout tweaks for dark mode & square size
+    fig.update_layout(
+        title=dict(
+            text=f"{home_player} vs {away_player}",
+            x=0.5,
+            font=dict(color='white', size=20)
+        ),
+        polar=dict(
+            bgcolor='#252730',            # chart background
+            radialaxis=dict(
+                visible=True,
+                range=[0, high],
+                tickfont=dict(color='white'),
+                gridcolor='#39353f'
+            ),
+            angularaxis=dict(
+                tickfont=dict(color='white'),
+                gridcolor='#39353f'
+            )
+        ),
+        paper_bgcolor='#252730',          # figure background
+        font=dict(color='white'),
+        showlegend=True,
+        legend=dict(font=dict(color='white')),
+        width=600, height=600             # square dimensions
     )
-    
-    # Extract values
-    try:
-        home_vals = df.loc[df["player_name"] == home_player, keep_columns].iloc[0].astype(float).tolist()
-    except IndexError:
-        raise ValueError(f"No data for home player {home_player!r}")
 
-    try:
-        away_vals = df.loc[df["player_name"] == away_player, keep_columns].iloc[0].astype(float).tolist()
-    except IndexError:
-        raise ValueError(f"No data for away player {away_player!r}")
-
-    fig, ax = radar.setup_axis()
-    rings_inner = radar.draw_circles(ax=ax, facecolor='#ffb2b2', edgecolor='#fc5f5f')
-    radar_output = radar.draw_radar_compare(home_vals, away_vals, ax=ax,
-                                            kwargs_radar={'facecolor': '#00f2c1', 'alpha': 0.6},
-                                            kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
-    radar_poly, radar_poly2, vertices1, vertices2 = radar_output
-    range_labels = radar.draw_range_labels(ax=ax, fontsize=15,
-                                        fontproperties=robotto_thin.prop)
-    param_labels = radar.draw_param_labels(ax=ax, fontsize=15,
-                                        fontproperties=robotto_thin.prop)
-    
     return fig
 
 
+# def mpl_radar_spts(df, home_player, away_player):
+#     # Show the raw table for inspection (Streamlit)
+#     st.dataframe(df)
+
+#     # Explicitly name your columns so order never drifts
+
+
+#     keep_columns = [
+#         "live_ball_scas_p90",
+#         "dead_ball_taken_p90",
+#         "dead_ball_scas_p90",
+#         "dead_ball_gcas_p90",
+#         "dead_ball_sca_eff_p90"
+#     ]
+
+#     col_headers = [
+#         "Live Ball SCAs",
+#         "Dead Balls Taken",
+#         "Dead Ball SCAs",
+#         "Dead Ball GCAs",
+#         "Dead Ball SCA Efficiency"
+#     ]
+
+#     # Compute 95th‑percentile ceiling
+#     vals = df[keep_columns].astype(float).values
+#     high = np.percentile(vals, 95, axis=0).tolist()
+#     low  = [0.0]*len(keep_columns)
+
+#     # Build the radar
+#     radar = Radar(
+#         col_headers,           # use the same list here
+#         low,
+#         high,
+#         round_int=[False]*5,
+#         num_rings=4,
+#         ring_width=1,
+#         center_circle_radius=1
+#     )
+
+#     # Grab each player’s stats
+#     try:
+#         home_vals = df.loc[df["player_name"] == home_player, keep_columns].iloc[0].tolist()
+#         away_vals = df.loc[df["player_name"] == away_player, keep_columns].iloc[0].tolist()
+#     except IndexError as e:
+#         raise ValueError("Player not found.") from e
+
+#     # Create a single polar subplot
+#     fig, ax = radar.setup_axis(facecolor='#0D1117')
+
+#     fig.patch.set_facecolor('#0D1117')
+#     ax.patch .set_facecolor('#0D1117')
+#     fig.set_size_inches(12, 12)   # 6×6 inches
+#     fig.set_dpi(400)             # fewer pixels
+
+#     # 5) Draw the grid & comparisons
+#     radar.draw_circles(
+#         ax=ax,
+#         facecolor='#28252c',
+#         edgecolor='#39353f',
+#         lw=1.5
+#     )
+#     p1, p2, *_ = radar.draw_radar_compare(
+#         home_vals,
+#         away_vals,
+#         ax=ax,
+#         kwargs_radar  ={'facecolor': '#00f2c1', 'alpha': 0.6},
+#         kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6}
+#     )
+
+#     # 6) White labels
+#     radar.draw_range_labels(
+#         ax=ax,
+#         fontsize=15,
+#         fontproperties=robotto_thin.prop,
+#         color='white'
+#     )
+#     radar.draw_param_labels(
+#         ax=ax,
+#         fontsize=15,
+#         fontproperties=robotto_thin.prop,
+#         color='white'
+#     )
+
+#     # 7) Title
+#     ax.set_title(
+#         f"{home_player} vs {away_player}",
+#         color='white',
+#         fontsize=20,
+#         y=1.1
+#     )
+
+#     # 8) legend with transparent frame
+#     leg = ax.legend([p1, p2], [home_player, away_player],
+#                     loc='upper right', fontsize=12,
+#                     frameon=True,  # create the box…
+#                     facecolor='none',  # …but make it invisible
+#                     edgecolor='none')
+#     for t in leg.get_texts():
+#         t.set_color('white')
+
+#     # 9) tighten up margins so no white sliver shows
+#     fig.subplots_adjust(top=0.85, bottom=0.05, left=0.05, right=0.95)
+
+
+#     return fig
 
 
 def radar_spts(df, home_player=None, away_player=None, plot_average=False):
