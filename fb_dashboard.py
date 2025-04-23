@@ -163,23 +163,29 @@ if home_set_piece_player and home_team and away_team:
 
 if home_defender and away_defender:
 
-    home_team_df = rated_team_table[rated_team_table['Squad'] == home_team]
-    home_team_df = home_team_df.iloc[0]
-    home_player_df = defender_stats[defender_stats['Player'] == home_defender]
-    home_player_df['player_xG_contr'] = home_player_df['p90_xG']/home_team_df['Home_xGp90']
+    home_team_df = rated_team_table[rated_team_table['Squad'] == home_team].iloc[0]
+    
+
+    home_player_df = defender_stats[defender_stats['Player'] == home_defender].copy()
+    home_player_df['player_xG_contr'] = round(home_player_df['p90_xG'] / home_team_df['Home_xGp90'],3)
     home_player_df = home_player_df.iloc[0]
     home_defender_cont = home_player_df['player_xG_contr']
 
-    away_team_df = rated_team_table[rated_team_table['Squad'] == away_team]
-    away_team_df = away_team_df.iloc[0]
-    away_player_df = defender_stats[defender_stats['Player'] == away_defender]
-    away_player_df['player_xG_contr'] = away_player_df['p90_xG']/away_team_df['Away_xGp90']
+
+    away_team_df = rated_team_table[rated_team_table['Squad'] == away_team].iloc[0]
+
+    away_player_df = defender_stats[defender_stats['Player'] == away_defender].copy()
+    away_player_df['player_xG_contr'] = round(away_player_df['p90_xG'] / away_team_df['Away_xGp90'],3)
     away_player_df = away_player_df.iloc[0]
     away_defender_cont = away_player_df['player_xG_contr']
+
+
     home_cb_butterfly_df = fbref.butterfly_plot_prep(home_player_df)
     away_cb_butterfly_df = fbref.butterfly_plot_prep(away_player_df)
 
     butterfly_fig = fbref.cb_butterfly(home_cb_butterfly_df, away_cb_butterfly_df, home_player = home_defender, away_player = away_defender)
+   
+
 
     
 ######### Home Tab
