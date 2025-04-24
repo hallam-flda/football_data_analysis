@@ -241,10 +241,6 @@ with home_tab:
 
 with test_tab:
 
-    if radar_fig:
-        st.pyplot(radar_fig_mpl)
-    else:
-        st.write(" ")
 
     with open("data/data/fbref_dashboard/data.json", "r") as f:
         api_json = json.load(f)
