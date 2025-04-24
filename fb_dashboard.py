@@ -158,7 +158,7 @@ if home_team and away_team and prem_table_unformatted is not None:
 
 if home_set_piece_player and home_team and away_team:
     radar_fig = fbref.radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player ,plot_average = False)
-    radar_fig_mpl = fbref.mpl_radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player)
+    #radar_fig_mpl = fbref.mpl_radar_spts(set_piece_takers, home_set_piece_player, away_set_piece_player)
 
 
 if home_defender and away_defender:
