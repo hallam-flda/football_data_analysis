@@ -60,7 +60,7 @@ prem_table_ha.columns = pd.MultiIndex.from_tuples(
 
 ## LAYOUT ##
 st.set_page_config(layout="wide")
-home_tab, test_tab = st.tabs(["Home", "Test"])
+intro_tab, graph_tab, lineup_tab = st.tabs(["Intro","Graph", "Lineups"])
 
 with st.sidebar:
     update_dashboard = st.button("Click Here To Update Dashboard (placeholder)")
@@ -166,7 +166,7 @@ if home_defender and away_defender:
     home_team_df = rated_team_table[rated_team_table['Squad'] == home_team].iloc[0]
     
 
-    home_player_df = defender_stats[defender_stats['Player'] == home_defender].copy()
+    home_player_df = defender_stats[(defender_stats['Player'] == home_defender) & (defender_stats['Team'] == home_team)].copy()
     home_player_df['player_xG_contr'] = round(home_player_df['p90_xG'] / home_team_df['Home_xGp90'],3)
     home_player_df = home_player_df.iloc[0]
     home_defender_cont = home_player_df['player_xG_contr']
@@ -174,7 +174,7 @@ if home_defender and away_defender:
 
     away_team_df = rated_team_table[rated_team_table['Squad'] == away_team].iloc[0]
 
-    away_player_df = defender_stats[defender_stats['Player'] == away_defender].copy()
+    away_player_df = defender_stats[(defender_stats['Player'] == away_defender) & (defender_stats['Team'] == away_team)].copy()
     away_player_df['player_xG_contr'] = round(away_player_df['p90_xG'] / away_team_df['Away_xGp90'],3)
     away_player_df = away_player_df.iloc[0]
     away_defender_cont = away_player_df['player_xG_contr']
@@ -186,10 +186,25 @@ if home_defender and away_defender:
     butterfly_fig = fbref.cb_butterfly(home_cb_butterfly_df, away_cb_butterfly_df, home_player = home_defender, away_player = away_defender)
    
 
-
+with intro_tab:
+    st.subheader("Introduction")
+    st.write("This is a dashboard to assess potential value opportunities for betting on a Centre-Back to be assisted by a Set-Piece Taker.")
+    st.write(
+    """
+    The associated analysis for this dashboard can be found here. In short, when a centre-back scores in the premier league, 47% of the time it has been assisted by one of
+    the club's set piece takers that season. This is a conditional probability and can be written as:
+    """
+    )
+    st.subheader("How to use this Dahsboard")
+    st.write(
+    """
+    Using the sidebar on the left, select a club and combination of set-piece takers and centre-backs to generate the associated true probabilities of centre-back X to score assisted by 
+    Set-Piece taker Y
+    """
+    )
     
-######### Home Tab
-with home_tab:
+######### graph Tab
+with graph_tab:
         
     possion_plot, spt_plot = st.columns([1, 1])
 
@@ -239,7 +254,7 @@ with home_tab:
 
 ## Test Tab
 
-with test_tab:
+with lineup_tab:
 
 
     with open("data/data/fbref_dashboard/data.json", "r") as f:
