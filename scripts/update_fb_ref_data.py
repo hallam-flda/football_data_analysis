@@ -56,4 +56,4 @@ def league_table_update():
     print('league table data saved')
 
 fixture_list_update()
-league_table_update
+league_table_update()

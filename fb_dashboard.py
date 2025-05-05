@@ -15,6 +15,7 @@ prem_table_ha = pd.read_csv("data/data/fbref_dashboard/prem_table_ha.csv")
 player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
 set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece_takers_fbref.csv")
 fixture_list = pd.read_csv("data/data/fbref_dashboard/fixture_list.csv")
+lineups = pd.read_csv("data/data/fbref_dashboard/prem_24_lineups.csv")
 
 ## VARIABLES ##
 # Default variables values to be defined later
@@ -255,17 +256,7 @@ with graph_tab:
 ## Test Tab
 
 with lineup_tab:
-
-
-    with open("data/data/fbref_dashboard/data.json", "r") as f:
-        api_json = json.load(f)
-    lineups = api_json['response'][0]["lineups"]
-    lineup_df = pd.DataFrame(lineups)
-
-    output_df = fbref.join_players_and_subs(lineup_df)
-    #st.dataframe(output_df)
-
-    test_df = output_df[(output_df["team_name"] == "Aldosivi") & (output_df["role"] == "starter")]
-
-    fig, ax = fbref.plot_pitch_with_players(test_df)
+    plot_df = fbref.players_plotting_coords(lineups, home_team, away_team)
+    fig, ax = fbref.plot_pitch_with_players(plot_df)
     st.pyplot(fig)
+
