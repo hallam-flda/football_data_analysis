@@ -35,18 +35,17 @@ away_defender = None
 
 ## DATA MANIPULATION ##
 # Can also be moved to another file
-team_list = set(prem_table_ha.Squad)
-team_list = sorted(list(team_list))
 
-player_team_list = set(player_stats.Team)
-player_team_list = sorted(list(player_team_list))
+team_mapping = fbref.club_name_mapping(prem_table_ha.Squad, player_stats.Team)
+team_mapping_2 = fbref.club_name_mapping(lineups.home_team, player_stats.Team)
 
-team_mapping = zip(team_list, player_team_list)
-team_mapping = dict(team_mapping)
 
 prem_table_ha['Squad'] = prem_table_ha['Squad'].replace(team_mapping)
 fixture_list['Home'] = fixture_list['Home'].replace(team_mapping)
 fixture_list['Away'] = fixture_list['Away'].replace(team_mapping)
+lineups['home_team'] = lineups['home_team'].replace(team_mapping_2)
+lineups['away_team'] = lineups['away_team'].replace(team_mapping_2)
+
 
 set_piece_takers = set_piece_takers[set_piece_takers["season"] == 2024]
 defender_stats = player_stats[player_stats["Pos"].fillna("").astype(str).str.contains("DF")]
@@ -256,7 +255,13 @@ with graph_tab:
 ## Test Tab
 
 with lineup_tab:
+
+    st.dataframe(lineups)
+    st.dataframe(lineups['home_team'].unique())
     plot_df = fbref.players_plotting_coords(lineups, home_team, away_team)
     fig, ax = fbref.plot_pitch_with_players(plot_df)
     st.pyplot(fig)
+
+    st.write(team_mapping)
+    st.write(team_mapping_2)
 

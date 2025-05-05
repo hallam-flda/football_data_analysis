@@ -77,7 +77,7 @@ def players_plotting_coords(df, home_team = None, away_team = None):
     )
     )
 
-        # Away team processing (mirrored x-axis)
+    # Away team processing (mirrored x-axis)
     tidy[["away_xplot", "away_yplot"]] = tidy["away_player_grid"].str.extract(r'^(\d+):(\d+)$').astype(float)
     tidy['away_formation_list'] = tidy['away_formation'].str.split('-').to_list()
     tidy['away_xplot'] = np.where(
