@@ -17,6 +17,7 @@ player_stats = pd.read_csv("data/data/fbref_dashboard/all_prem_squads.csv")
 set_piece_takers = pd.read_csv("data/data/fbref_dashboard/set_piece_takers_fbref.csv")
 fixture_list = pd.read_csv("data/data/fbref_dashboard/fixture_list.csv")
 lineups = pd.read_csv("data/data/fbref_dashboard/prem_24_lineups.csv")
+lineups_long = pd.read_csv("data/data/fbref_dashboard/prem_24_lineups_long.csv")
 
 ## VARIABLES ##
 # Default variables values to be defined later
@@ -267,6 +268,14 @@ with lineup_tab:
     lineups_copy = lineups.copy()
     historic_fixture_list = historic_fixture_list[['Wk','Home','Away']]
     lineups_copy = lineups_copy.merge(historic_fixture_list, left_on = ['home_team','away_team'], right_on = ['Home','Away'], how = 'left')
+
+    lineups_home_lw = lineups_copy.copy()
+    lineups_home_lw = lineups_home_lw[((lineups_home_lw['home_team'] == home_team) | (lineups_home_lw['away_team'] == home_team)) & (lineups_home_lw['Wk'] == previous_game_week)]
+    lineups_away_lw = lineups_copy.copy()
+    lineups_away_lw = lineups_away_lw[((lineups_away_lw['home_team'] == away_team) | (lineups_away_lw['away_team'] == away_team)) & (lineups_away_lw['Wk'] == previous_game_week)]
+
+    st.dataframe(lineups_home_lw)
+    st.dataframe(lineups_away_lw)
     st.dataframe(lineups_copy)
     st.dataframe(historic_fixture_list) 
     
