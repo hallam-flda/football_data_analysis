@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.patches import Circle
+import streamlit as st
 
 X_MIN = 10
 Y_MIN = 10
@@ -49,6 +50,57 @@ def join_players_and_subs(df):
 
     return tidy
 
+def players_plotting_coords(df, home_team = None, away_team = None):
+
+    tidy = df[
+    (df['away_team'] == away_team) &
+    (df['home_team'] == home_team) &
+    (df['home_player_grid'].str.contains(":", na=False))
+    ].copy()
+    tidy[["home_xplot","home_yplot"]] = tidy["home_player_grid"].str.extract(r'^(\d+):(\d+)$')
+    tidy['home_xplot'] = tidy['home_xplot'].astype(float)
+    tidy['home_yplot'] = tidy['home_yplot'].astype(float)
+    tidy['home_formation_list'] = tidy['home_formation'].str.split('-').to_list()
+    tidy['home_xplot'] = np.where(tidy["home_player_pos"] == "G", 5, X_MIN + (tidy['home_xplot'] - 1) * (X_MAX - X_MIN) / tidy['home_formation_list'].apply(len))
+    # Calculate max yplot per xplot
+    max_y_per_x = tidy.groupby("home_xplot")["home_yplot"].transform("max")
+    tidy['home_max_y_per_x'] = max_y_per_x
+    denominator = (max_y_per_x - 1).replace(0, 2)
+    tidy['denominator'] = denominator  
+    tidy['home_yplot'] = np.where(tidy['home_max_y_per_x'] == 1, 2.1, tidy['home_yplot'])
+    tidy['home_yplot'] = np.where(
+        tidy['home_player_pos'] == "G",
+        40,  # fixed y for goalkeeper
+        np.where(tidy['home_max_y_per_x'] == 2,
+                 (Y_MIN*2) + ((tidy['home_yplot'] - 1) * ((Y_MAX*0.7 - Y_MIN*1.2) / (denominator))),
+                    Y_MIN + ((tidy['home_yplot'] - 1) * ((Y_MAX - Y_MIN) / (denominator)))
+    )
+    )
+
+    # Away team processing (mirrored x-axis)
+    tidy[["away_xplot", "away_yplot"]] = tidy["away_player_grid"].str.extract(r'^(\d+):(\d+)$').astype(float)
+    tidy['away_formation_list'] = tidy['away_formation'].str.split('-').to_list()
+    tidy['away_xplot'] = np.where(
+        tidy["away_player_pos"] == "G",
+        120 - 5,  # fixed x for GK on opposite side
+        120 - (X_MIN + (tidy['away_xplot'] - 1) * (X_MAX - X_MIN) / tidy['away_formation_list'].apply(len))
+    )
+    tidy['away_max_y_per_x'] = tidy.groupby("away_xplot")["away_yplot"].transform("max")
+    away_denominator = (tidy['away_max_y_per_x'] - 1).replace(0, 2)
+    tidy['away_yplot'] = np.where(tidy['away_max_y_per_x'] == 1, 2.1, tidy['away_yplot'])
+    tidy['away_yplot'] = np.where(
+        tidy['away_player_pos'] == "G",
+        40,
+        np.where(
+            tidy['away_max_y_per_x'] == 2,
+            (Y_MIN * 2) + ((tidy['away_yplot'] - 1) * ((Y_MAX * 0.7 - Y_MIN * 1.2) / away_denominator)),
+            Y_MIN + ((tidy['away_yplot'] - 1) * ((Y_MAX - Y_MIN) / away_denominator))
+        )
+    )
+
+
+    return tidy
+
 def plot_pitch_with_players(df):
     pitch = Pitch(
         pitch_color='grass', line_color='white', stripe=True,
@@ -60,7 +112,16 @@ def plot_pitch_with_players(df):
     for _, row in df.iterrows():
         # Plot player circle
         circle = plt.Circle(
-            (row['xplot'], row['yplot']), 
+            (row['home_xplot'], row['home_yplot']), 
+            radius=2.5, 
+            color='white', 
+            ec='black', 
+            zorder=3
+        )
+        ax.add_patch(circle)
+
+        circle = plt.Circle(
+            (row['away_xplot'], row['away_yplot']), 
             radius=2.5, 
             color='white', 
             ec='black', 
@@ -70,8 +131,16 @@ def plot_pitch_with_players(df):
 
         # Player number inside the circle
         ax.text(
-            row['xplot'], row['yplot'], 
-            str(row['player_number']), 
+            row['home_xplot'], row['home_yplot'], 
+            str(row['home_player_number']), 
+            va='center', ha='center', 
+            fontsize=8, fontweight='bold', 
+            zorder=4
+        )
+
+        ax.text(
+            row['away_xplot'], row['away_yplot'], 
+            str(row['away_player_number']), 
             va='center', ha='center', 
             fontsize=8, fontweight='bold', 
             zorder=4
@@ -79,8 +148,16 @@ def plot_pitch_with_players(df):
 
         # Player name underneath
         ax.text(
-            row['xplot'], row['yplot'] - 6,  # slightly below the circle
-            row['player_name'], 
+            row['home_xplot'], row['home_yplot'] - 6,  # slightly below the circle
+            row['home_player_name'], 
+            va='top', ha='center', 
+            fontsize=6, color='white', 
+            zorder=4
+        )
+
+        ax.text(
+            row['away_xplot'], row['away_yplot'] - 6,  # slightly below the circle
+            row['away_player_name'], 
             va='top', ha='center', 
             fontsize=6, color='white', 
             zorder=4

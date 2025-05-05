@@ -8,20 +8,20 @@ import matplotlib as plt
 
 ## fonts from mpl soccer docs walkthrough
 
-URL1 = ('https://raw.githubusercontent.com/googlefonts/SourceSerifProGFVersion/main/fonts/'
-        'SourceSerifPro-Regular.ttf')
-serif_regular = FontManager(URL1)
-URL2 = ('https://raw.githubusercontent.com/googlefonts/SourceSerifProGFVersion/main/fonts/'
-        'SourceSerifPro-ExtraLight.ttf')
-serif_extra_light = FontManager(URL2)
-URL3 = ('https://raw.githubusercontent.com/google/fonts/main/ofl/rubikmonoone/'
-        'RubikMonoOne-Regular.ttf')
-rubik_regular = FontManager(URL3)
-URL4 = 'https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Thin.ttf'
-robotto_thin = FontManager(URL4)
-URL5 = ('https://raw.githubusercontent.com/google/fonts/main/apache/robotoslab/'
-        'RobotoSlab%5Bwght%5D.ttf')
-robotto_bold = FontManager(URL5)
+# URL1 = ('https://raw.githubusercontent.com/googlefonts/SourceSerifProGFVersion/main/fonts/'
+#         'SourceSerifPro-Regular.ttf')
+# serif_regular = FontManager(URL1)
+# URL2 = ('https://raw.githubusercontent.com/googlefonts/SourceSerifProGFVersion/main/fonts/'
+#         'SourceSerifPro-ExtraLight.ttf')
+# serif_extra_light = FontManager(URL2)
+# URL3 = ('https://raw.githubusercontent.com/google/fonts/main/ofl/rubikmonoone/'
+#         'RubikMonoOne-Regular.ttf')
+# rubik_regular = FontManager(URL3)
+# URL4 = 'https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Thin.ttf'
+# robotto_thin = FontManager(URL4)
+# URL5 = ('https://raw.githubusercontent.com/google/fonts/main/apache/robotoslab/'
+#         'RobotoSlab%5Bwght%5D.ttf')
+# robotto_bold = FontManager(URL5)
 
 
 
