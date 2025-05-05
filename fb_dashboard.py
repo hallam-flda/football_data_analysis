@@ -7,6 +7,7 @@ from mplsoccer import Pitch, VerticalPitch
 import matplotlib.pyplot as plt
 import json
 import numpy as np
+from datetime import date
 
 
 ## DATA ##
@@ -46,6 +47,7 @@ fixture_list['Away'] = fixture_list['Away'].replace(team_mapping)
 lineups['home_team'] = lineups['home_team'].replace(team_mapping_2)
 lineups['away_team'] = lineups['away_team'].replace(team_mapping_2)
 
+historic_fixture_list = fixture_list.copy()
 
 set_piece_takers = set_piece_takers[set_piece_takers["season"] == 2024]
 defender_stats = player_stats[player_stats["Pos"].fillna("").astype(str).str.contains("DF")]
@@ -58,35 +60,34 @@ prem_table_ha.columns = pd.MultiIndex.from_tuples(
     [col.split("_",1) if "_" in col else ("",col) for col in prem_table_ha.columns]
 )
 
-## LAYOUT ##
+game_week = int(fbref.get_current_gameweek(fixture_list))
+previous_game_week = game_week - 1
 st.set_page_config(layout="wide")
+
+# st.write(f"Current Game Week: {game_week}")
+# st.dataframe(fixture_list[fixture_list["Wk"] == game_week])
+## LAYOUT ##
+
 intro_tab, graph_tab, lineup_tab = st.tabs(["Intro","Graph", "Lineups"])
 
 with st.sidebar:
     update_dashboard = st.button("Click Here To Update Dashboard (placeholder)")
 
-    game_week = st.selectbox(
-        "Game Week",
-        [34,35,36,37,38],
-        index = None,
-        placeholder="Select Game Week..."
+    
+    fixture_list = fixture_list[fixture_list["Wk"] == game_week]
+    options_list = fixture_list["Date"].dt.strftime("%Y-%m-%d") + " - " + fixture_list["Time"] + " " + fixture_list["Home"] + " vs " + fixture_list["Away"]
+    fixture = st.selectbox(
+        "Fixture",
+        options_list,
+        index=None,
+        placeholder="Select Fixture..."
     )
-
-    if game_week:
-        fixture_list = fixture_list[fixture_list["Wk"] == game_week]
-        options_list = fixture_list["Date"] + " - " + fixture_list["Time"] + " " + fixture_list["Home"] + " vs " + fixture_list["Away"]
-        fixture = st.selectbox(
-            "Fixture",
-            options_list,
-            index=None,
-            placeholder="Select Fixture..."
-        )
-        if fixture:
-            # Split off the datetime part
-            _, teams_part = fixture.split(" - ", 1)
-            # Now split again to get the team names
-            teams_string = teams_part.split(" ", 1)[1]  # remove the time (e.g. "16:30")
-            home_team, away_team = teams_string.split(" vs ")
+    if fixture:
+        # Extract home and away teams from the fixture string
+        _, teams_part = fixture.split(" - ", 1)
+        
+        teams_string = teams_part.split(" ", 1)[1]  # remove the time (e.g. "16:30")
+        home_team, away_team = teams_string.split(" vs ")
 
     set_piece_takers["player_club"] = set_piece_takers["player_club"].replace(team_mapping)
 
@@ -252,16 +253,30 @@ with graph_tab:
                 st.write(f'There is a {away_prob*100:.2f}% chance that {away_defender} will score from a set piece taken by {away_set_piece_player} This implies a fair betting price of {1/away_prob:.2f} ')
 
 
-## Test Tab
 
 with lineup_tab:
-
-    st.dataframe(lineups)
-    st.dataframe(lineups['home_team'].unique())
+    
+    # game_week_selector = st.selectbox(
+    #     "Game Week",
+    #     [34,35,36,37,38],
+    #     index = None,
+    #     placeholder="Select Game Week..."
+    # )
+    if fixture:
+        st.write(fixture)
+    lineups_copy = lineups.copy()
+    historic_fixture_list = historic_fixture_list[['Wk','Home','Away']]
+    lineups_copy = lineups_copy.merge(historic_fixture_list, left_on = ['home_team','away_team'], right_on = ['Home','Away'], how = 'left')
+    st.dataframe(lineups_copy)
+    st.dataframe(historic_fixture_list) 
+    
+    st.subheader("Lineups")
+    st.write("The default plot for games that have not yet occurred is the last game played by each team")
     plot_df = fbref.players_plotting_coords(lineups, home_team, away_team)
     fig, ax = fbref.plot_pitch_with_players(plot_df)
     st.pyplot(fig)
 
-    st.write(team_mapping)
-    st.write(team_mapping_2)
 
+
+    # today = date.today()
+    # st.write(today)  # e.g. 2025-05-05
