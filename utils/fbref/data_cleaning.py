@@ -46,3 +46,24 @@ def get_current_gameweek(df):
     current_wk = week_ranges.loc[mask, 'Wk']
 
     return current_wk
+
+def get_last_week_lineup(lineups_df, team, previous_week):
+    
+    team_lineup = lineups_df[
+        ((lineups_df['home_team'] == team) | (lineups_df['away_team'] == team)) &
+        (lineups_df['Wk'] == previous_week)
+    ].copy()
+
+    # identify whether the team was playing at home or away
+    team_lineup['team_role'] = team_lineup.apply(
+        lambda row: 'home' if row['home_team'] == team else 'away',
+        axis=1
+    )
+
+    role = team_lineup['team_role'].iloc[0]
+    keep_columns = [col for col in team_lineup.columns if col.startswith(role)]
+
+    team_lineup = team_lineup[keep_columns]
+    team_lineup.columns = [col.removeprefix(f"{role}_") for col in team_lineup.columns]
+
+    return team_lineup

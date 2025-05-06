@@ -269,20 +269,17 @@ with lineup_tab:
     historic_fixture_list = historic_fixture_list[['Wk','Home','Away']]
     lineups_copy = lineups_copy.merge(historic_fixture_list, left_on = ['home_team','away_team'], right_on = ['Home','Away'], how = 'left')
 
-    lineups_home_lw = lineups_copy.copy()
-    lineups_home_lw = lineups_home_lw[((lineups_home_lw['home_team'] == home_team) | (lineups_home_lw['away_team'] == home_team)) & (lineups_home_lw['Wk'] == previous_game_week)]
-    lineups_away_lw = lineups_copy.copy()
-    lineups_away_lw = lineups_away_lw[((lineups_away_lw['home_team'] == away_team) | (lineups_away_lw['away_team'] == away_team)) & (lineups_away_lw['Wk'] == previous_game_week)]
+    home_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, home_team, previous_game_week)
+    away_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, away_team, previous_game_week)
 
-    st.dataframe(lineups_home_lw)
-    st.dataframe(lineups_away_lw)
-    st.dataframe(lineups_copy)
-    st.dataframe(historic_fixture_list) 
+
+    st.dataframe(home_team_lw_lineup)
+    st.dataframe(away_team_lw_lineup)
     
     st.subheader("Lineups")
     st.write("The default plot for games that have not yet occurred is the last game played by each team")
-    plot_df = fbref.players_plotting_coords(lineups, home_team, away_team)
-    fig, ax = fbref.plot_pitch_with_players(plot_df)
+    home_plot_df, away_plot_df = fbref.players_plotting_coords(home_team_lw_lineup, away_team_lw_lineup)
+    fig, ax = fbref.plot_pitch_with_players(home_plot_df, away_plot_df)
     st.pyplot(fig)
 
 
