@@ -69,6 +69,7 @@ st.set_page_config(layout="wide")
 # st.dataframe(fixture_list[fixture_list["Wk"] == game_week])
 ## LAYOUT ##
 
+title_placeholder = st.empty()
 intro_tab, graph_tab, lineup_tab = st.tabs(["Intro","Graph", "Lineups"])
 
 with st.sidebar:
@@ -144,6 +145,9 @@ with st.sidebar:
     use_spreadex = st.toggle("Use Spreadex Supremacies", value=False)
 
 
+if fixture:
+    title_placeholder.title(f"{fixture}")
+    
 
 
 if home_team and away_team and prem_table_unformatted is not None:
@@ -197,7 +201,7 @@ with intro_tab:
     the club's set piece takers that season. This is a conditional probability and can be written as:
     """
     )
-    st.subheader("How to use this Dahsboard")
+    st.subheader("How to use this Dashboard")
     st.write(
     """
     Using the sidebar on the left, select a club and combination of set-piece takers and centre-backs to generate the associated true probabilities of centre-back X to score assisted by 
@@ -263,24 +267,47 @@ with lineup_tab:
     #     index = None,
     #     placeholder="Select Game Week..."
     # )
-    if fixture:
-        st.write(fixture)
     lineups_copy = lineups.copy()
     historic_fixture_list = historic_fixture_list[['Wk','Home','Away']]
     lineups_copy = lineups_copy.merge(historic_fixture_list, left_on = ['home_team','away_team'], right_on = ['Home','Away'], how = 'left')
 
-    home_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, home_team, previous_game_week)
-    away_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, away_team, previous_game_week)
+    if fixture:
+        try:
+            home_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, home_team, previous_game_week)
+        except:
+            home_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, home_team, previous_game_week-1)
+        try:
+            away_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, away_team, previous_game_week)
+        except:
+            away_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, away_team, previous_game_week-1)
 
+        
+        st.subheader("Lineups", divider = True)
+        st.write("The default plot shows how each time lined up for their previous fixture. You can select a previous game week to see how the teams lined up in that fixture.")
+        home_plot_df, away_plot_df = fbref.players_plotting_coords(home_team_lw_lineup, away_team_lw_lineup)
+        fig, ax = fbref.plot_pitch_with_players(home_plot_df, away_plot_df)
 
-    st.dataframe(home_team_lw_lineup)
-    st.dataframe(away_team_lw_lineup)
-    
-    st.subheader("Lineups")
-    st.write("The default plot for games that have not yet occurred is the last game played by each team")
-    home_plot_df, away_plot_df = fbref.players_plotting_coords(home_team_lw_lineup, away_team_lw_lineup)
-    fig, ax = fbref.plot_pitch_with_players(home_plot_df, away_plot_df)
-    st.pyplot(fig)
+        historic_lineups = st.toggle("Show Historic Lineups", value=False)   
+
+        if historic_lineups:
+            home_week, away_week = st.columns([1, 1])
+            with home_week:
+                home_week_select = int(st.selectbox(f"Select {home_team} fixture", lineups_copy['Wk'].unique(), key="home_week_select"))
+            with away_week:
+                away_week_select = int(st.selectbox(f"Select {away_team} fixture", lineups_copy['Wk'].unique(), key="away_week_select"))
+            try:
+                home_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, home_team, home_week_select)
+            except:
+                st.write(f"{home_team} did not play in this game week")
+            try:
+                away_team_lw_lineup = fbref.get_last_week_lineup(lineups_copy, away_team, away_week_select)
+            except:
+                st.write(f"{away_team} did not play in this game week")
+            home_plot_df, away_plot_df = fbref.players_plotting_coords(home_team_lw_lineup, away_team_lw_lineup)
+            fig, ax = fbref.plot_pitch_with_players(home_plot_df, away_plot_df)
+            
+                 
+        st.pyplot(fig)
 
 
 

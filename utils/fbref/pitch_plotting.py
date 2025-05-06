@@ -50,52 +50,49 @@ def join_players_and_subs(df):
 
     return tidy
 
-def players_plotting_coords(home_team_df = None, away_team_df = None):
+def process_team_coords(team_df, is_away=False):
+    team = team_df[team_df['player_grid'].str.contains(":", na=False)].copy()
+    
+    
+    team[["xplot", "yplot"]] = team["player_grid"].str.extract(r'^(\d+):(\d+)$').astype(float)
+    
+    
+    team['formation_list'] = team['formation'].str.split('-').to_list()
+    line_width = (X_MAX - X_MIN)
+    formation_lens = team['formation_list'].apply(len)
 
-    home = home_team_df[(home_team_df['player_grid'].str.contains(":", na=False))].copy()
-    home[["xplot","yplot"]] = home["player_grid"].str.extract(r'^(\d+):(\d+)$')
-    home['xplot'] = home['xplot'].astype(float)
-    home['yplot'] = home['yplot'].astype(float)
-    home['formation_list'] = home['formation'].str.split('-').to_list()
-    home['xplot'] = np.where(home["player_pos"] == "G", 5, X_MIN + (home['xplot'] - 1) * (X_MAX - X_MIN) / home['formation_list'].apply(len))
-    # Calculate max yplot per xplot
-    max_y_per_x = home.groupby("xplot")["yplot"].transform("max")
-    home['max_y_per_x'] = max_y_per_x
-    denominator = (max_y_per_x - 1).replace(0, 2)
-    home['denominator'] = denominator  
-    home['yplot'] = np.where(home['max_y_per_x'] == 1, 2.1, home['yplot'])
-    home['yplot'] = np.where(
-        home['player_pos'] == "G",
-        40,  # fixed y for goalkeeper
-        np.where(home['max_y_per_x'] == 2,
-                 (Y_MIN*2) + ((home['yplot'] - 1) * ((Y_MAX*0.7 - Y_MIN*1.2) / (denominator))),
-                    Y_MIN + ((home['yplot'] - 1) * ((Y_MAX - Y_MIN) / (denominator)))
-    )
+    outfield_x = (X_MIN + (team['xplot'] - 1) * line_width / formation_lens)
+    if is_away:
+        outfield_x = 120 - outfield_x
+
+    team['xplot'] = np.where(
+        team["player_pos"] == "G",
+        115 if is_away else 5,
+        outfield_x
     )
 
-    # Away team processing (mirrored x-axis)
-    away = away_team_df[(away_team_df['player_grid'].str.contains(":", na=False))].copy()
-    away[["xplot", "yplot"]] = away["player_grid"].str.extract(r'^(\d+):(\d+)$').astype(float)
-    away['formation_list'] = away['formation'].str.split('-').to_list()
-    away['xplot'] = np.where(
-        away["player_pos"] == "G",
-        120 - 5,  # fixed x for GK on opposite side
-        120 - (X_MIN + (away['xplot'] - 1) * (X_MAX - X_MIN) / away['formation_list'].apply(len))
-    )
-    away['max_y_per_x'] = away.groupby("xplot")["yplot"].transform("max")
-    denominator = (away['max_y_per_x'] - 1).replace(0, 2)
-    away['yplot'] = np.where(away['max_y_per_x'] == 1, 2.1, away['yplot'])
-    away['yplot'] = np.where(
-        away['player_pos'] == "G",
+    
+    team['max_y_per_x'] = team.groupby("xplot")["yplot"].transform("max")
+    denominator = (team['max_y_per_x'] - 1).replace(0, 2)
+    team['yplot'] = np.where(team['max_y_per_x'] == 1, 2.1, team['yplot'])
+
+   
+    team['yplot'] = np.where(
+        team['player_pos'] == "G",
         40,
         np.where(
-            away['max_y_per_x'] == 2,
-            (Y_MIN * 2) + ((away['yplot'] - 1) * ((Y_MAX * 0.7 - Y_MIN * 1.2) / denominator)),
-            Y_MIN + ((away['yplot'] - 1) * ((Y_MAX - Y_MIN) / denominator))
+            team['max_y_per_x'] == 2,
+            (Y_MAX * 0.85) - ((team['yplot'] - 1) * ((Y_MAX * 0.75 - Y_MIN * 1.3) / denominator)),
+            Y_MAX - ((team['yplot'] - 1) * ((Y_MAX - Y_MIN) / denominator))
         )
     )
 
+    return team
 
+
+def players_plotting_coords(home_team_df=None, away_team_df=None):
+    home = process_team_coords(home_team_df, is_away=False)
+    away = process_team_coords(away_team_df, is_away=True)
     return home, away
 
 def plot_pitch_with_players(home_df, away_df):
