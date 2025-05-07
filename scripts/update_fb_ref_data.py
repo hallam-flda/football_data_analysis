@@ -2,6 +2,9 @@ from utils.fbref.scraping_funcs import get_team_data, get_league_data
 import pandas as pd
 import time
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 OUTPUT_PATH = "data/data/fbref_dashboard/"
 
@@ -57,3 +60,4 @@ def league_table_update():
 
 fixture_list_update()
 league_table_update()
+squad_data_update()
