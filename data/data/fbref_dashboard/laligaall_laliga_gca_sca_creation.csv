@@ -1,0 +1,589 @@
+,Player,Nation,Pos,Age,90s,sca_SCA,sca_SCA90,sca_types_PassLive,sca_types_PassDead,sca_types_TO,sca_types_Sh,sca_types_Fld,sca_types_Def,gca_GCA,gca_GCA90,gca_types_PassLive,gca_types_PassDead,gca_types_TO,gca_types_Sh,gca_types_Fld,gca_types_Def,Matches,Team,Season
+0,Pedri,es ESP,MF,22-165,28.6,142,4.97,130,4,1,2,4,1,12,0.42,12,0,0,0,0,0,Matches,Barcelona,2024
+1,Jules Koundé,fr FRA,DF,26-178,28.9,59,2.04,55,0,2,2,0,0,7,0.24,6,0,0,1,0,0,Matches,Barcelona,2024
+2,Robert Lewandowski,pl POL,FW,36-261,27.1,48,1.77,33,0,4,7,4,0,3,0.11,2,0,0,1,0,0,Matches,Barcelona,2024
+3,Raphinha,br BRA,"FW,MF",28-146,27.8,151,5.42,91,30,8,12,9,1,22,0.79,11,2,4,2,2,1,Matches,Barcelona,2024
+4,Lamine Yamal,es ESP,FW,17-300,27.7,163,5.88,101,3,33,14,10,2,26,0.94,18,0,4,2,2,0,Matches,Barcelona,2024
+5,Pau Cubarsí,es ESP,DF,18-107,26.0,33,1.27,32,0,0,1,0,0,6,0.23,5,0,0,1,0,0,Matches,Barcelona,2024
+6,Iñigo Martínez,es ESP,DF,33-357,25.7,42,1.64,35,1,1,3,2,0,9,0.35,6,1,1,0,1,0,Matches,Barcelona,2024
+7,Alejandro Balde,es ESP,DF,21-203,23.1,73,3.16,57,3,3,3,7,0,12,0.52,10,0,0,0,2,0,Matches,Barcelona,2024
+8,Marc Casado,es ESP,MF,21-237,17.9,45,2.51,40,0,0,1,2,2,6,0.34,6,0,0,0,0,0,Matches,Barcelona,2024
+9,Iñaki Peña,es ESP,GK,26-068,14.5,1,0.07,1,0,0,0,0,0,1,0.07,1,0,0,0,0,0,Matches,Barcelona,2024
+10,Wojciech Szczęsny,pl POL,GK,35-021,13.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Barcelona,2024
+11,Gavi,es ESP,"MF,FW",20-277,9.9,36,3.62,34,0,1,1,0,0,4,0.4,4,0,0,0,0,0,Matches,Barcelona,2024
+12,Dani Olmo,es ESP,"MF,FW",27-002,11.4,51,4.46,35,0,7,5,4,0,9,0.79,2,0,3,1,3,0,Matches,Barcelona,2024
+13,Ferrán Torres,es ESP,"FW,MF",25-069,11.3,33,2.92,23,2,4,1,2,1,4,0.35,3,0,1,0,0,0,Matches,Barcelona,2024
+14,Eric García,es ESP,"MF,DF",24-120,13.7,25,1.82,22,0,0,3,0,0,5,0.36,4,0,0,1,0,0,Matches,Barcelona,2024
+15,Fermin López,es ESP,"MF,FW",21-363,11.5,45,3.93,29,4,6,3,1,2,5,0.44,5,0,0,0,0,0,Matches,Barcelona,2024
+16,Ronald Araújo,uy URU,DF,26-063,7.1,10,1.4,9,0,0,1,0,0,1,0.14,0,0,0,1,0,0,Matches,Barcelona,2024
+17,Gerard Martín,es ESP,DF,23-128,9.8,26,2.66,25,0,0,0,1,0,3,0.31,3,0,0,0,0,0,Matches,Barcelona,2024
+18,Frenkie de Jong,nl NED,MF,27-362,10.1,35,3.47,31,0,2,1,0,1,11,1.09,9,0,2,0,0,0,Matches,Barcelona,2024
+19,Marc-André ter Stegen,de GER,GK,33-009,6.5,1,0.15,0,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Barcelona,2024
+20,Héctor Fort,es ESP,DF,18-280,6.0,14,2.33,13,1,0,0,0,0,1,0.17,1,0,0,0,0,0,Matches,Barcelona,2024
+21,Pablo Torre,es ESP,"MF,FW",22-036,3.4,18,5.24,14,2,0,0,1,1,3,0.87,3,0,0,0,0,0,Matches,Barcelona,2024
+22,Marc Bernal,es ESP,MF,17-348,2.7,1,0.37,0,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Barcelona,2024
+23,Ansu Fati,es ESP,FW,22-190,2.6,11,4.25,9,0,0,2,0,0,0,0.0,0,0,0,0,0,0,Matches,Barcelona,2024
+24,Pau Victor Delgado,es ESP,FW,23-164,3.3,12,3.58,10,0,1,0,1,0,2,0.6,1,0,0,0,1,0,Matches,Barcelona,2024
+25,Sergi Dominguez,es ESP,DF,20-038,1.9,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Barcelona,2024
+26,Andreas Christensen,dk DEN,DF,29-029,1.3,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Barcelona,2024
+27,Daniel Rodriguez,es ESP,FW,19-273,0.4,2,4.86,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Barcelona,2024
+28,Federico Valverde,uy URU,"MF,DF",26-291,29.7,75,2.53,71,1,0,3,0,0,13,0.44,12,0,0,1,0,0,Matches,Real Madrid,2024
+29,Kylian Mbappé,fr FRA,FW,26-140,28.3,110,3.89,69,1,22,12,6,0,11,0.39,7,1,1,2,0,0,Matches,Real Madrid,2024
+30,Thibaut Courtois,be BEL,GK,32-363,28.0,4,0.14,3,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+31,Aurélien Tchouaméni,fr FRA,"DF,MF",25-102,27.3,33,1.21,32,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+32,Antonio Rüdiger,de GER,DF,32-067,25.5,28,1.1,19,0,0,6,3,0,2,0.08,1,0,0,0,1,0,Matches,Real Madrid,2024
+33,Jude Bellingham,eng ENG,MF,21-314,24.6,91,3.69,73,1,4,7,3,3,12,0.49,10,0,0,1,1,0,Matches,Real Madrid,2024
+34,Vinicius Júnior,br BRA,FW,24-301,23.7,131,5.54,76,1,29,11,11,3,15,0.63,8,0,5,0,2,0,Matches,Real Madrid,2024
+35,Lucas Vázquez,es ESP,DF,33-312,22.4,63,2.81,52,5,1,2,2,1,8,0.36,8,0,0,0,0,0,Matches,Real Madrid,2024
+36,Rodrygo,br BRA,"FW,MF",24-120,21.4,106,4.95,66,18,13,3,5,1,9,0.42,7,0,1,0,1,0,Matches,Real Madrid,2024
+37,Fran Garcia,es ESP,DF,25-268,20.3,41,2.02,36,0,1,3,0,1,2,0.1,2,0,0,0,0,0,Matches,Real Madrid,2024
+38,Raúl Asencio,es ESP,DF,22-085,15.9,11,0.69,10,0,1,0,0,0,1,0.06,1,0,0,0,0,0,Matches,Real Madrid,2024
+39,Brahim Díaz,ma MAR,"FW,MF",25-279,14.3,51,3.57,39,0,5,5,1,1,12,0.84,7,0,1,3,0,1,Matches,Real Madrid,2024
+40,Luka Modrić,hr CRO,MF,39-242,16.8,96,5.7,63,30,0,2,0,1,12,0.71,9,3,0,0,0,0,Matches,Real Madrid,2024
+41,Ferland Mendy,fr FRA,DF,29-335,11.2,5,0.45,4,0,0,0,0,1,1,0.09,1,0,0,0,0,0,Matches,Real Madrid,2024
+42,Dani Ceballos,es ESP,MF,28-275,10.8,44,4.06,38,4,1,0,1,0,5,0.46,4,1,0,0,0,0,Matches,Real Madrid,2024
+43,Eduardo Camavinga,fr FRA,"MF,DF",22-180,12.2,31,2.54,25,1,2,0,3,0,2,0.16,2,0,0,0,0,0,Matches,Real Madrid,2024
+44,Éder Militão,br BRA,DF,27-111,10.4,12,1.15,9,0,0,2,0,1,1,0.1,1,0,0,0,0,0,Matches,Real Madrid,2024
+45,Arda Güler,tr TUR,"MF,FW",20-073,10.5,55,5.22,35,9,5,4,1,1,10,0.95,4,2,1,2,1,0,Matches,Real Madrid,2024
+46,Dani Carvajal,es ESP,DF,33-118,6.8,12,1.77,10,2,0,0,0,0,2,0.3,1,1,0,0,0,0,Matches,Real Madrid,2024
+47,Andriy Lunin,ua UKR,GK,26-087,5.0,1,0.2,1,0,0,0,0,0,1,0.2,1,0,0,0,0,0,Matches,Real Madrid,2024
+48,David Alaba,at AUT,DF,32-319,3.5,2,0.57,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+49,Endrick,br BRA,FW,18-292,2.5,6,2.35,4,0,1,0,1,0,2,0.78,0,0,1,0,1,0,Matches,Real Madrid,2024
+50,Fran,es ESP,GK,19-319,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+51,Jacobo Ramón,es ESP,DF,20-123,0.3,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+52,Jesús Vallejo,es ESP,DF,28-124,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+53,Chema,es ESP,MF,20-014,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+54,Lorenzo Aguado,es ESP,DF,22-232,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+55,Daniel Yáñez,es ESP,FW,18-042,0.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Madrid,2024
+56,Jan Oblak,si SVN,GK,32-122,33.0,6,0.18,4,2,0,0,0,0,1,0.03,1,0,0,0,0,0,Matches,Atletico Madrid,2024
+57,Antoine Griezmann,fr FRA,"FW,MF",34-049,26.0,88,3.39,65,15,0,5,2,1,12,0.46,11,0,0,1,0,0,Matches,Atletico Madrid,2024
+58,Julián Álvarez,ar ARG,FW,25-098,25.2,88,3.49,63,5,8,8,1,3,9,0.36,6,0,0,2,0,1,Matches,Atletico Madrid,2024
+59,Pablo Barrios,es ESP,MF,21-328,24.6,62,2.52,54,1,1,3,1,2,9,0.37,9,0,0,0,0,0,Matches,Atletico Madrid,2024
+60,Marcos Llorente,es ESP,"DF,MF",30-099,23.9,48,2.01,43,2,1,1,1,0,11,0.46,10,0,0,0,1,0,Matches,Atletico Madrid,2024
+61,Giuliano Simeone,ar ARG,MF,22-142,19.0,43,2.27,34,0,4,2,3,0,8,0.42,6,0,1,0,1,0,Matches,Atletico Madrid,2024
+62,Robin Le Normand,es ESP,DF,28-179,20.9,7,0.33,4,0,0,3,0,0,1,0.05,0,0,0,1,0,0,Matches,Atletico Madrid,2024
+63,Clément Lenglet,fr FRA,DF,29-326,19.9,14,0.7,13,0,1,0,0,0,2,0.1,2,0,0,0,0,0,Matches,Atletico Madrid,2024
+64,Rodrigo De Paul,ar ARG,MF,30-350,20.0,75,3.75,68,3,0,2,1,1,10,0.5,10,0,0,0,0,0,Matches,Atletico Madrid,2024
+65,Conor Gallagher,eng ENG,MF,25-092,17.2,29,1.68,22,0,4,0,3,0,6,0.35,4,0,1,0,1,0,Matches,Atletico Madrid,2024
+66,José María Giménez,uy URU,DF,30-109,20.2,5,0.25,5,0,0,0,0,0,1,0.05,1,0,0,0,0,0,Matches,Atletico Madrid,2024
+67,Javi Galán,es ESP,DF,30-171,17.3,29,1.67,26,1,1,0,1,0,5,0.29,5,0,0,0,0,0,Matches,Atletico Madrid,2024
+68,Samuel Lino,br BRA,"MF,DF",25-137,14.4,40,2.78,32,0,1,4,3,0,3,0.21,1,0,0,1,1,0,Matches,Atletico Madrid,2024
+69,Koke,es ESP,MF,33-121,17.9,42,2.34,40,1,0,0,0,1,4,0.22,4,0,0,0,0,0,Matches,Atletico Madrid,2024
+70,Nahuel Molina,ar ARG,DF,27-033,16.0,39,2.43,29,5,3,1,0,1,5,0.31,5,0,0,0,0,0,Matches,Atletico Madrid,2024
+71,Alexander Sørloth,no NOR,FW,29-155,14.8,26,1.76,15,0,4,5,2,0,5,0.34,2,0,2,1,0,0,Matches,Atletico Madrid,2024
+72,Reinildo Mandava,mz MOZ,DF,31-108,10.5,7,0.67,6,0,0,0,0,1,1,0.1,0,0,0,0,0,1,Matches,Atletico Madrid,2024
+73,César Azpilicueta,es ESP,DF,35-254,8.2,6,0.73,4,1,0,0,0,1,1,0.12,1,0,0,0,0,0,Matches,Atletico Madrid,2024
+74,Axel Witsel,be BEL,DF,36-117,8.5,3,0.36,2,0,1,0,0,0,2,0.24,1,0,1,0,0,0,Matches,Atletico Madrid,2024
+75,Rodrigo Riquelme,es ESP,"MF,DF",25-037,5.7,29,5.05,27,1,1,0,0,0,1,0.17,1,0,0,0,0,0,Matches,Atletico Madrid,2024
+76,Ángel Correa,ar ARG,"FW,MF",30-061,8.1,27,3.34,15,1,3,4,2,2,3,0.37,2,0,1,0,0,0,Matches,Atletico Madrid,2024
+77,Juan Musso,ar ARG,GK,31-003,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Atletico Madrid,2024
+78,Thomas Lemar,fr FRA,MF,29-178,0.7,3,4.35,2,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Atletico Madrid,2024
+79,Adrian Niño,es ESP,FW,20-324,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Atletico Madrid,2024
+80,Iñaki Williams,gh GHA,FW,30-328,29.0,79,2.72,60,1,6,7,3,2,14,0.48,10,0,3,1,0,0,Matches,Athletic Club,2024
+81,Daniel Vivian,es ESP,DF,25-298,25.7,33,1.29,31,0,1,0,0,1,1,0.04,1,0,0,0,0,0,Matches,Athletic Club,2024
+82,Álex Berenguer,es ESP,"FW,MF",29-309,23.0,90,3.91,58,18,8,2,2,2,14,0.61,6,4,2,1,1,0,Matches,Athletic Club,2024
+83,Mikel Jauregizar,es ESP,MF,21-178,21.8,67,3.07,50,6,1,4,3,3,8,0.37,6,0,0,0,2,0,Matches,Athletic Club,2024
+84,Nico Williams,es ESP,FW,22-301,21.3,109,5.12,64,13,21,3,5,3,13,0.61,9,2,1,0,1,0,Matches,Athletic Club,2024
+85,Beñat Prados,es ESP,MF,24-090,17.9,19,1.06,18,0,0,1,0,0,3,0.17,3,0,0,0,0,0,Matches,Athletic Club,2024
+86,Gorka Guruzeta,es ESP,FW,28-239,18.1,25,1.38,19,1,0,4,0,1,1,0.06,1,0,0,0,0,0,Matches,Athletic Club,2024
+87,Aitor Paredes,es ESP,DF,25-010,18.1,8,0.44,8,0,0,0,0,0,1,0.06,1,0,0,0,0,0,Matches,Athletic Club,2024
+88,Yuri Berchiche,es ESP,DF,35-088,18.7,35,1.87,30,2,0,1,0,2,2,0.11,2,0,0,0,0,0,Matches,Athletic Club,2024
+89,Yeray Álvarez,es ESP,DF,30-105,17.8,17,0.96,14,0,0,0,0,3,1,0.06,1,0,0,0,0,0,Matches,Athletic Club,2024
+90,Oihan Sancet,es ESP,MF,25-014,16.3,42,2.57,32,0,4,4,2,0,7,0.43,4,0,1,2,0,0,Matches,Athletic Club,2024
+91,Unai Simón,es ESP,GK,27-332,17.0,5,0.29,4,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+92,Andoni Gorosabel,es ESP,DF,28-278,15.6,30,1.93,28,1,1,0,0,0,2,0.13,2,0,0,0,0,0,Matches,Athletic Club,2024
+93,Óscar de Marcos,es ESP,DF,36-025,15.3,42,2.74,38,3,0,0,1,0,8,0.52,8,0,0,0,0,0,Matches,Athletic Club,2024
+94,Iñigo Ruiz de Galarreta,es ESP,MF,31-276,13.9,42,3.03,36,3,2,1,0,0,5,0.36,3,2,0,0,0,0,Matches,Athletic Club,2024
+95,Julen Agirrezabala,es ESP,GK,24-134,13.4,3,0.22,3,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+96,Unai Gómez,es ESP,"MF,FW",21-349,12.3,21,1.71,13,4,1,2,1,0,2,0.16,1,0,0,1,0,0,Matches,Athletic Club,2024
+97,Adama Boiro,es ESP,DF,22-321,11.2,13,1.17,9,1,1,1,1,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+98,Mikel Vesga,es ESP,MF,31-353,9.8,20,2.04,18,0,0,2,0,0,1,0.1,0,0,0,1,0,0,Matches,Athletic Club,2024
+99,Iñigo Lekue,es ESP,DF,32-005,7.6,13,1.72,9,2,0,1,0,1,1,0.13,0,0,0,1,0,0,Matches,Athletic Club,2024
+100,Álvaro djaló,es ESP,FW,25-266,6.7,11,1.63,4,0,1,1,5,0,1,0.15,0,0,0,0,1,0,Matches,Athletic Club,2024
+101,Unai Núñez,es ESP,DF,28-099,6.5,2,0.31,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+102,Maroan Sannadi,es ESP,FW,24-097,5.7,14,2.47,8,0,2,2,2,0,2,0.35,1,0,0,0,1,0,Matches,Athletic Club,2024
+103,Alex Padilla,es ESP,GK,21-250,3.6,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+104,Ander Herrera,es ESP,MF,35-268,3.0,11,3.64,10,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+105,Peio Canales,es ESP,"MF,FW",20-112,2.1,6,2.8,5,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+106,Nicolás Serrano,es ESP,FW,22-065,1.2,2,1.61,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+107,Javi Martón,es ESP,"FW,MF",26-003,0.6,1,1.73,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+108,Adu Ares,es ESP,FW,23-209,0.2,1,4.74,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+109,Endika Buján,es ESP,FW,22-113,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Athletic Club,2024
+110,Diego Llorente,es ESP,DF,31-266,28.0,15,0.54,12,0,0,1,1,1,2,0.07,1,0,0,0,0,1,Matches,Real Betis,2024
+111,Johnny Cardoso,us USA,MF,23-231,21.7,30,1.38,24,0,5,0,0,1,1,0.05,1,0,0,0,0,0,Matches,Real Betis,2024
+112,Marc Bartra,es ESP,DF,34-114,20.5,12,0.58,9,0,1,2,0,0,3,0.15,1,0,0,2,0,0,Matches,Real Betis,2024
+113,Romain Perraud,fr FRA,DF,27-229,20.1,32,1.59,28,1,1,2,0,0,4,0.2,3,0,0,1,0,0,Matches,Real Betis,2024
+114,Abde Ezzalzouli,ma MAR,"FW,MF",23-143,19.6,64,3.27,42,0,10,8,3,1,6,0.31,4,0,0,2,0,0,Matches,Real Betis,2024
+115,Natan,br BRA,DF,24-092,20.2,8,0.4,7,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+116,Sergi Altimira,es ESP,MF,23-257,19.5,48,2.45,37,0,3,2,1,5,1,0.05,1,0,0,0,0,0,Matches,Real Betis,2024
+117,Youssouf Sabaly,sn SEN,DF,32-065,17.3,18,1.04,16,1,1,0,0,0,3,0.17,3,0,0,0,0,0,Matches,Real Betis,2024
+118,Pablo Fornals,es ESP,"MF,FW",29-076,17.1,78,4.57,69,5,2,2,0,0,8,0.47,8,0,0,0,0,0,Matches,Real Betis,2024
+119,Adrián,es ESP,GK,38-126,15.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+120,Rui Silva,pt POR,GK,31-091,15.0,5,0.33,5,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+121,Isco,es ESP,MF,33-018,14.6,97,6.63,65,22,3,3,3,1,12,0.82,8,4,0,0,0,0,Matches,Real Betis,2024
+122,Vitor Roque,br BRA,FW,20-070,13.7,34,2.48,19,0,5,5,5,0,4,0.29,0,0,0,1,3,0,Matches,Real Betis,2024
+123,Giovani Lo Celso,ar ARG,"MF,FW",29-030,14.5,87,5.98,61,19,3,0,4,0,8,0.55,5,1,2,0,0,0,Matches,Real Betis,2024
+124,Ricardo Rodríguez,ch SUI,DF,32-257,12.3,25,2.03,21,1,0,2,0,1,1,0.08,1,0,0,0,0,0,Matches,Real Betis,2024
+125,Antony,br BRA,FW,25-074,12.2,65,5.31,50,4,4,4,3,0,9,0.74,6,0,1,2,0,0,Matches,Real Betis,2024
+126,Jesus Rodríguez,es ESP,FW,19-169,10.8,34,3.14,17,0,8,2,7,0,5,0.46,3,0,0,1,1,0,Matches,Real Betis,2024
+127,Marc Roca,es ESP,MF,28-164,10.1,24,2.38,19,1,2,1,0,1,1,0.1,1,0,0,0,0,0,Matches,Real Betis,2024
+128,Cucho,co COL,FW,26-019,9.7,35,3.63,25,0,3,3,3,1,5,0.52,3,0,0,0,2,0,Matches,Real Betis,2024
+129,Aitor Ruibal,es ESP,"DF,FW",29-048,11.0,33,3.01,28,2,1,1,1,0,4,0.36,4,0,0,0,0,0,Matches,Real Betis,2024
+130,Ezequiel Ávila,ar ARG,FW,31-092,7.5,31,4.12,24,0,1,2,4,0,3,0.4,3,0,0,0,0,0,Matches,Real Betis,2024
+131,Héctor Bellerín,es ESP,DF,30-051,6.4,12,1.86,11,0,1,0,0,0,2,0.31,2,0,0,0,0,0,Matches,Real Betis,2024
+132,Cédric Bakambu,cd COD,FW,34-028,6.9,11,1.59,9,0,0,1,1,0,3,0.43,2,0,0,0,1,0,Matches,Real Betis,2024
+133,William Carvalho,pt POR,MF,33-032,4.3,11,2.56,11,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+134,Fran Vieites,es ESP,GK,26-002,4.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+135,Ángel Ortíz,es ESP,DF,20-288,3.8,6,1.57,5,0,0,0,1,0,2,0.52,2,0,0,0,0,0,Matches,Real Betis,2024
+136,Iker Losada,es ESP,"MF,FW",23-281,3.7,8,2.14,7,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+137,Assane Diao,sn SEN,FW,19-244,3.1,7,2.28,6,0,0,1,0,0,2,0.65,2,0,0,0,0,0,Matches,Real Betis,2024
+138,Juanmi,es ESP,"FW,MF",31-354,2.7,5,1.84,3,0,1,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+139,Nabil Fekir,fr FRA,MF,31-295,2.0,12,6.0,9,2,0,0,0,1,1,0.5,0,1,0,0,0,0,Matches,Real Betis,2024
+140,Carlos Guirao,es ESP,MF,22-012,1.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+141,Mateo Flores,es ESP,MF,21-032,1.7,2,1.18,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+142,Rodri,es ESP,FW,24-358,1.3,11,8.39,7,2,0,1,0,1,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+143,Sergio Arribas,es ESP,DF,22-088,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+144,Pablo Garcia,es ESP,FW,18-267,0.3,2,6.67,1,0,1,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Betis,2024
+145,Sergi Cardona,es ESP,DF,25-305,30.7,75,2.44,67,3,1,4,0,0,11,0.36,11,0,0,0,0,0,Matches,Villarreal,2024
+146,Santi Comesaña,es ESP,MF,28-216,26.1,72,2.76,64,1,1,2,0,4,9,0.34,7,0,0,1,0,1,Matches,Villarreal,2024
+147,Kiko Femenía,es ESP,DF,34-096,24.7,43,1.74,35,3,2,0,0,3,5,0.2,5,0,0,0,0,0,Matches,Villarreal,2024
+148,Alex Baena,es ESP,MF,23-293,25.2,152,6.03,98,38,3,8,4,1,18,0.71,15,2,0,0,1,0,Matches,Villarreal,2024
+149,Logan Costa,cv CPV,DF,24-038,24.7,18,0.72,16,0,0,1,1,0,1,0.04,0,0,0,0,1,0,Matches,Villarreal,2024
+150,Thierno Barry,fr FRA,FW,22-200,24.3,43,1.77,30,0,2,6,3,2,4,0.16,4,0,0,0,0,0,Matches,Villarreal,2024
+151,Daniel Parejo,es ESP,MF,36-023,23.2,73,3.14,59,11,0,2,1,0,12,0.52,10,1,0,1,0,0,Matches,Villarreal,2024
+152,Pape Gueye,sn SEN,MF,26-105,22.0,44,2.0,36,2,0,3,1,2,7,0.32,5,1,0,1,0,0,Matches,Villarreal,2024
+153,Diego Conde,es ESP,GK,26-193,20.8,3,0.14,1,2,0,0,0,0,1,0.05,1,0,0,0,0,0,Matches,Villarreal,2024
+154,Yeremi Pino,es ESP,MF,22-201,18.5,57,3.09,44,0,5,4,3,1,9,0.49,6,0,0,2,1,0,Matches,Villarreal,2024
+155,Ayoze Pérez,es ESP,FW,31-284,19.6,65,3.28,46,0,8,6,4,1,5,0.25,2,0,2,1,0,0,Matches,Villarreal,2024
+156,Juan Foyth,ar ARG,DF,27-117,13.9,18,1.3,17,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+157,Raúl Albiol,es ESP,DF,39-247,13.2,5,0.38,4,0,0,1,0,0,3,0.23,3,0,0,0,0,0,Matches,Villarreal,2024
+158,Luiz Lúcio Reis Júnior,br BRA,GK,24-115,13.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+159,Nicolas Pépé,ci CIV,"FW,MF",29-345,13.6,51,3.74,34,8,4,2,3,0,6,0.44,6,0,0,0,0,0,Matches,Villarreal,2024
+160,Willy Kambwala,fr FRA,DF,20-257,10.4,5,0.48,3,0,0,2,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+161,Eric Bailly,ci CIV,DF,31-027,6.9,2,0.29,1,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+162,Ilias Akhomach,ma MAR,"MF,FW",21-023,6.5,29,4.38,17,0,5,1,6,0,1,0.15,0,0,0,0,1,0,Matches,Villarreal,2024
+163,Gerard Moreno,es ESP,FW,33-032,7.2,37,5.14,29,0,2,3,2,1,4,0.56,2,0,0,1,1,0,Matches,Villarreal,2024
+164,Denis Suárez,es ESP,MF,31-123,5.9,25,4.26,17,6,0,2,0,0,2,0.34,2,0,0,0,0,0,Matches,Villarreal,2024
+165,Pau Navarro,es ESP,DF,20-014,7.2,4,0.56,4,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+166,Tajon Buchanan,ca CAN,MF,26-090,3.3,12,3.61,8,1,1,1,1,0,1,0.3,1,0,0,0,0,0,Matches,Villarreal,2024
+167,Arnaut Danjuma,nl NED,FW,28-098,2.2,2,0.9,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+168,Alfonso Pedraza,es ESP,"DF,MF",29-030,3.1,11,3.54,9,0,1,1,0,0,1,0.32,1,0,0,0,0,0,Matches,Villarreal,2024
+169,Juan Bernat,es ESP,"DF,MF",32-069,2.4,8,3.4,7,0,0,1,0,0,1,0.42,1,0,0,0,0,0,Matches,Villarreal,2024
+170,Ramón Terrats,es ESP,"MF,FW",24-203,1.5,4,2.73,2,0,0,1,1,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+171,Pau Cabanes,es ESP,"MF,FW",20-081,1.8,12,6.63,8,0,1,0,3,0,2,1.1,1,0,0,0,1,0,Matches,Villarreal,2024
+172,Arnau Solà,es ESP,MF,22-035,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+173,Thiago Ojeda,ar ARG,MF,22-117,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+174,Karl Etta,cm CMR,MF,21-207,0.0,1,30.0,0,0,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Villarreal,2024
+175,Vicente Guaita,es ESP,GK,38-119,30.0,3,0.1,1,2,0,0,0,0,1,0.03,1,0,0,0,0,0,Matches,Celta Vigo,2024
+176,Óscar Mingueza,es ESP,"MF,DF",25-361,26.6,83,3.12,67,6,2,4,2,2,14,0.53,10,1,2,0,1,0,Matches,Celta Vigo,2024
+177,Marcos Alonso,es ESP,DF,34-132,27.0,34,1.26,30,2,0,1,0,1,5,0.19,5,0,0,0,0,0,Matches,Celta Vigo,2024
+178,Carl Starfelt,se SWE,DF,29-342,25.2,18,0.71,16,0,0,1,0,1,1,0.04,1,0,0,0,0,0,Matches,Celta Vigo,2024
+179,Fran Beltrán,es ESP,MF,26-095,23.4,37,1.58,33,0,1,3,0,0,2,0.09,2,0,0,0,0,0,Matches,Celta Vigo,2024
+180,Javi Rodríguez,es ESP,DF,21-317,24.4,29,1.19,24,0,1,1,3,0,3,0.12,3,0,0,0,0,0,Matches,Celta Vigo,2024
+181,Borja Iglesias,es ESP,FW,32-112,19.9,33,1.66,22,1,0,5,5,0,7,0.35,3,0,0,1,3,0,Matches,Celta Vigo,2024
+182,Ilaix Moriba,gn GUI,MF,22-110,19.7,49,2.49,36,0,1,5,3,4,5,0.25,3,0,0,1,1,0,Matches,Celta Vigo,2024
+183,Iago Aspas,es ESP,"FW,MF",37-281,17.7,68,3.84,60,1,2,3,2,0,12,0.68,10,0,0,1,1,0,Matches,Celta Vigo,2024
+184,Sergio Carreira,es ESP,"MF,DF",24-208,16.4,35,2.13,31,1,3,0,0,0,4,0.24,4,0,0,0,0,0,Matches,Celta Vigo,2024
+185,Hugo Álvarez,es ESP,"MF,DF",21-311,16.4,43,2.62,35,0,5,3,0,0,8,0.49,6,0,2,0,0,0,Matches,Celta Vigo,2024
+186,Hugo Sotelo,es ESP,MF,21-141,13.9,40,2.88,27,12,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+187,Pablo Durán,es ESP,"FW,MF",23-349,13.1,26,1.99,21,0,2,2,1,0,4,0.31,3,0,0,1,0,0,Matches,Celta Vigo,2024
+188,Williot Swedberg,se SWE,"FW,MF",21-097,13.0,28,2.15,20,0,2,5,1,0,5,0.38,4,0,1,0,0,0,Matches,Celta Vigo,2024
+189,Alfon,es ESP,"FW,MF",26-005,13.5,54,4.01,28,0,12,8,6,0,5,0.37,3,0,0,1,1,0,Matches,Celta Vigo,2024
+190,Carlos Dominguez,es ESP,DF,24-087,10.0,5,0.5,5,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+191,Jonathan Bamba,ci CIV,"FW,MF",29-044,9.0,28,3.11,24,0,2,2,0,0,4,0.44,4,0,0,0,0,0,Matches,Celta Vigo,2024
+192,Damián Rodríguez,es ESP,MF,22-053,9.8,23,2.34,15,8,0,0,0,0,2,0.2,2,0,0,0,0,0,Matches,Celta Vigo,2024
+193,Javier Manquillo,es ESP,DF,31-004,5.7,1,0.18,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+194,Anastasios Douvikas,gr GRE,FW,25-280,7.8,11,1.41,5,0,2,1,3,0,1,0.13,1,0,0,0,0,0,Matches,Celta Vigo,2024
+195,Jailson Siqueira,br BRA,"DF,MF",29-244,6.8,8,1.17,5,0,0,1,0,2,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+196,Fer López,,"FW,MF",,5.9,22,3.72,20,0,0,2,0,0,3,0.51,2,0,0,1,0,0,Matches,Celta Vigo,2024
+197,Yoel Lago,es ESP,DF,21-045,4.3,1,0.23,1,0,0,0,0,0,1,0.23,1,0,0,0,0,0,Matches,Celta Vigo,2024
+198,Iván Villar,es ESP,GK,27-304,4.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+199,Iker Losada,es ESP,"FW,MF",23-281,3.8,8,2.11,8,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+200,Franco Cervi,ar ARG,"FW,MF",30-348,2.9,5,1.74,5,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+201,Mihailo Ristić,rs SRB,"MF,DF",29-190,2.7,4,1.46,2,2,0,0,0,0,1,0.36,1,0,0,0,0,0,Matches,Celta Vigo,2024
+202,Luca de la Torre,us USA,MF,26-351,0.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+203,Joseph Aidoo,gh GHA,DF,29-222,0.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+204,Tadeo Allende,ar ARG,FW,26-078,0.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Celta Vigo,2024
+205,Florian Lejeune,fr FRA,DF,33-354,32.9,30,0.91,23,0,1,6,0,0,3,0.09,2,0,0,1,0,0,Matches,Rayo Vallecano,2024
+206,Andrei Ratiu,ro ROU,DF,26-323,30.2,80,2.65,59,4,8,6,1,2,5,0.17,3,0,0,2,0,0,Matches,Rayo Vallecano,2024
+207,Augusto Batalla,ar ARG,GK,29-009,28.0,6,0.21,5,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+208,Jorge de Frutos,es ESP,"FW,MF",28-078,24.7,55,2.23,45,0,5,1,3,1,7,0.28,5,0,2,0,0,0,Matches,Rayo Vallecano,2024
+209,Pep Chavarría,es ESP,"DF,FW",27-029,25.4,51,2.01,42,4,1,3,1,0,2,0.08,2,0,0,0,0,0,Matches,Rayo Vallecano,2024
+210,Álvaro García,es ESP,"FW,MF",32-194,25.2,93,3.69,74,0,2,10,5,2,6,0.24,6,0,0,0,0,0,Matches,Rayo Vallecano,2024
+211,Abdul Mumin,gh GHA,DF,26-337,22.4,11,0.49,10,0,0,0,1,0,3,0.13,3,0,0,0,0,0,Matches,Rayo Vallecano,2024
+212,Pathé Ciss,sn SEN,"MF,DF",31-054,21.0,41,1.95,31,3,2,2,1,2,2,0.1,1,0,0,1,0,0,Matches,Rayo Vallecano,2024
+213,Isaac Palazón Camacho,es ESP,"MF,FW",30-133,20.0,86,4.29,51,18,5,4,8,0,5,0.25,2,3,0,0,0,0,Matches,Rayo Vallecano,2024
+214,Unai López,es ESP,MF,29-191,16.8,43,2.56,37,5,0,0,0,1,2,0.12,1,1,0,0,0,0,Matches,Rayo Vallecano,2024
+215,Óscar Valentín,es ESP,MF,30-262,18.6,41,2.2,37,0,1,0,3,0,3,0.16,3,0,0,0,0,0,Matches,Rayo Vallecano,2024
+216,Adri Embarba,es ESP,"FW,MF",33-002,16.5,42,2.54,24,10,1,1,6,0,1,0.06,1,0,0,0,0,0,Matches,Rayo Vallecano,2024
+217,Randy Nteka,ao ANG,FW,27-154,12.5,21,1.67,12,1,1,4,3,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+218,Sergio Camello,es ESP,FW,24-088,12.6,38,3.02,27,0,7,2,1,1,5,0.4,2,0,2,0,0,1,Matches,Rayo Vallecano,2024
+219,Pedro Díaz,es ESP,MF,26-338,11.5,37,3.22,22,7,4,4,0,0,4,0.35,1,0,2,1,0,0,Matches,Rayo Vallecano,2024
+220,Iván Balliu,al ALB,DF,33-128,10.0,13,1.31,9,2,0,1,1,0,1,0.1,1,0,0,0,0,0,Matches,Rayo Vallecano,2024
+221,Aridane Hernández,es ESP,DF,36-047,8.4,4,0.48,3,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+222,Alfonso Espino,uy URU,DF,33-124,8.2,9,1.1,4,4,1,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+223,Gerard Gumbau,es ESP,MF,30-142,8.6,28,3.26,18,9,1,0,0,0,1,0.12,1,0,0,0,0,0,Matches,Rayo Vallecano,2024
+224,Cárdenas,es ESP,GK,28-042,6.0,1,0.17,0,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+225,Óscar Trejo,ar ARG,MF,37-013,5.4,16,2.99,13,0,0,2,1,0,1,0.19,1,0,0,0,0,0,Matches,Rayo Vallecano,2024
+226,Sergi Guardiola,es ESP,FW,33-345,4.0,9,2.25,9,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+227,James Rodríguez,co COL,"MF,FW",33-301,1.6,6,3.86,4,1,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+228,Pelayo Fernandez,es ESP,DF,22-010,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+229,Etienne Eto'o,cm CMR,FW,22-264,0.4,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+230,Raúl de Tomás,es ESP,"DF,FW",30-204,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Rayo Vallecano,2024
+231,Sergio Herrera,es ESP,GK,31-338,33.0,4,0.12,3,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+232,Jesús Areso,es ESP,DF,25-311,30.2,60,1.98,46,10,2,1,1,0,8,0.26,6,2,0,0,0,0,Matches,Osasuna,2024
+233,Catena,es ESP,DF,30-193,30.2,21,0.7,16,3,0,1,1,0,5,0.17,3,0,0,1,1,0,Matches,Osasuna,2024
+234,Lucas Torró,es ESP,MF,30-294,29.4,36,1.23,30,0,0,4,1,1,3,0.1,3,0,0,0,0,0,Matches,Osasuna,2024
+235,Aimar Oroz,es ESP,"MF,FW",23-163,29.0,75,2.59,62,0,3,6,3,1,6,0.21,5,0,0,1,0,0,Matches,Osasuna,2024
+236,Ante Budimir,hr CRO,FW,33-291,29.1,41,1.41,24,0,3,6,8,0,13,0.45,3,0,1,2,7,0,Matches,Osasuna,2024
+237,Enzo Boyomo,cm CMR,DF,23-214,29.2,10,0.34,9,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+238,Rubén García,es ESP,"FW,MF",31-299,24.5,90,3.66,55,27,2,2,4,0,12,0.49,8,1,0,1,2,0,Matches,Osasuna,2024
+239,Jon Moncayola,es ESP,MF,26-361,22.9,63,2.75,44,16,0,2,0,1,4,0.17,3,1,0,0,0,0,Matches,Osasuna,2024
+240,Abel,es ESP,DF,24-261,22.4,36,1.61,27,2,5,0,1,1,4,0.18,2,0,1,0,0,1,Matches,Osasuna,2024
+241,Bryan Zaragoza,es ESP,"FW,MF",24-014,16.9,58,3.44,36,5,11,1,5,0,8,0.47,6,0,1,1,0,0,Matches,Osasuna,2024
+242,Jorge Herrando,es ESP,DF,24-070,15.2,13,0.86,10,0,0,3,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+243,Juan Cruz Armada,es ESP,DF,32-285,13.0,9,0.69,8,1,0,0,0,0,1,0.08,1,0,0,0,0,0,Matches,Osasuna,2024
+244,Pablo Ibáñez,es ESP,MF,26-231,11.4,15,1.31,11,0,1,1,2,0,3,0.26,2,0,0,0,1,0,Matches,Osasuna,2024
+245,Moi Gómez,es ESP,"MF,FW",30-320,8.8,19,2.16,16,3,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+246,Rubén Peña,es ESP,"FW,DF",33-295,7.6,21,2.77,17,1,1,0,2,0,1,0.13,0,0,0,0,1,0,Matches,Osasuna,2024
+247,Raúl,es ESP,"FW,MF",24-187,7.7,14,1.82,5,0,3,2,4,0,1,0.13,0,0,1,0,0,0,Matches,Osasuna,2024
+248,Iker Muñoz,es ESP,MF,22-185,5.6,11,1.97,7,0,1,2,1,0,1,0.18,0,0,0,1,0,0,Matches,Osasuna,2024
+249,Kike Barja,es ESP,"FW,MF",28-038,2.9,15,5.11,7,4,2,0,2,0,1,0.34,0,0,0,0,1,0,Matches,Osasuna,2024
+250,Nacho Vidal,es ESP,DF,30-105,1.4,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+251,José Arnaiz,es ESP,"MF,FW",30-024,1.4,5,3.69,4,0,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+252,Aitor Fernández,es ESP,GK,34-006,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+253,Unai García,es ESP,DF,33-095,0.7,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+254,Iker Benito,es ESP,"FW,MF",22-272,0.4,1,2.43,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+255,Javi Martínez,es ESP,MF,25-138,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Osasuna,2024
+256,Antonio Raillo,es ESP,DF,33-213,31.6,25,0.79,21,2,0,2,0,0,1,0.03,1,0,0,0,0,0,Matches,Mallorca,2024
+257,Sergi Darder,es ESP,"MF,FW",31-138,26.6,85,3.19,43,36,2,4,0,0,6,0.23,4,2,0,0,0,0,Matches,Mallorca,2024
+258,Johan Mojica,co COL,DF,32-261,28.3,79,2.79,65,5,4,3,2,0,5,0.18,5,0,0,0,0,0,Matches,Mallorca,2024
+259,Dominik Greif,sk SVK,GK,28-033,28.0,4,0.14,3,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+260,Martin Valjent,sk SVK,DF,29-149,27.7,19,0.69,15,0,1,2,1,0,1,0.04,1,0,0,0,0,0,Matches,Mallorca,2024
+261,Samu Costa,pt POR,MF,24-163,25.6,50,1.96,37,1,2,5,4,1,5,0.2,3,1,0,1,0,0,Matches,Mallorca,2024
+262,Pablo Maffeo,es ESP,DF,27-301,24.5,57,2.32,37,9,5,1,4,1,3,0.12,2,1,0,0,0,0,Matches,Mallorca,2024
+263,Dani Rodríguez,es ESP,"MF,FW",36-337,21.8,59,2.7,30,23,0,3,3,0,11,0.5,8,2,0,0,1,0,Matches,Mallorca,2024
+264,Vedat Muriqi,xk KVX,FW,31-015,19.6,42,2.15,28,0,2,7,4,1,6,0.31,5,0,0,0,1,0,Matches,Mallorca,2024
+265,Cyle Larin,ca CAN,FW,30-022,18.0,20,1.11,12,0,0,4,4,0,3,0.17,1,0,0,1,1,0,Matches,Mallorca,2024
+266,Omar Mascarell,gq EQG,MF,32-096,19.1,12,0.63,10,0,1,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+267,Copete,es ESP,DF,25-211,16.0,10,0.63,9,1,0,0,0,0,1,0.06,1,0,0,0,0,0,Matches,Mallorca,2024
+268,Manu Morlanes,es ESP,MF,26-117,14.4,35,2.42,32,1,0,2,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+269,Roberto Navarro,es ESP,"MF,FW",23-027,14.2,44,3.1,36,1,4,1,2,0,2,0.14,2,0,0,0,0,0,Matches,Mallorca,2024
+270,Takuma Asano,jp JPN,"FW,MF",30-180,11.0,20,1.82,15,0,1,2,2,0,1,0.09,1,0,0,0,0,0,Matches,Mallorca,2024
+271,Antonio Sánchez,es ESP,"MF,DF",28-128,13.6,16,1.18,10,2,1,2,1,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+272,Leo Román,es ESP,GK,24-307,6.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+273,Mateu Morey,es ESP,DF,25-068,5.5,10,1.84,8,0,1,0,1,0,1,0.18,1,0,0,0,0,0,Matches,Mallorca,2024
+274,Toni Lato,es ESP,DF,27-169,5.1,12,2.35,10,1,0,0,0,1,1,0.2,1,0,0,0,0,0,Matches,Mallorca,2024
+275,Abdón Prats,es ESP,"FW,MF",32-153,5.1,7,1.39,5,0,0,1,1,0,1,0.2,0,0,0,0,1,0,Matches,Mallorca,2024
+276,Marc Domenech,es ESP,"FW,MF",19-128,2.3,4,1.77,2,0,0,2,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+277,Valery Fernández,es ESP,"MF,FW",25-167,3.3,5,1.51,4,0,0,0,0,1,3,0.91,2,0,0,0,0,1,Matches,Mallorca,2024
+278,Chiquinho,pt POR,"MF,FW",25-093,1.6,7,4.29,0,2,3,1,1,0,1,0.61,0,1,0,0,0,0,Matches,Mallorca,2024
+279,Siebe Van Der Heyden,be BEL,"DF,MF",26-344,1.1,2,1.86,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+280,David López,es ESP,DF,22-095,0.9,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+281,Javier Llabrés,es ESP,FW,22-240,0.6,3,4.74,2,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+282,Jan Salas,es ESP,MF,19-272,0.3,1,3.75,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+283,Daniel Luna,co COL,MF,22-002,0.2,1,4.5,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Mallorca,2024
+284,Álex Remiro,es ESP,GK,30-046,33.0,6,0.18,4,2,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+285,Martín Zubimendi,es ESP,MF,26-096,29.9,42,1.41,35,0,3,1,1,2,5,0.17,4,0,0,0,1,0,Matches,Real Sociedad,2024
+286,Sergio Gómez,es ESP,"MF,DF",24-247,28.2,94,3.33,48,39,1,3,2,1,9,0.32,6,3,0,0,0,0,Matches,Real Sociedad,2024
+287,Jon Aramburu,ve VEN,DF,22-290,24.7,29,1.17,22,3,1,0,1,2,2,0.08,2,0,0,0,0,0,Matches,Real Sociedad,2024
+288,Igor Zubeldia,es ESP,DF,28-040,22.7,15,0.66,14,0,0,1,0,0,1,0.04,1,0,0,0,0,0,Matches,Real Sociedad,2024
+289,Mikel Oyarzabal,es ESP,"FW,MF",28-018,22.3,34,1.52,25,0,1,2,6,0,5,0.22,3,0,0,0,2,0,Matches,Real Sociedad,2024
+290,Takefusa Kubo,jp JPN,"MF,FW",23-339,22.9,95,4.16,63,8,13,1,6,4,7,0.31,2,0,5,0,0,0,Matches,Real Sociedad,2024
+291,Nayef Aguerd,ma MAR,DF,29-040,19.6,16,0.82,13,1,0,2,0,0,1,0.05,1,0,0,0,0,0,Matches,Real Sociedad,2024
+292,Javi López,es ESP,DF,23-045,19.5,18,0.92,14,1,1,0,2,0,2,0.1,1,0,0,0,1,0,Matches,Real Sociedad,2024
+293,Luka Sučić,hr CRO,MF,22-243,17.8,48,2.69,38,0,2,5,2,1,5,0.28,5,0,0,0,0,0,Matches,Real Sociedad,2024
+294,Brais Méndez,es ESP,MF,28-122,15.5,39,2.53,30,5,1,1,2,0,1,0.06,1,0,0,0,0,0,Matches,Real Sociedad,2024
+295,Aritz Elustondo,es ESP,DF,31-042,13.2,10,0.76,10,0,0,0,0,0,1,0.08,1,0,0,0,0,0,Matches,Real Sociedad,2024
+296,Ander Barrenetxea,es ESP,"MF,FW",23-133,12.3,37,3.01,29,0,2,4,1,1,5,0.41,4,0,0,1,0,0,Matches,Real Sociedad,2024
+297,Sheraldo Becker,sr SUR,"FW,MF",30-089,11.1,21,1.9,17,0,2,1,1,0,1,0.09,1,0,0,0,0,0,Matches,Real Sociedad,2024
+298,Aihen Muñoz,es ESP,DF,27-266,10.3,7,0.68,6,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+299,Pablo Marín,es ESP,MF,21-310,10.6,20,1.9,16,0,2,0,2,0,2,0.19,2,0,0,0,0,0,Matches,Real Sociedad,2024
+300,Beñat Turrientes,es ESP,MF,23-098,9.1,10,1.1,9,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+301,Orri Steinn Óskarsson,is ISL,FW,20-253,10.5,10,0.95,8,0,0,1,1,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+302,Jon Pacheco,es ESP,DF,24-121,8.5,3,0.35,2,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+303,Olasagasti,es ESP,MF,24-266,8.8,15,1.7,13,0,0,1,1,0,2,0.23,2,0,0,0,0,0,Matches,Real Sociedad,2024
+304,Hamari Traoré,ml MLI,DF,33-102,6.4,11,1.72,9,1,1,0,0,0,2,0.31,1,1,0,0,0,0,Matches,Real Sociedad,2024
+305,Jon Martin,es ESP,DF,19-128,8.0,8,0.99,6,0,0,2,0,0,1,0.12,1,0,0,0,0,0,Matches,Real Sociedad,2024
+306,Umar Sadiq,ng NGA,FW,28-096,2.5,3,1.19,2,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+307,Unai Marrero,es ESP,GK,23-212,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+308,Arsen Zakharyan,ru RUS,"MF,FW",21-348,0.8,6,7.4,4,1,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+309,Urko González,es ESP,MF,24-050,0.5,1,2.0,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+310,Arkaitz Mariezkurrena,es ESP,"MF,FW",20-034,1.2,3,2.41,2,0,1,0,0,0,1,0.8,1,0,0,0,0,0,Matches,Real Sociedad,2024
+311,Álvaro Odriozola,es ESP,DF,29-146,0.5,1,2.09,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+312,Daniel Díaz,es ESP,MF,18-321,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+313,Luken Beitia,es ESP,DF,20-313,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Real Sociedad,2024
+314,Jon Magunazelaia,es ESP,MF,24-300,0.1,1,12.86,1,0,0,0,0,0,1,12.86,1,0,0,0,0,0,Matches,Real Sociedad,2024
+315,Cristhian Mosquera,es ESP,DF,20-316,32.9,12,0.36,10,0,0,0,0,2,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+316,Diego López,es ESP,"MF,FW",22-361,27.7,62,2.24,53,1,3,2,3,0,9,0.32,7,0,1,0,1,0,Matches,Valencia,2024
+317,Giorgi Mamardashvili,ge GEO,GK,24-222,30.0,8,0.27,5,3,0,0,0,0,2,0.07,1,1,0,0,0,0,Matches,Valencia,2024
+318,César Tárrega,es ESP,DF,23-072,29.6,10,0.34,9,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+319,Luis Rioja,es ESP,"MF,FW",31-205,28.6,71,2.48,57,5,5,1,2,1,9,0.31,7,1,0,1,0,0,Matches,Valencia,2024
+320,Javier Guerra,es ESP,MF,22-128,25.9,71,2.74,54,5,4,4,3,1,6,0.23,4,0,0,2,0,0,Matches,Valencia,2024
+321,Dimitri Foulquier,fr FRA,DF,32-047,24.9,36,1.44,26,4,1,3,0,2,4,0.16,3,0,0,1,0,0,Matches,Valencia,2024
+322,Hugo Duro,es ESP,FW,25-180,21.8,27,1.24,19,0,1,4,3,0,3,0.14,1,0,0,1,1,0,Matches,Valencia,2024
+323,Enzo Barrenechea,ar ARG,MF,23-352,21.2,41,1.93,32,1,0,1,3,4,8,0.38,5,1,0,0,1,1,Matches,Valencia,2024
+324,Domingos André Ribeiro Almeida,pt POR,"MF,FW",24-344,19.5,76,3.91,48,14,1,3,8,2,4,0.21,3,1,0,0,0,0,Matches,Valencia,2024
+325,José Luis Gayà,es ESP,DF,29-349,17.3,37,2.14,33,1,2,1,0,0,5,0.29,4,0,1,0,0,0,Matches,Valencia,2024
+326,José Luis García Vayá,es ESP,MF,26-271,17.4,50,2.87,27,20,1,1,1,0,3,0.17,3,0,0,0,0,0,Matches,Valencia,2024
+327,Yarek Gasiorowski,es ESP,DF,20-117,10.5,7,0.67,5,1,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+328,Jesus Vazquez,es ESP,DF,22-127,9.1,8,0.88,5,0,1,1,0,1,1,0.11,1,0,0,0,0,0,Matches,Valencia,2024
+329,Thierry Correia,pt POR,DF,26-061,8.5,16,1.87,12,1,2,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+330,Umar Sadiq,ng NGA,FW,28-096,7.5,15,2.01,8,0,2,2,1,2,3,0.4,0,0,1,1,0,1,Matches,Valencia,2024
+331,Dani Gómez,es ESP,FW,26-283,5.9,6,1.02,4,0,0,1,0,1,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+332,Rafa Mir,es ESP,"FW,MF",27-325,6.6,8,1.21,5,0,0,3,0,0,4,0.6,2,0,0,2,0,0,Matches,Valencia,2024
+333,Mouctar Diakhaby,gn GUI,DF,28-141,4.1,2,0.49,2,0,0,0,0,0,1,0.25,1,0,0,0,0,0,Matches,Valencia,2024
+334,Hugo Guillamón,es ESP,MF,25-098,4.0,7,1.73,6,0,1,0,0,0,1,0.25,1,0,0,0,0,0,Matches,Valencia,2024
+335,Stole Dimitrievski,mk MKD,GK,31-135,4.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+336,Francisco Perez,es ESP,"MF,FW",22-242,5.1,12,2.35,12,0,0,0,0,0,1,0.2,1,0,0,0,0,0,Matches,Valencia,2024
+337,Sergi Canós,es ESP,"MF,FW",28-096,4.0,19,4.68,13,1,0,4,1,0,1,0.25,1,0,0,0,0,0,Matches,Valencia,2024
+338,Ivan Jaime Pajuelo,es ESP,MF,24-225,2.1,8,3.75,6,1,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+339,Germán Valera,es ESP,MF,23-054,1.6,5,3.04,4,0,1,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+340,Max Aarons,eng ENG,"DF,MF",25-125,1.2,1,0.87,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+341,Maximiliano Caufriez,be BEL,DF,28-082,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+342,Rodrigo Abajas,es ESP,DF,21-362,0.7,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+343,Martín Tejón,es ESP,"MF,DF",21-027,0.5,1,1.87,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+344,Iker Córdoba,es ESP,DF,19-179,0.2,1,6.43,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+345,David Otorbi,es ESP,MF,17-205,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+346,Alberto Marí,es ESP,FW,23-302,0.1,1,12.86,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valencia,2024
+347,David Soria,es ESP,GK,32-035,34.0,7,0.21,4,3,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+348,Omar Alderete,py PAR,DF,28-134,30.4,34,1.12,27,1,1,3,1,1,4,0.13,2,0,0,1,1,0,Matches,Getafe,2024
+349,Djené,tg TOG,"DF,MF",33-129,27.3,21,0.77,18,1,0,0,1,1,1,0.04,1,0,0,0,0,0,Matches,Getafe,2024
+350,Luis Milla,es ESP,MF,30-214,28.9,125,4.32,71,40,4,4,5,1,6,0.21,3,3,0,0,0,0,Matches,Getafe,2024
+351,Iglesias,es ESP,DF,26-310,28.3,53,1.87,28,13,4,2,5,1,4,0.14,1,1,0,1,0,1,Matches,Getafe,2024
+352,Diego Rico,es ESP,DF,32-075,27.3,66,2.42,41,20,1,2,2,0,8,0.29,2,3,1,1,1,0,Matches,Getafe,2024
+353,Mauro Arambarri,uy URU,MF,29-221,26.9,52,1.93,32,0,3,6,9,2,3,0.11,1,0,0,2,0,0,Matches,Getafe,2024
+354,Chrisantus Uche,ng NGA,"FW,MF",21-355,24.8,73,2.95,48,0,7,2,15,1,9,0.36,7,0,0,0,2,0,Matches,Getafe,2024
+355,Domingos Duarte,pt POR,DF,30-060,17.0,8,0.47,8,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+356,Carles Pérez,es ESP,"MF,FW",27-082,15.9,40,2.52,26,1,6,2,3,2,1,0.06,0,0,0,0,0,1,Matches,Getafe,2024
+357,Bertuğ Yıldırım,tr TUR,FW,22-301,11.6,21,1.81,13,0,1,2,4,1,1,0.09,0,0,0,0,1,0,Matches,Getafe,2024
+358,Alex Sola,es ESP,"MF,FW",25-334,11.4,26,2.28,17,0,6,0,3,0,2,0.18,2,0,0,0,0,0,Matches,Getafe,2024
+359,Ramón Terrats,es ESP,"MF,FW",24-203,10.1,24,2.37,16,4,1,1,2,0,1,0.1,1,0,0,0,0,0,Matches,Getafe,2024
+360,Coba da Costa,es ESP,"MF,FW",22-287,9.9,32,3.24,24,0,5,2,0,1,4,0.41,3,0,0,1,0,0,Matches,Getafe,2024
+361,Juan Berrocal,es ESP,DF,26-005,10.6,5,0.47,3,1,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+362,Allan Nyom,cm CMR,"DF,MF",36-364,7.7,10,1.31,6,0,0,1,2,1,2,0.26,1,0,0,1,0,0,Matches,Getafe,2024
+363,Juanmi,es ESP,"FW,MF",31-354,7.4,9,1.22,7,0,1,0,0,1,1,0.14,1,0,0,0,0,0,Matches,Getafe,2024
+364,Juan Bernat,es ESP,"MF,DF",32-069,7.0,8,1.14,8,0,0,0,0,0,1,0.14,1,0,0,0,0,0,Matches,Getafe,2024
+365,Álvaro Rodríguez,uy URU,FW,20-299,7.9,11,1.4,7,0,2,2,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+366,Carles Aleñá,es ESP,"MF,FW",27-124,5.0,8,1.6,7,0,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+367,Borja Mayoral,es ESP,FW,28-034,9.3,15,1.61,13,0,1,1,0,0,2,0.21,1,0,0,1,0,0,Matches,Getafe,2024
+368,Jesús Santiago,es ESP,MF,20-349,3.6,4,1.12,2,1,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+369,Nabil Aberdin,fr FRA,MF,22-259,2.9,3,1.03,3,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+370,Peter González,do DOM,"MF,FW",22-288,4.4,12,2.71,6,1,0,3,1,1,1,0.23,1,0,0,0,0,0,Matches,Getafe,2024
+371,Abdoulaye Keita,es ESP,"FW,MF",22-250,1.1,1,0.95,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+372,Alberto Risco,es ESP,"MF,FW",19-252,0.8,6,7.71,5,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+373,John Joe,ie IRL,"MF,FW",21-197,0.5,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+374,Gorka Rivera Alonso,es ESP,"DF,MF",20-281,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+375,Ismael Bekhoucha,ma MAR,"DF,MF",20-170,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+376,David Argüelles,es ESP,MF,23-128,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Getafe,2024
+377,Joan García,es ESP,GK,24-005,34.0,8,0.24,4,4,0,0,0,0,1,0.03,0,1,0,0,0,0,Matches,Espanyol,2024
+378,Omar El Hilali,ma MAR,DF,21-239,32.1,25,0.78,21,1,1,1,1,0,3,0.09,3,0,0,0,0,0,Matches,Espanyol,2024
+379,Marash Kumbulla,al ALB,DF,25-090,30.0,12,0.4,9,0,1,1,1,0,2,0.07,1,0,1,0,0,0,Matches,Espanyol,2024
+380,Javi Puado,es ESP,"FW,MF",26-349,29.5,52,1.76,41,0,2,5,4,0,6,0.2,5,0,0,0,1,0,Matches,Espanyol,2024
+381,Leandro Cabrera,uy URU,DF,33-326,29.0,20,0.69,16,0,0,2,1,1,7,0.24,4,0,0,2,1,0,Matches,Espanyol,2024
+382,Alex Král,cz CZE,MF,26-355,29.2,42,1.44,31,1,2,2,4,2,1,0.03,1,0,0,0,0,0,Matches,Espanyol,2024
+383,Carlos Romero,es ESP,DF,23-192,24.4,48,1.97,32,12,3,0,1,0,4,0.16,2,1,0,0,1,0,Matches,Espanyol,2024
+384,Jofre,es ESP,"MF,FW",23-326,22.4,54,2.42,36,0,6,5,7,0,5,0.22,4,0,0,0,1,0,Matches,Espanyol,2024
+385,Pol Lozano,es ESP,MF,25-215,19.8,40,2.0,32,6,0,0,0,2,2,0.1,2,0,0,0,0,0,Matches,Espanyol,2024
+386,Roberto Férnandez,es ESP,FW,22-310,13.1,19,1.45,11,0,2,1,4,1,3,0.23,0,0,0,0,2,1,Matches,Espanyol,2024
+387,Álvaro Tejero,es ESP,"MF,DF",28-293,13.2,48,3.65,25,19,1,1,1,1,8,0.61,4,2,1,1,0,0,Matches,Espanyol,2024
+388,Urko González,es ESP,MF,24-050,11.5,13,1.13,11,0,2,0,0,0,3,0.26,3,0,0,0,0,0,Matches,Espanyol,2024
+389,Brian Oliván,es ESP,DF,31-038,11.3,24,2.09,16,8,0,0,0,0,1,0.09,0,1,0,0,0,0,Matches,Espanyol,2024
+390,Antoniu,es ESP,"MF,FW",22-246,9.8,22,2.24,10,0,6,0,4,2,1,0.1,1,0,0,0,0,0,Matches,Espanyol,2024
+391,Alejo Véliz,ar ARG,FW,21-232,11.2,11,0.96,5,0,0,2,4,0,2,0.18,1,0,0,0,1,0,Matches,Espanyol,2024
+392,Edu Expósito,es ESP,MF,28-281,8.0,29,3.65,11,11,2,2,3,0,2,0.25,0,2,0,0,0,0,Matches,Espanyol,2024
+393,José Gragera,es ESP,MF,24-160,6.3,7,1.11,4,0,0,0,1,2,0,0.0,0,0,0,0,0,0,Matches,Espanyol,2024
+394,Sergi Gómez,es ESP,DF,33-042,7.2,4,0.55,4,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Espanyol,2024
+395,Walid Cheddira,ma MAR,FW,27-107,6.8,18,2.65,10,0,2,2,4,0,4,0.59,1,0,1,0,2,0,Matches,Espanyol,2024
+396,Irvin Cardona,fr FRA,"FW,MF",27-274,6.7,20,2.97,16,1,0,2,1,0,3,0.45,2,0,0,1,0,0,Matches,Espanyol,2024
+397,Álvaro Aguado,es ESP,MF,29-008,4.8,15,3.13,13,1,0,1,0,0,1,0.21,1,0,0,0,0,0,Matches,Espanyol,2024
+398,Fernando Calero,es ESP,"DF,MF",29-237,5.3,5,0.94,4,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches,Espanyol,2024
+399,Justin Smith,ca CAN,MF,22-094,2.3,2,0.86,2,0,0,0,0,0,1,0.43,1,0,0,0,0,0,Matches,Espanyol,2024
+400,Rafael Bauza,es ESP,MF,20-099,2.0,1,0.49,0,0,1,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Espanyol,2024
+401,Pere Milla,es ESP,"MF,FW",32-228,3.5,7,2.0,6,0,0,1,0,0,1,0.29,1,0,0,0,0,0,Matches,Espanyol,2024
+402,Naci Ünüvar,nl NED,"MF,DF",21-330,0.3,2,5.63,1,0,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Espanyol,2024
+403,Roger Hinojo,es ESP,DF,20-077,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Espanyol,2024
+404,Paulo Gazzaniga,ar ARG,GK,33-127,33.5,1,0.03,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+405,Miguel Gutiérrez,es ESP,"DF,MF",23-286,27.3,74,2.71,55,13,1,3,1,1,8,0.29,6,1,0,1,0,0,Matches,Girona,2024
+406,Daley Blind,nl NED,DF,35-061,26.9,44,1.64,40,2,0,0,0,2,7,0.26,6,0,0,0,0,1,Matches,Girona,2024
+407,Arnau Martinez,es ESP,"DF,MF",22-014,25.7,52,2.03,42,2,3,2,2,1,5,0.19,5,0,0,0,0,0,Matches,Girona,2024
+408,David López,es ESP,DF,35-212,25.0,22,0.88,18,0,0,4,0,0,2,0.08,0,0,0,2,0,0,Matches,Girona,2024
+409,Ladislav Krejčí,cz CZE,DF,26-019,24.1,29,1.2,25,1,0,2,1,0,4,0.17,2,0,0,1,1,0,Matches,Girona,2024
+410,Yangel Herrera,ve VEN,MF,27-115,22.3,47,2.1,35,2,1,3,4,2,5,0.22,5,0,0,0,0,0,Matches,Girona,2024
+411,Iván Martín,es ESP,MF,26-084,20.4,52,2.55,49,0,0,2,1,0,4,0.2,3,0,0,1,0,0,Matches,Girona,2024
+412,Bryan Gil,es ESP,"FW,MF",24-087,19.1,56,2.93,39,3,8,1,4,1,5,0.26,5,0,0,0,0,0,Matches,Girona,2024
+413,Viktor Tsyhankov,ua UKR,"FW,MF",27-175,17.6,54,3.07,29,21,1,0,2,1,7,0.4,3,3,0,0,1,0,Matches,Girona,2024
+414,Donny van de Beek,nl NED,MF,28-021,15.8,28,1.77,27,0,0,1,0,0,2,0.13,2,0,0,0,0,0,Matches,Girona,2024
+415,Oriol Romeu,es ESP,MF,33-227,13.8,19,1.38,19,0,0,0,0,0,1,0.07,1,0,0,0,0,0,Matches,Girona,2024
+416,Abel Ruiz,es ESP,FW,25-101,13.6,13,0.95,9,0,0,3,1,0,1,0.07,0,0,0,1,0,0,Matches,Girona,2024
+417,Arnaut Danjuma,nl NED,"FW,MF",28-098,14.6,39,2.68,25,6,5,2,1,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+418,Yaser Asprilla,co COL,"FW,MF",21-171,12.6,53,4.22,40,5,6,1,1,0,6,0.48,4,2,0,0,0,0,Matches,Girona,2024
+419,Bojan Miovski,mk MKD,FW,25-319,9.5,9,0.95,3,0,1,2,2,1,4,0.42,2,0,0,1,1,0,Matches,Girona,2024
+420,Alejandro Francés,es ESP,DF,22-281,10.6,13,1.22,12,0,0,1,0,0,1,0.09,1,0,0,0,0,0,Matches,Girona,2024
+421,Arthur Melo,br BRA,MF,28-270,7.3,8,1.09,7,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+422,Juanpe,es ESP,DF,34-009,6.8,2,0.3,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+423,Cristhian Stuani,uy URU,FW,38-209,9.2,13,1.41,9,0,1,3,0,0,3,0.33,2,0,0,1,0,0,Matches,Girona,2024
+424,Portu,es ESP,"FW,MF",32-353,6.2,22,3.53,17,1,3,1,0,0,4,0.64,3,0,1,0,0,0,Matches,Girona,2024
+425,Jhon Solis,co COL,MF,20-218,5.2,6,1.14,5,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+426,Silvi Clúa,es ESP,MF,20-100,1.8,2,1.1,1,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+427,Gabriel Osei Misehouy,nl NED,"FW,MF",19-295,2.9,6,2.1,5,0,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+428,Iker Almena,es ESP,"FW,DF",21-005,0.5,3,5.63,2,0,1,0,0,0,2,3.75,1,0,1,0,0,0,Matches,Girona,2024
+429,Papa Ba,es ESP,MF,20-239,0.5,2,3.75,1,0,1,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+430,Pau López,es ESP,GK,30-147,0.5,1,2.0,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+431,Kim Minsu,kr KOR,"MF,FW",19-110,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+432,Ferrán Ruiz,es ESP,MF,22-013,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Girona,2024
+433,Dodi Lukebakio,be BEL,FW,27-227,31.4,113,3.6,61,18,21,5,7,1,8,0.26,6,0,2,0,0,0,Matches,Sevilla,2024
+434,Carmona,es ESP,DF,23-100,30.0,51,1.7,35,6,3,2,3,2,1,0.03,1,0,0,0,0,0,Matches,Sevilla,2024
+435,Loïc Bade,fr FRA,DF,25-028,28.2,23,0.81,20,0,1,2,0,0,2,0.07,2,0,0,0,0,0,Matches,Sevilla,2024
+436,Ørjan Nyland,no NOR,GK,34-241,26.7,11,0.41,10,1,0,0,0,0,2,0.07,1,1,0,0,0,0,Matches,Sevilla,2024
+437,Isaac Romero,es ESP,FW,24-356,23.4,38,1.62,26,1,5,2,4,0,6,0.26,4,0,1,1,0,0,Matches,Sevilla,2024
+438,Adrià Pedrosa,es ESP,DF,26-361,23.5,39,1.66,27,6,3,2,1,0,3,0.13,3,0,0,0,0,0,Matches,Sevilla,2024
+439,Nemanja Gudelj,rs SRB,"MF,DF",33-174,24.3,30,1.23,15,11,1,0,1,2,2,0.08,0,2,0,0,0,0,Matches,Sevilla,2024
+440,Kike Salas,es ESP,DF,23-016,21.4,16,0.75,13,0,0,3,0,0,4,0.19,4,0,0,0,0,0,Matches,Sevilla,2024
+441,Djibril Sow,ch SUI,MF,28-092,20.7,57,2.76,52,0,0,1,2,2,3,0.15,3,0,0,0,0,0,Matches,Sevilla,2024
+442,Lucien Agoume,fr FRA,MF,23-089,19.5,47,2.41,44,0,1,1,0,1,4,0.21,3,0,0,1,0,0,Matches,Sevilla,2024
+443,Saúl Ñíguez,es ESP,MF,30-169,16.2,47,2.91,36,0,0,7,1,3,8,0.5,7,0,0,1,0,0,Matches,Sevilla,2024
+444,Albert Sambi Lokonga,be BEL,MF,25-199,15.6,33,2.12,31,0,0,1,0,1,3,0.19,3,0,0,0,0,0,Matches,Sevilla,2024
+445,Juanlu Sánchez,es ESP,"MF,DF",21-267,15.5,33,2.13,30,0,1,2,0,0,4,0.26,4,0,0,0,0,0,Matches,Sevilla,2024
+446,Peque,es ESP,"MF,FW",22-217,11.4,29,2.54,21,0,0,5,3,0,2,0.18,2,0,0,0,0,0,Matches,Sevilla,2024
+447,Chidera Ejuke,ng NGA,FW,27-127,10.6,39,3.67,23,5,8,0,3,0,2,0.19,2,0,0,0,0,0,Matches,Sevilla,2024
+448,Ruben Vargas,ch SUI,"FW,MF",26-277,7.5,31,4.16,16,5,4,5,1,0,3,0.4,3,0,0,0,0,0,Matches,Sevilla,2024
+449,Álvaro Fernández,es ESP,GK,27-026,7.3,2,0.27,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+450,Tanguy Nianzou,fr FRA,DF,22-336,5.8,1,0.17,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+451,Marcão,br BRA,DF,28-338,5.1,2,0.39,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+452,Kelechi Iheanacho,ng NGA,FW,28-218,4.4,12,2.7,8,0,1,3,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+453,Jesús Navas,es ESP,"FW,MF",39-169,4.7,15,3.18,13,2,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+454,Valentín Barco,ar ARG,"DF,FW",20-290,3.2,10,3.12,5,4,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+455,Stanis Idumbo,be BEL,"FW,MF",19-314,3.2,7,2.21,7,0,0,0,0,0,1,0.32,1,0,0,0,0,0,Matches,Sevilla,2024
+456,Lucas Ocampos,ar ARG,FW,30-302,1.9,7,3.6,7,0,0,0,0,0,2,1.03,2,0,0,0,0,0,Matches,Sevilla,2024
+457,Suso,es ESP,"FW,MF",31-171,3.5,29,8.29,14,7,5,2,1,0,2,0.57,1,1,0,0,0,0,Matches,Sevilla,2024
+458,Álvaro Pascual,es ESP,FW,23-128,2.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+459,Akor Adams,ng NGA,FW,25-100,1.5,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+460,Manu Bueno,es ESP,"MF,FW",20-286,1.3,1,0.79,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+461,Gonzalo Montiel,ar ARG,"DF,MF",28-128,1.3,2,1.59,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+462,Ramón Martínez,es ESP,DF,22-199,1.1,2,1.87,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+463,Diego Iturralde,es ESP,FW,22-023,0.4,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+464,Israel Domínguez,es ESP,FW,22-002,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+465,Leandro Antonetti,pr PUR,FW,22-116,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+466,Mateo Mejía,es ESP,FW,22-039,0.1,1,8.18,0,0,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+467,Darío Fuentes,es ESP,DF,22-117,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Sevilla,2024
+468,Carlos Vicente,es ESP,"FW,MF",26-016,30.4,94,3.1,45,34,3,5,5,2,8,0.26,5,1,1,1,0,0,Matches,Alaves,2024
+469,Nahuel Tenaglia,ar ARG,DF,29-077,29.3,46,1.57,26,9,2,2,6,1,2,0.07,1,0,0,0,1,0,Matches,Alaves,2024
+470,Abdel Abqar,ma MAR,DF,26-060,27.4,25,0.91,20,0,0,2,1,2,3,0.11,2,0,0,0,1,0,Matches,Alaves,2024
+471,Antonio Sivera,es ESP,GK,28-271,27.2,10,0.37,5,5,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+472,Antonio Blanco,es ESP,MF,24-290,26.6,41,1.54,35,3,0,1,1,1,1,0.04,1,0,0,0,0,0,Matches,Alaves,2024
+473,Kiké,es ESP,FW,35-165,25.6,35,1.37,28,0,0,2,5,0,4,0.16,3,0,0,0,1,0,Matches,Alaves,2024
+474,Manu Sánchez,es ESP,DF,24-258,25.5,34,1.33,23,4,0,5,2,0,2,0.08,1,0,0,1,0,0,Matches,Alaves,2024
+475,Jon Guridi,es ESP,"MF,FW",30-070,20.0,40,2.0,29,3,2,3,1,2,8,0.4,5,0,2,1,0,0,Matches,Alaves,2024
+476,Moussa Diarra,ml MLI,DF,24-180,19.7,18,0.91,14,0,0,0,4,0,4,0.2,2,0,0,0,2,0,Matches,Alaves,2024
+477,Ander Guevara,es ESP,MF,27-306,18.6,35,1.88,33,1,1,0,0,0,5,0.27,5,0,0,0,0,0,Matches,Alaves,2024
+478,Santiago Mouriño,uy URU,DF,23-085,17.5,9,0.51,8,0,0,0,1,0,1,0.06,1,0,0,0,0,0,Matches,Alaves,2024
+479,Carlos Martín,es ESP,"FW,MF",23-017,14.5,28,1.93,19,0,3,4,2,0,3,0.21,1,0,0,2,0,0,Matches,Alaves,2024
+480,Joan Jordán,es ESP,MF,30-307,15.1,52,3.43,31,18,0,1,2,0,3,0.2,2,1,0,0,0,0,Matches,Alaves,2024
+481,Tomás Conechny,ar ARG,"FW,MF",27-040,8.8,13,1.47,12,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+482,Carles Aleñá,es ESP,"MF,FW",27-124,8.5,33,3.91,20,5,2,3,3,0,3,0.36,2,1,0,0,0,0,Matches,Alaves,2024
+483,Toni Martínez,es ESP,"FW,MF",27-313,10.1,26,2.56,16,0,4,2,2,2,1,0.1,0,0,0,1,0,0,Matches,Alaves,2024
+484,Stoichkov,es ESP,"MF,FW",31-185,7.8,28,3.6,17,0,2,3,4,2,2,0.26,1,0,0,1,0,0,Matches,Alaves,2024
+485,Aleksandar Sedlar,rs SRB,DF,33-147,5.7,2,0.35,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+486,Jesús Owono,gq EQG,GK,24-069,5.4,1,0.18,0,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+487,Pica,es ESP,DF,23-128,5.4,2,0.37,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+488,Carlos Benavídez,uy URU,MF,27-040,4.4,10,2.3,8,0,1,0,0,1,3,0.69,3,0,0,0,0,0,Matches,Alaves,2024
+489,Abderrahman Rebbach,dz ALG,"FW,MF",26-271,4.3,10,2.34,7,0,1,2,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+490,Facundo Garcés,ar ARG,DF,25-246,3.5,1,0.28,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+491,Asier Villalibre,es ESP,FW,27-221,3.5,7,2.01,4,0,0,1,2,0,1,0.29,1,0,0,0,0,0,Matches,Alaves,2024
+492,Hugo Novoa,es ESP,"DF,MF",22-128,2.6,6,2.28,6,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+493,Luka Romero,ar ARG,"FW,MF",20-172,2.2,8,3.62,4,1,1,0,1,1,1,0.45,1,0,0,0,0,0,Matches,Alaves,2024
+494,Pau Cabanes,es ESP,"MF,FW",20-081,2.0,6,2.93,4,0,1,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+495,Adrian Rodriguez,es ESP,GK,24-148,1.4,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+496,Luis Rioja,es ESP,FW,31-205,0.3,1,3.91,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Alaves,2024
+497,Alberto Moleiro,es ESP,"FW,MF",21-221,27.4,93,3.4,68,0,14,5,5,1,6,0.22,3,0,1,1,1,0,Matches,Las Palmas,2024
+498,Álex Suárez,es ESP,DF,32-052,25.8,14,0.54,12,0,0,2,0,0,2,0.08,2,0,0,0,0,0,Matches,Las Palmas,2024
+499,Javier Muñoz,es ESP,"MF,DF",30-070,27.8,57,2.05,43,4,5,0,3,2,8,0.29,7,1,0,0,0,0,Matches,Las Palmas,2024
+500,Jasper Cillessen,nl NED,GK,36-017,25.9,1,0.04,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+501,Scott McKenna,sct SCO,DF,28-178,25.4,11,0.43,8,1,1,1,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+502,Mika Mármol,es ESP,DF,23-312,23.7,33,1.4,28,4,0,1,0,0,4,0.17,4,0,0,0,0,0,Matches,Las Palmas,2024
+503,Sandro Ramírez,es ESP,"FW,MF",29-304,21.4,55,2.58,28,18,0,2,7,0,6,0.28,3,1,0,0,2,0,Matches,Las Palmas,2024
+504,Fábio Silva,pt POR,FW,22-294,20.7,43,2.08,30,0,4,3,5,1,5,0.24,3,0,1,1,0,0,Matches,Las Palmas,2024
+505,Dario Essugo,pt POR,MF,20-056,18.9,33,1.75,22,0,3,3,3,2,1,0.05,1,0,0,0,0,0,Matches,Las Palmas,2024
+506,Kirian Rodríguez,es ESP,MF,29-065,19.5,49,2.51,43,2,1,0,2,1,7,0.36,7,0,0,0,0,0,Matches,Las Palmas,2024
+507,Viti,es ESP,DF,27-235,19.5,28,1.43,22,3,2,0,1,0,3,0.15,3,0,0,0,0,0,Matches,Las Palmas,2024
+508,Oliver McBurnie,sct SCO,FW,28-339,17.4,38,2.18,30,0,2,4,2,0,6,0.34,6,0,0,0,0,0,Matches,Las Palmas,2024
+509,Álex Muñoz,es ESP,DF,30-283,15.2,14,0.92,12,1,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+510,José Campaña,es ESP,MF,31-343,12.2,34,2.78,30,4,0,0,0,0,4,0.33,4,0,0,0,0,0,Matches,Las Palmas,2024
+511,Juan Herzog,es ESP,DF,21-361,10.7,2,0.19,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+512,Stefan Bajcetic,es ESP,"MF,DF",20-199,9.3,12,1.29,10,0,0,1,1,0,1,0.11,0,0,0,1,0,0,Matches,Las Palmas,2024
+513,Marvin,es ESP,"DF,FW",24-310,9.1,13,1.44,11,1,0,1,0,0,2,0.22,2,0,0,0,0,0,Matches,Las Palmas,2024
+514,Dinko Horkaš,hr CRO,GK,26-060,8.1,1,0.12,0,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+515,Manuel Fuster,es ESP,"FW,MF",27-199,8.8,44,4.99,37,4,1,0,1,1,6,0.68,5,0,0,0,0,1,Matches,Las Palmas,2024
+516,Enzo Loiodice,fr FRA,MF,24-163,5.6,8,1.43,4,3,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+517,Jaime Mata,es ESP,FW,36-197,5.9,13,2.2,9,0,1,2,1,0,1,0.17,1,0,0,0,0,0,Matches,Las Palmas,2024
+518,Adnan Januzaj,be BEL,"MF,FW",30-093,4.5,29,6.44,16,6,0,3,4,0,5,1.11,2,0,0,2,1,0,Matches,Las Palmas,2024
+519,Andy Pelmard,fr FRA,DF,25-058,2.3,3,1.32,1,0,0,1,1,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+520,Benito Ramírez,es ESP,"DF,MF",29-302,4.3,21,4.9,18,1,0,1,1,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+521,Daley Sinkgraven,nl NED,DF,29-309,1.0,2,1.98,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+522,Marc Cardona,es ESP,"FW,DF",29-305,1.2,4,3.24,2,0,0,2,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+523,Fabio González,es ESP,MF,28-086,0.6,2,3.4,2,0,0,0,0,0,1,1.7,1,0,0,0,0,0,Matches,Las Palmas,2024
+524,Pejiño,es ESP,FW,28-284,0.2,1,5.63,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+525,Valentín Pezzolesi,es ESP,DF,18-023,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+526,Aboubacar Bassinga,ci CIV,MF,19-300,0.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Las Palmas,2024
+527,Sergi,es ESP,DF,33-019,31.4,12,0.38,11,0,0,0,1,0,3,0.1,2,0,0,0,1,0,Matches,Leganes,2024
+528,Marko Dmitrović,rs SRB,GK,33-105,28.0,6,0.21,3,3,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Leganes,2024
+529,Seydouba Cissé,gn GUI,MF,24-088,23.2,35,1.51,28,1,1,1,4,0,3,0.13,1,0,0,0,2,0,Matches,Leganes,2024
+530,Valentin Rosier,fr FRA,DF,28-263,27.1,34,1.25,23,4,3,4,0,0,6,0.22,5,0,1,0,0,0,Matches,Leganes,2024
+531,Yvan Neyou,cm CMR,MF,28-126,24.1,27,1.12,22,0,2,0,3,0,2,0.08,2,0,0,0,0,0,Matches,Leganes,2024
+532,Javi Hernández,es ESP,DF,27-007,23.5,34,1.44,24,6,0,1,2,1,3,0.13,1,0,0,1,1,0,Matches,Leganes,2024
+533,Renato Tapia,pe PER,"MF,DF",29-285,23.2,16,0.69,12,1,1,0,1,1,3,0.13,3,0,0,0,0,0,Matches,Leganes,2024
+534,Juan Cruz,es ESP,"FW,MF",25-014,23.1,48,2.08,31,6,2,5,2,2,5,0.22,5,0,0,0,0,0,Matches,Leganes,2024
+535,Matija Nastasić,rs SRB,DF,32-042,22.6,6,0.27,5,0,0,0,1,0,1,0.04,0,0,0,0,1,0,Matches,Leganes,2024
+536,Dani Raba,es ESP,"FW,MF",29-192,18.1,84,4.65,37,17,12,3,10,5,11,0.61,6,1,2,0,1,1,Matches,Leganes,2024
+537,Miguel,es ESP,FW,25-248,18.6,28,1.5,13,0,2,5,6,2,6,0.32,5,0,1,0,0,0,Matches,Leganes,2024
+538,Darko Brašanac,rs SRB,MF,33-086,17.3,29,1.67,23,0,1,3,2,0,2,0.12,2,0,0,0,0,0,Matches,Leganes,2024
+539,Jorge Sáenz,es ESP,DF,28-173,14.8,8,0.54,6,0,0,0,1,1,0,0.0,0,0,0,0,0,0,Matches,Leganes,2024
+540,Adrià Altimira,es ESP,"DF,FW",24-042,14.1,12,0.85,9,0,1,0,2,0,1,0.07,1,0,0,0,0,0,Matches,Leganes,2024
+541,Óscar Rodríguez Arnaiz,es ESP,"MF,FW",26-315,13.9,45,3.25,28,6,5,3,2,1,9,0.65,5,1,1,1,0,1,Matches,Leganes,2024
+542,Diego,es ESP,"FW,MF",25-021,10.3,11,1.06,7,0,0,2,2,0,1,0.1,0,0,0,0,1,0,Matches,Leganes,2024
+543,Munir El Haddadi,ma MAR,"FW,MF",29-250,7.4,11,1.49,6,0,1,2,2,0,1,0.14,0,0,0,1,0,0,Matches,Leganes,2024
+544,Enric Franquesa,es ESP,"DF,FW",28-072,6.8,6,0.88,4,0,0,1,0,1,0,0.0,0,0,0,0,0,0,Matches,Leganes,2024
+545,Juan Soriano,es ESP,GK,27-259,6.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Leganes,2024
+546,Sébastien Haller,ci CIV,FW,30-321,4.5,4,0.89,3,0,1,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Leganes,2024
+547,Roberto López,es ESP,MF,25-015,4.4,15,3.41,8,5,1,0,0,1,1,0.23,0,1,0,0,0,0,Matches,Leganes,2024
+548,Yan Diomandé,ci CIV,"FW,MF",18-176,2.6,11,4.27,9,0,2,0,0,0,1,0.39,1,0,0,0,0,0,Matches,Leganes,2024
+549,Julián Chicco,ar ARG,"MF,DF",27-116,3.3,5,1.53,3,0,1,1,0,0,1,0.31,1,0,0,0,0,0,Matches,Leganes,2024
+550,Aritz Arambarri,es ESP,DF,27-098,2.0,1,0.51,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Leganes,2024
+551,Duk,cv CPV,"MF,FW",25-082,1.6,6,3.72,4,0,1,1,0,0,1,0.62,0,0,0,1,0,0,Matches,Leganes,2024
+552,Borna Barišić,hr CRO,DF,32-180,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Leganes,2024
+553,Karl Jakob Hein,ee EST,GK,23-026,28.0,3,0.11,1,2,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+554,Luis Pérez,es ESP,DF,30-094,26.9,49,1.82,42,6,0,0,0,1,2,0.07,2,0,0,0,0,0,Matches,Valladolid,2024
+555,Javi Sánchez,es ESP,DF,28-056,22.5,14,0.62,13,0,0,1,0,0,2,0.09,1,0,0,1,0,0,Matches,Valladolid,2024
+556,Raúl Moro,es ESP,"MF,FW",22-155,22.2,85,3.83,53,11,16,1,3,1,7,0.32,5,0,1,0,1,0,Matches,Valladolid,2024
+557,Lucas Oliveira Rosa,br BRA,DF,25-036,21.0,31,1.48,24,1,2,2,1,1,1,0.05,1,0,0,0,0,0,Matches,Valladolid,2024
+558,Stanko Jurić,hr CRO,MF,28-266,19.2,9,0.47,7,0,0,1,0,1,2,0.1,2,0,0,0,0,0,Matches,Valladolid,2024
+559,Mario Martín,es ESP,MF,21-065,17.9,30,1.67,18,1,2,3,6,0,1,0.06,1,0,0,0,0,0,Matches,Valladolid,2024
+560,Eray Cömert,ch SUI,"DF,MF",27-094,16.9,10,0.59,10,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+561,Anuar,ma MAR,"MF,FW",30-114,16.6,23,1.38,15,1,2,0,5,0,4,0.24,1,0,2,0,1,0,Matches,Valladolid,2024
+562,Mamadou Sylla,sn SEN,"FW,MF",31-050,16.5,20,1.21,14,0,1,1,4,0,5,0.3,2,0,1,0,2,0,Matches,Valladolid,2024
+563,Selim Amallah,ma MAR,MF,28-175,14.0,29,2.07,14,8,6,0,0,1,1,0.07,1,0,0,0,0,0,Matches,Valladolid,2024
+564,David Torres,es ESP,DF,22-065,15.4,3,0.19,3,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+565,Kike Pérez,es ESP,MF,28-084,13.2,36,2.72,20,11,1,1,2,1,1,0.08,1,0,0,0,0,0,Matches,Valladolid,2024
+566,Marcos André,br BRA,FW,28-201,13.1,19,1.45,15,0,3,0,1,0,1,0.08,1,0,0,0,0,0,Matches,Valladolid,2024
+567,Iván Sánchez,es ESP,"MF,FW",32-228,14.0,51,3.66,34,7,4,1,4,1,5,0.36,5,0,0,0,0,0,Matches,Valladolid,2024
+568,Juanmi Latasa,es ESP,FW,24-047,12.0,23,1.91,18,0,0,4,1,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+569,Juma Bah,sl SLE,DF,19-028,9.6,2,0.21,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+570,Antonio Candela,it ITA,DF,25-012,8.0,6,0.75,5,1,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+571,Adam Aznou,ma MAR,DF,18-341,7.5,10,1.34,7,3,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+572,Chuky san jose,es ESP,MF,21-010,7.2,13,1.81,7,3,1,0,2,0,2,0.28,0,0,1,0,1,0,Matches,Valladolid,2024
+573,Darwin Machís,ve VEN,"MF,FW",32-091,6.9,15,2.17,8,5,0,1,1,0,1,0.14,1,0,0,0,0,0,Matches,Valladolid,2024
+574,Tamás Nikitscher,hu HUN,MF,25-187,6.3,1,0.16,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+575,Florian Grillitsch,at AUT,MF,29-275,5.3,18,3.37,15,0,1,0,2,0,1,0.19,1,0,0,0,0,0,Matches,Valladolid,2024
+576,Joseph Aidoo,gh GHA,DF,29-222,6.0,1,0.17,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+577,André Ferreira,pt POR,GK,28-345,5.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+578,Cenk Özkacar,tr TUR,DF,24-215,4.9,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+579,Amath,sn SEN,"FW,DF",28-297,3.9,10,2.55,8,0,1,1,0,0,1,0.25,1,0,0,0,0,0,Matches,Valladolid,2024
+580,Enzo Boyomo,cm CMR,DF,23-214,3.0,1,0.33,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+581,Víctor Meseguer,es ESP,MF,25-334,4.6,8,1.72,5,0,0,2,1,0,1,0.22,1,0,0,0,0,0,Matches,Valladolid,2024
+582,Henrique,br BRA,DF,31-014,2.2,4,1.83,3,0,0,0,1,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+583,Raúl Chasco,es ESP,DF,21-238,1.4,2,1.38,2,0,0,0,0,0,1,0.69,1,0,0,0,0,0,Matches,Valladolid,2024
+584,Arnau Rafús,es ESP,GK,22-012,1.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+585,Mario Maroto,es ESP,MF,21-162,0.2,2,9.47,2,0,0,0,0,0,1,4.74,1,0,0,0,0,0,Matches,Valladolid,2024
+586,Adrian Baquerin,es ESP,FW,18-066,0.1,1,7.5,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
+587,Kenedy,br BRA,"MF,FW",29-090,0.1,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches,Valladolid,2024
