@@ -1,0 +1,569 @@
+,Player,Nation,Pos,Age,90s,tackles_Tkl,tackles_TklW,tackles_Def 3rd,tackles_Mid 3rd,tackles_Att 3rd,challenges_Tkl,challenges_Att,challenges_Tkl%,challenges_Lost,blocks_Blocks,blocks_Sh,blocks_Pass,Int,Tkl+Int,Clr,Err,Matches,Team,Season
+0,David Raya,es ESP,GK,29-236,35.0,0,0,0,0,0,0,2,0.0,2,0,0,0,2,2,18,6,Matches,Arsenal,2024
+1,William Saliba,fr FRA,DF,24-046,32.3,60,36,35,23,2,21,27,77.8,6,24,15,9,21,81,111,6,Matches,Arsenal,2024
+2,Declan Rice,eng ENG,MF,26-115,29.4,52,24,21,25,6,16,37,43.2,21,24,11,13,25,77,44,0,Matches,Arsenal,2024
+3,Thomas Partey,gh GHA,"MF,DF",31-330,28.1,80,49,23,37,20,44,72,61.1,28,25,7,18,33,113,46,4,Matches,Arsenal,2024
+4,Gabriel Magalhães,br BRA,DF,27-141,26.3,25,15,12,8,5,12,16,75.0,4,42,29,13,16,41,93,2,Matches,Arsenal,2024
+5,Jurriën Timber,nl NED,DF,23-326,26.9,58,38,17,30,11,18,27,66.7,9,19,4,15,22,80,44,1,Matches,Arsenal,2024
+6,Leandro Trossard,be BEL,FW,30-156,26.2,26,17,5,14,7,9,31,29.0,22,31,0,31,9,35,17,0,Matches,Arsenal,2024
+7,Martin Ødegaard,no NOR,MF,26-143,23.7,19,11,9,7,3,4,24,16.7,20,5,0,5,4,23,5,1,Matches,Arsenal,2024
+8,Gabriel Martinelli,br BRA,"FW,MF",23-325,22.7,20,15,8,5,7,7,23,30.4,16,10,0,10,4,24,15,0,Matches,Arsenal,2024
+9,Kai Havertz,de GER,"FW,MF",25-332,20.4,16,9,3,6,7,4,15,26.7,11,22,4,18,6,22,31,1,Matches,Arsenal,2024
+10,Bukayo Saka,eng ENG,"FW,MF",23-246,17.1,24,13,7,10,7,11,22,50.0,11,21,0,21,3,27,8,0,Matches,Arsenal,2024
+11,Mikel Merino,es ESP,"MF,FW",28-321,15.8,38,22,6,21,11,15,29,51.7,14,18,5,13,14,52,24,1,Matches,Arsenal,2024
+12,Myles Lewis-Skelly,eng ENG,DF,18-225,13.0,22,14,10,9,3,10,10,100.0,0,2,1,1,6,28,20,0,Matches,Arsenal,2024
+13,Riccardo Calafiori,it ITA,DF,22-355,10.3,26,18,15,9,2,18,29,62.1,11,12,6,6,9,35,25,0,Matches,Arsenal,2024
+14,Ben White,eng ENG,DF,27-213,10.5,13,9,9,2,2,11,28,39.3,17,9,7,2,15,28,35,0,Matches,Arsenal,2024
+15,Ethan Nwaneri,eng ENG,"FW,MF",18-049,9.1,11,7,4,4,3,7,18,38.9,11,8,2,6,2,13,4,1,Matches,Arsenal,2024
+16,Jorginho,it ITA,MF,33-140,7.8,12,4,1,7,4,8,20,40.0,12,3,0,3,7,19,2,2,Matches,Arsenal,2024
+17,Jakub Kiwior,pl POL,DF,25-083,9.5,13,7,7,5,1,8,11,72.7,3,8,5,3,3,16,37,2,Matches,Arsenal,2024
+18,Gabriel Jesus,br BRA,FW,28-036,6.8,10,6,4,3,3,4,9,44.4,5,10,1,9,4,14,8,0,Matches,Arsenal,2024
+19,Raheem Sterling,eng ENG,"FW,MF",30-152,4.9,8,4,1,2,5,4,8,50.0,4,3,0,3,1,9,3,0,Matches,Arsenal,2024
+20,Oleksandr Zinchenko,ua UKR,"DF,MF",28-145,5.1,4,1,1,2,1,2,7,28.6,5,5,0,5,4,8,6,0,Matches,Arsenal,2024
+21,Kieran Tierney,sct SCO,"DF,FW",27-338,2.0,5,4,3,1,1,3,5,60.0,2,0,0,0,2,7,5,0,Matches,Arsenal,2024
+22,Nathan Butler-Oyedeji,eng ENG,FW,22-125,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Arsenal,2024
+23,Takehiro Tomiyasu,jp JPN,DF,26-185,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches,Arsenal,2024
+24,Reiss Nelson,eng ENG,FW,25-150,0.0,1,0,0,1,0,0,1,0.0,1,0,0,0,0,1,1,0,Matches,Arsenal,2024
+25,Youri Tielemans,be BEL,MF,28-002,33.3,83,57,31,44,8,40,73,54.8,33,37,16,21,22,105,47,4,Matches,Aston Villa,2024
+26,Emiliano Martínez,ar ARG,GK,32-249,33.0,3,3,3,0,0,2,2,100.0,0,1,0,1,0,3,17,6,Matches,Aston Villa,2024
+27,Morgan Rogers,eng ENG,"FW,MF",22-287,31.7,36,18,13,13,10,19,39,48.7,20,25,7,18,5,41,19,2,Matches,Aston Villa,2024
+28,Ezri Konsa,eng ENG,DF,27-198,29.6,32,17,19,9,4,18,22,81.8,4,18,10,8,21,53,101,4,Matches,Aston Villa,2024
+29,Ollie Watkins,eng ENG,FW,29-130,25.9,9,6,0,5,4,3,11,27.3,8,11,3,8,8,17,15,2,Matches,Aston Villa,2024
+30,Lucas Digne,fr FRA,DF,31-293,25.1,63,37,38,16,9,43,64,67.2,21,23,4,19,25,88,85,1,Matches,Aston Villa,2024
+31,John McGinn,sct SCO,"MF,FW",30-203,22.8,31,22,10,13,8,11,27,40.7,16,21,2,19,14,45,16,3,Matches,Aston Villa,2024
+32,Pau Torres,es ESP,DF,28-113,20.2,20,14,11,7,2,9,15,60.0,6,14,10,4,9,29,65,2,Matches,Aston Villa,2024
+33,Matty Cash,pl POL,DF,27-275,20.0,47,27,25,19,3,24,34,70.6,10,18,7,11,21,68,57,2,Matches,Aston Villa,2024
+34,Jacob Ramsey,eng ENG,"FW,MF",23-346,16.8,30,15,14,10,6,10,20,50.0,10,21,3,18,7,37,8,1,Matches,Aston Villa,2024
+35,Boubacar Kamara,fr FRA,MF,25-167,16.3,49,20,28,17,4,28,54,51.9,26,17,7,10,17,66,48,3,Matches,Aston Villa,2024
+36,Amadou Onana,be BEL,MF,23-266,15.3,47,24,21,22,4,14,26,53.8,12,14,6,8,24,71,37,3,Matches,Aston Villa,2024
+37,Leon Bailey,jm JAM,"FW,MF",27-273,12.6,6,4,1,3,2,2,10,20.0,8,6,0,6,3,9,12,0,Matches,Aston Villa,2024
+38,Tyrone Mings,eng ENG,DF,32-057,11.7,6,5,5,1,0,2,2,100.0,0,13,11,2,7,13,58,1,Matches,Aston Villa,2024
+39,Ian Maatsen,nl NED,DF,23-060,10.6,27,15,16,8,3,16,22,72.7,6,11,0,11,15,42,33,2,Matches,Aston Villa,2024
+40,Diego Carlos,br BRA,DF,32-055,9.2,8,3,6,1,1,4,6,66.7,2,13,7,6,5,13,36,2,Matches,Aston Villa,2024
+41,Marco Asensio,es ESP,"MF,FW",29-108,6.0,7,5,0,7,0,3,9,33.3,6,2,0,2,1,8,3,0,Matches,Aston Villa,2024
+42,Axel Disasi,fr FRA,DF,27-059,5.4,8,5,7,1,0,3,7,42.9,4,4,1,3,5,13,18,0,Matches,Aston Villa,2024
+43,Lamare Bogarde,nl NED,"DF,MF",21-124,5.3,14,6,6,6,2,10,16,62.5,6,5,3,2,1,15,13,0,Matches,Aston Villa,2024
+44,Andrés García,es ESP,"DF,MF",22-091,3.5,9,5,5,3,1,4,8,50.0,4,2,0,2,2,11,10,2,Matches,Aston Villa,2024
+45,Jáder Durán,co COL,FW,21-147,7.1,8,7,1,2,5,1,4,25.0,3,5,0,5,0,8,13,0,Matches,Aston Villa,2024
+46,Marcus Rashford,eng ENG,FW,27-190,4.9,10,7,2,3,5,4,6,66.7,2,2,0,2,1,11,3,0,Matches,Aston Villa,2024
+47,Ross Barkley,eng ENG,MF,31-155,6.3,14,3,4,10,0,9,14,64.3,5,9,3,6,10,24,5,0,Matches,Aston Villa,2024
+48,Jaden Philogene Bidace,eng ENG,"FW,MF",23-090,3.7,11,5,4,7,0,4,6,66.7,2,5,0,5,3,14,2,1,Matches,Aston Villa,2024
+49,Donyell Malen,nl NED,FW,26-120,3.3,7,4,3,3,1,1,4,25.0,3,1,0,1,0,7,1,0,Matches,Aston Villa,2024
+50,Robin Olsen,se SWE,GK,35-121,2.0,1,0,1,0,0,1,1,100.0,0,0,0,0,0,1,2,1,Matches,Aston Villa,2024
+51,Kosta Nedeljković,rs SRB,DF,19-144,1.4,7,5,1,3,3,2,3,66.7,1,1,0,1,0,7,3,0,Matches,Aston Villa,2024
+52,Emi Buendía,ar ARG,"MF,FW",28-135,1.1,6,6,3,2,1,0,5,0.0,5,5,1,4,0,6,2,0,Matches,Aston Villa,2024
+53,Milos Kerkez,hu HUN,DF,21-183,34.2,50,26,25,19,6,23,37,62.2,14,36,11,25,42,92,103,3,Matches,Bournemouth,2024
+54,Antoine Semenyo,gh GHA,FW,25-122,32.6,53,34,16,24,13,16,42,38.1,26,59,8,51,10,63,35,1,Matches,Bournemouth,2024
+55,Illia Zabarnyi,ua UKR,DF,22-250,31.6,46,32,26,19,1,30,44,68.2,14,33,20,13,38,84,165,2,Matches,Bournemouth,2024
+56,Lewis Cook,eng ENG,"MF,DF",28-095,31.3,80,42,41,35,4,36,66,54.5,30,30,11,19,40,120,66,0,Matches,Bournemouth,2024
+57,Kepa Arrizabalaga,es ESP,GK,30-218,28.0,1,0,1,0,0,0,2,0.0,2,1,0,1,0,1,14,3,Matches,Bournemouth,2024
+58,Justin Kluivert,nl NED,"MF,FW",26-004,24.0,21,9,4,10,7,4,21,19.0,17,24,0,24,13,34,23,1,Matches,Bournemouth,2024
+59,Ryan Christie,sct SCO,MF,30-076,23.5,54,33,19,27,8,27,64,42.2,37,44,11,33,30,84,51,3,Matches,Bournemouth,2024
+60,Evanilson,br BRA,FW,25-215,22.9,16,10,6,5,5,8,12,66.7,4,10,2,8,0,16,21,0,Matches,Bournemouth,2024
+61,Dean Huijsen,es ESP,DF,20-025,24.8,33,23,16,16,1,15,25,60.0,10,36,28,8,49,82,175,4,Matches,Bournemouth,2024
+62,Dango Ouattara,bf BFA,FW,23-087,22.3,35,26,14,11,10,17,41,41.5,24,36,10,26,11,46,51,0,Matches,Bournemouth,2024
+63,Tyler Adams,us USA,MF,26-084,19.0,75,46,24,44,7,35,66,53.0,31,33,10,23,32,107,38,0,Matches,Bournemouth,2024
+64,Marcus Tavernier,eng ENG,"FW,MF",26-048,18.6,41,24,14,18,9,10,26,38.5,16,16,3,13,5,46,11,0,Matches,Bournemouth,2024
+65,Adam Smith,eng ENG,DF,34-010,15.7,21,10,10,5,6,12,25,48.0,13,12,5,7,14,35,47,1,Matches,Bournemouth,2024
+66,Marcos Senesi,ar ARG,DF,27-364,11.3,35,21,22,11,2,14,30,46.7,16,15,7,8,11,46,54,0,Matches,Bournemouth,2024
+67,David Brooks,wls WAL,"FW,MF",27-305,9.2,11,4,2,6,3,1,14,7.1,13,16,2,14,5,16,8,1,Matches,Bournemouth,2024
+68,Alex Scott,eng ENG,MF,21-261,7.9,26,13,10,8,8,18,40,45.0,22,17,4,13,10,36,13,0,Matches,Bournemouth,2024
+69,James Hill,eng ENG,DF,23-119,5.0,15,8,6,6,3,3,11,27.3,8,5,0,5,9,24,31,0,Matches,Bournemouth,2024
+70,Julian Araujo,mx MEX,DF,23-269,4.7,8,3,4,4,0,5,12,41.7,7,3,0,3,6,14,16,0,Matches,Bournemouth,2024
+71,Mark Travers,ie IRL,GK,25-356,5.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,5,0,Matches,Bournemouth,2024
+72,Enes Ünal,tr TUR,"FW,MF",27-364,3.8,1,0,0,0,1,0,3,0.0,3,1,0,1,0,1,6,0,Matches,Bournemouth,2024
+73,Neto,br BRA,GK,35-294,2.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,1,Matches,Bournemouth,2024
+74,Luis Sinisterra,co COL,"FW,MF",25-326,2.6,7,2,3,2,2,0,4,0.0,4,3,0,3,1,8,8,0,Matches,Bournemouth,2024
+75,Philip Billing,dk DEN,MF,28-332,2.0,14,5,7,6,1,3,4,75.0,1,3,0,3,5,19,2,0,Matches,Bournemouth,2024
+76,Max Aarons,eng ENG,DF,25-125,1.0,2,2,1,1,0,1,1,100.0,0,3,1,2,1,3,0,0,Matches,Bournemouth,2024
+77,Daniel Jebbison,eng ENG,FW,21-269,0.9,3,2,2,1,0,3,5,60.0,2,2,1,1,1,4,1,0,Matches,Bournemouth,2024
+78,Ben Winterburn,eng ENG,"FW,MF",20-247,0.3,0,0,0,0,0,0,1,0.0,1,0,0,0,2,2,0,0,Matches,Bournemouth,2024
+79,Julio Soler,ar ARG,FW,20-082,0.0,1,1,1,0,0,1,1,100.0,0,1,0,1,0,1,0,0,Matches,Bournemouth,2024
+80,Remy Rees-Dottin,eng ENG,FW,19-064,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Bournemouth,2024
+81,Zain Silcott-Duberry,ms MSR,FW,19-304,0.0,1,1,0,0,1,1,1,100.0,0,0,0,0,0,1,0,0,Matches,Bournemouth,2024
+82,Nathan Collins,ie IRL,DF,24-009,35.0,37,22,22,11,4,22,34,64.7,12,71,51,20,32,69,214,2,Matches,Brentford,2024
+83,Bryan Mbeumo,cm CMR,FW,25-275,34.9,45,29,17,14,14,18,31,58.1,13,24,3,21,14,59,48,1,Matches,Brentford,2024
+84,Mark Flekken,nl NED,GK,31-330,33.4,4,4,4,0,0,3,9,33.3,6,2,0,2,0,4,26,4,Matches,Brentford,2024
+85,Keane Lewis-Potter,eng ENG,"DF,FW",24-076,31.5,44,26,23,15,6,26,44,59.1,18,24,9,15,19,63,71,3,Matches,Brentford,2024
+86,Mikkel Damsgaard,dk DEN,"MF,FW",24-310,29.5,78,43,27,26,25,28,72,38.9,44,36,2,34,26,104,30,2,Matches,Brentford,2024
+87,Yoane Wissa,cd COD,FW,28-248,29.4,22,12,6,8,8,11,27,40.7,16,29,8,21,8,30,20,3,Matches,Brentford,2024
+88,Christian Nørgaard,dk DEN,MF,31-060,28.3,75,45,34,34,7,44,71,62.0,27,51,19,32,45,120,65,1,Matches,Brentford,2024
+89,Vitaly Janelt,de GER,MF,26-364,25.0,38,22,14,13,11,21,36,58.3,15,33,9,24,27,65,53,1,Matches,Brentford,2024
+90,Sepp van den Berg,nl NED,DF,23-140,25.7,37,22,23,10,4,18,27,66.7,9,50,36,14,20,57,118,2,Matches,Brentford,2024
+91,Kevin Schade,de GER,FW,23-163,23.0,35,23,14,10,11,12,20,60.0,8,17,2,15,5,40,31,0,Matches,Brentford,2024
+92,Ethan Pinnock,jm JAM,DF,31-345,21.3,35,19,15,16,4,13,24,54.2,11,29,18,11,24,59,142,4,Matches,Brentford,2024
+93,Kristoffer Ajer,no NOR,DF,27-022,15.6,25,17,14,10,1,14,26,53.8,12,17,4,13,12,37,49,0,Matches,Brentford,2024
+94,Yehor Yarmoliuk,ua UKR,MF,21-069,13.3,39,24,14,19,6,23,46,50.0,23,24,7,17,10,49,31,0,Matches,Brentford,2024
+95,Mads Roerslev,dk DEN,DF,25-319,12.2,18,8,14,3,1,11,28,39.3,17,12,5,7,4,22,35,0,Matches,Brentford,2024
+96,Mathias Jensen,dk DEN,MF,29-128,9.1,13,9,6,5,2,7,15,46.7,8,13,4,9,8,21,13,1,Matches,Brentford,2024
+97,Fabio Carvalho,pt POR,"FW,MF",22-252,5.1,13,9,4,4,5,6,13,46.2,7,6,1,5,3,16,2,0,Matches,Brentford,2024
+98,Michael Kayode,it ITA,DF,20-303,3.2,13,8,9,4,0,7,7,100.0,0,0,0,0,4,17,13,0,Matches,Brentford,2024
+99,Ben Mee,eng ENG,DF,35-230,2.0,2,2,0,2,0,1,1,100.0,0,3,3,0,4,6,7,0,Matches,Brentford,2024
+100,Hákon Rafn Valdimarsson,is ISL,GK,23-208,1.6,0,0,0,0,0,0,0,,0,0,0,0,0,0,2,0,Matches,Brentford,2024
+101,Thiago,br BRA,FW,23-317,1.6,3,2,1,0,2,0,1,0.0,1,2,0,2,2,5,2,1,Matches,Brentford,2024
+102,Edmond-Paris Maghoma,eng ENG,"MF,FW",24-001,1.3,2,1,0,2,0,1,3,33.3,2,2,2,0,1,3,2,0,Matches,Brentford,2024
+103,Rico Henry,eng ENG,DF,27-305,0.9,0,0,0,0,0,0,4,0.0,4,3,1,2,1,1,2,0,Matches,Brentford,2024
+104,Yunus Emre Konak,tr TUR,"FW,MF",19-119,0.5,4,4,0,4,0,1,2,50.0,1,2,0,2,0,4,0,0,Matches,Brentford,2024
+105,Kim Jisoo,kr KOR,DF,20-136,0.3,0,0,0,0,0,0,0,,0,0,0,0,0,0,2,0,Matches,Brentford,2024
+106,Frank Onyeka,ng NGA,MF,27-128,0.3,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Brentford,2024
+107,Gustavo Nunes,br BRA,"FW,MF",19-170,0.1,3,2,2,0,1,2,2,100.0,0,0,0,0,0,3,2,0,Matches,Brentford,2024
+108,Jayden Meghoma,eng ENG,DF,18-315,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Brentford,2024
+109,Ryan Trevitt,eng ENG,MF,22-058,0.0,1,1,1,0,0,0,0,,0,0,0,0,0,1,0,0,Matches,Brentford,2024
+110,Bart Verbruggen,nl NED,GK,22-264,33.0,0,0,0,0,0,0,3,0.0,3,1,0,1,0,0,28,5,Matches,Brighton and Hove Albion,2024
+111,Jan Paul van Hecke,nl NED,DF,24-335,29.9,40,26,20,19,1,20,38,52.6,18,32,19,13,23,63,132,2,Matches,Brighton and Hove Albion,2024
+112,Kaoru Mitoma,jp JPN,"FW,MF",27-354,28.0,43,26,14,13,16,18,46,39.1,28,46,3,43,13,56,10,0,Matches,Brighton and Hove Albion,2024
+113,Carlos Baleba,cm CMR,MF,21-126,26.7,71,41,24,32,15,44,72,61.1,28,44,10,34,40,111,41,1,Matches,Brighton and Hove Albion,2024
+114,Pervis Estupiñán,ec ECU,DF,27-108,24.7,58,39,30,21,7,31,46,67.4,15,16,2,14,34,92,55,2,Matches,Brighton and Hove Albion,2024
+115,Lewis Dunk,eng ENG,DF,33-169,23.1,17,10,8,7,2,11,19,57.9,8,28,18,10,13,30,79,2,Matches,Brighton and Hove Albion,2024
+116,João Pedro,br BRA,"FW,MF",23-225,21.6,16,12,6,6,4,4,11,36.4,7,12,0,12,9,25,12,0,Matches,Brighton and Hove Albion,2024
+117,Danny Welbeck,eng ENG,FW,34-164,21.6,23,14,6,12,5,7,18,38.9,11,17,2,15,5,28,13,0,Matches,Brighton and Hove Albion,2024
+118,Jack Hinshelwood,eng ENG,"DF,MF",20-028,19.4,26,18,8,10,8,11,27,40.7,16,8,3,5,15,41,37,1,Matches,Brighton and Hove Albion,2024
+119,Yasin Ayari,se SWE,MF,21-215,19.5,54,29,15,29,10,21,51,41.2,30,23,6,17,20,74,24,0,Matches,Brighton and Hove Albion,2024
+120,Joël Veltman,nl NED,DF,33-114,18.5,42,28,23,16,3,30,51,58.8,21,22,7,15,18,60,66,0,Matches,Brighton and Hove Albion,2024
+121,Georginio Rutter,fr FRA,"MF,FW",23-019,18.4,39,15,13,18,8,14,36,38.9,22,20,3,17,10,49,13,2,Matches,Brighton and Hove Albion,2024
+122,Yankuba Minteh,gm GAM,"FW,MF",20-291,17.6,45,32,24,13,8,17,45,37.8,28,20,0,20,11,56,31,0,Matches,Brighton and Hove Albion,2024
+123,Simon Adingra,ci CIV,"FW,MF",23-128,10.6,23,14,10,8,5,10,22,45.5,12,12,0,12,8,31,6,1,Matches,Brighton and Hove Albion,2024
+124,Matt O'Riley,dk DEN,MF,24-169,9.4,15,9,4,8,3,4,12,33.3,8,7,3,4,13,28,8,1,Matches,Brighton and Hove Albion,2024
+125,Igor,br BRA,DF,27-091,10.0,4,4,2,1,1,4,10,40.0,6,23,14,9,4,8,39,1,Matches,Brighton and Hove Albion,2024
+126,Tariq Lamptey,gh GHA,DF,24-221,8.9,14,10,8,6,0,7,22,31.8,15,14,7,7,6,20,22,1,Matches,Brighton and Hove Albion,2024
+127,Adam Webster,eng ENG,DF,30-125,6.9,8,5,4,3,1,5,11,45.5,6,12,9,3,14,22,28,1,Matches,Brighton and Hove Albion,2024
+128,Mats Wieffer,nl NED,"MF,DF",25-174,8.3,37,22,15,18,4,19,31,61.3,12,13,1,12,13,50,18,3,Matches,Brighton and Hove Albion,2024
+129,Brajan Gruda,de GER,"FW,MF",20-343,5.6,14,6,6,5,3,7,14,50.0,7,8,0,8,2,16,5,1,Matches,Brighton and Hove Albion,2024
+130,Ferdi Kadioglu,tr TUR,"DF,MF",25-214,4.3,10,6,4,5,1,6,15,40.0,9,2,2,0,8,18,17,0,Matches,Brighton and Hove Albion,2024
+131,Diego Gómez,py PAR,MF,22-043,4.9,17,10,8,7,2,9,18,50.0,9,11,0,11,7,24,9,1,Matches,Brighton and Hove Albion,2024
+132,James Milner,eng ENG,MF,39-125,1.9,5,2,1,3,1,3,3,100.0,0,4,2,2,2,7,2,1,Matches,Brighton and Hove Albion,2024
+133,Julio Enciso,py PAR,"MF,FW",21-106,3.3,0,0,0,0,0,0,2,0.0,2,2,0,2,0,0,1,0,Matches,Brighton and Hove Albion,2024
+134,Evan Ferguson,ie IRL,FW,20-202,2.7,4,3,0,3,1,2,5,40.0,3,3,1,2,0,4,4,0,Matches,Brighton and Hove Albion,2024
+135,Jason Steele,eng ENG,GK,34-264,2.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches,Brighton and Hove Albion,2024
+136,Solly March,eng ENG,"FW,MF",30-293,1.9,6,3,2,2,2,5,8,62.5,3,3,0,3,2,8,2,1,Matches,Brighton and Hove Albion,2024
+137,Billy Gilmour,sct SCO,MF,23-332,1.1,3,3,2,1,0,3,4,75.0,1,1,0,1,0,3,1,0,Matches,Brighton and Hove Albion,2024
+138,Eiran Cashin,ie IRL,DF,23-181,0.2,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,2,0,Matches,Brighton and Hove Albion,2024
+139,Jakub Moder,pl POL,MF,26-032,0.1,1,0,1,0,0,0,2,0.0,2,0,0,0,0,1,3,0,Matches,Brighton and Hove Albion,2024
+140,Jeremy Sarmiento,ec ECU,MF,22-327,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Brighton and Hove Albion,2024
+141,Moisés Caicedo,ec ECU,"MF,DF",23-188,34.2,103,64,37,51,15,50,80,62.5,30,45,10,35,49,152,52,1,Matches,Chelsea,2024
+142,Cole Palmer,eng ENG,MF,23-003,32.5,27,17,11,9,7,9,23,39.1,14,14,1,13,11,38,18,1,Matches,Chelsea,2024
+143,Levi Colwill,eng ENG,DF,22-072,32.0,42,30,22,17,3,16,25,64.0,9,35,24,11,32,74,104,4,Matches,Chelsea,2024
+144,Marc Cucurella,es ESP,DF,26-291,30.2,59,39,30,24,5,26,53,49.1,27,45,14,31,25,84,84,3,Matches,Chelsea,2024
+145,Enzo Fernández,ar ARG,MF,24-112,29.7,63,32,17,29,17,31,83,37.3,52,36,7,29,13,76,22,4,Matches,Chelsea,2024
+146,Robert Sánchez,es ESP,GK,27-172,29.0,0,0,0,0,0,0,1,0.0,1,0,0,0,2,2,20,9,Matches,Chelsea,2024
+147,Nicolas Jackson,sn SEN,FW,23-323,24.3,22,13,6,7,9,5,10,50.0,5,14,2,12,3,25,15,0,Matches,Chelsea,2024
+148,Noni Madueke,eng ENG,FW,23-060,20.1,22,15,7,12,3,13,34,38.2,21,17,0,17,8,30,11,0,Matches,Chelsea,2024
+149,Pedro Neto,pt POR,FW,25-061,22.4,22,9,9,9,4,8,19,42.1,11,13,2,11,9,31,6,0,Matches,Chelsea,2024
+150,Malo Gusto,fr FRA,DF,21-355,20.4,43,28,26,15,2,24,47,51.1,23,29,8,21,23,66,48,5,Matches,Chelsea,2024
+151,Jadon Sancho,eng ENG,FW,25-045,18.7,10,6,3,2,5,5,12,41.7,7,9,0,9,2,12,6,2,Matches,Chelsea,2024
+152,Wesley Fofana,fr FRA,DF,24-143,13.0,13,12,6,7,0,6,14,42.9,8,14,9,5,14,27,55,2,Matches,Chelsea,2024
+153,Tosin Adarabioyo,eng ENG,DF,27-227,13.7,14,10,10,4,0,8,12,66.7,4,9,7,2,10,24,62,0,Matches,Chelsea,2024
+154,Reece James,eng ENG,"DF,MF",25-152,9.3,9,9,5,3,1,3,9,33.3,6,12,4,8,12,21,18,4,Matches,Chelsea,2024
+155,Trevoh Chalobah,eng ENG,DF,25-308,9.3,10,6,4,6,0,6,7,85.7,1,5,2,3,9,19,46,1,Matches,Chelsea,2024
+156,Roméo Lavia,be BEL,MF,21-123,7.6,21,13,5,12,4,9,19,47.4,10,6,0,6,14,35,8,0,Matches,Chelsea,2024
+157,Christopher Nkunku,fr FRA,FW,27-176,10.2,12,8,3,4,5,6,8,75.0,2,9,2,7,7,19,10,0,Matches,Chelsea,2024
+158,Filip Jørgensen,dk DEN,GK,23-023,6.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,3,Matches,Chelsea,2024
+159,Axel Disasi,fr FRA,DF,27-059,4.0,7,4,5,1,1,6,11,54.5,5,4,1,3,2,9,11,1,Matches,Chelsea,2024
+160,João Félix,pt POR,"FW,MF",25-180,4.1,8,3,2,5,1,5,9,55.6,4,2,0,2,3,11,2,0,Matches,Chelsea,2024
+161,Benoît Badiashile,fr FRA,DF,24-044,3.7,9,6,5,4,0,4,5,80.0,1,2,2,0,6,15,12,2,Matches,Chelsea,2024
+162,Kiernan Dewsbury-Hall,eng ENG,"MF,FW",26-245,2.9,8,5,1,1,6,4,6,66.7,2,2,0,2,1,9,8,1,Matches,Chelsea,2024
+163,Joshua Acheampong,eng ENG,DF,19-004,1.9,2,1,2,0,0,2,2,100.0,0,1,0,1,1,3,2,0,Matches,Chelsea,2024
+164,Renato Veiga,pt POR,"DF,MF",21-284,2.0,9,6,6,3,0,4,12,33.3,8,3,1,2,1,10,2,0,Matches,Chelsea,2024
+165,Mykhailo Mudryk,ua UKR,FW,24-124,1.7,2,2,2,0,0,0,0,,0,3,1,2,0,2,1,0,Matches,Chelsea,2024
+166,Tyrique George,eng ENG,FW,19-094,1.1,2,0,2,0,0,2,3,66.7,1,0,0,0,1,3,1,0,Matches,Chelsea,2024
+167,Marc Guiu,es ESP,FW,19-125,0.8,1,1,0,1,0,1,1,100.0,0,0,0,0,0,1,0,0,Matches,Chelsea,2024
+168,Mathis Amougou,fr FRA,MF,19-111,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Chelsea,2024
+169,Shumaira Mheuka,eng ENG,MF,17-201,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Chelsea,2024
+170,Dean Henderson,eng ENG,GK,28-058,35.0,2,1,2,0,0,2,6,33.3,4,0,0,0,0,2,21,0,Matches,Crystal Palace,2024
+171,Tyrick Mitchell,eng ENG,DF,25-250,32.7,87,54,54,26,7,22,42,52.4,20,62,12,50,14,101,99,2,Matches,Crystal Palace,2024
+172,Daniel Muñoz,co COL,DF,28-348,32.9,113,74,53,37,23,52,89,58.4,37,36,4,32,40,153,102,1,Matches,Crystal Palace,2024
+173,Marc Guéhi,eng ENG,DF,24-300,33.0,56,31,32,22,2,30,46,65.2,16,54,22,32,25,81,156,2,Matches,Crystal Palace,2024
+174,Maxence Lacroix,fr FRA,DF,25-033,31.6,67,40,51,15,1,32,47,68.1,15,43,18,25,52,119,190,2,Matches,Crystal Palace,2024
+175,Jean-Philippe Mateta,fr FRA,FW,27-315,28.0,17,12,4,11,2,3,16,18.8,13,16,3,13,2,19,22,0,Matches,Crystal Palace,2024
+176,Eberechi Eze,eng ENG,"MF,FW",26-314,27.0,37,22,13,15,9,17,35,48.6,18,27,0,27,11,48,9,3,Matches,Crystal Palace,2024
+177,Ismaila Sarr,sn SEN,"MF,FW",27-073,27.6,21,10,9,9,3,7,23,30.4,16,24,8,16,9,30,36,0,Matches,Crystal Palace,2024
+178,Jefferson Lerma,co COL,"MF,DF",30-196,22.6,30,15,12,14,4,17,33,51.5,16,32,15,17,37,67,63,1,Matches,Crystal Palace,2024
+179,Will Hughes,eng ENG,MF,30-022,21.1,61,33,17,31,13,27,59,45.8,32,30,14,16,19,80,24,3,Matches,Crystal Palace,2024
+180,Chris Richards,us USA,DF,25-042,18.4,44,28,21,17,6,23,38,60.5,15,36,13,23,15,59,98,0,Matches,Crystal Palace,2024
+181,Adam Wharton,eng ENG,MF,20-341,14.6,34,14,14,16,4,17,44,38.6,27,11,2,9,20,54,27,0,Matches,Crystal Palace,2024
+182,Daichi Kamada,jp JPN,MF,28-277,15.8,45,27,19,22,4,13,38,34.2,25,21,5,16,16,61,14,0,Matches,Crystal Palace,2024
+183,Trevoh Chalobah,eng ENG,DF,25-308,11.8,20,16,7,12,1,12,23,52.2,11,19,9,10,19,39,57,3,Matches,Crystal Palace,2024
+184,Eddie Nketiah,eng ENG,"FW,MF",25-344,9.9,13,6,6,3,4,6,12,50.0,6,10,1,9,2,15,11,0,Matches,Crystal Palace,2024
+185,Nathaniel Clyne,eng ENG,"DF,MF",34-034,5.4,12,8,8,3,1,6,11,54.5,5,4,2,2,3,15,14,1,Matches,Crystal Palace,2024
+186,Cheick Doucouré,ml MLI,MF,25-121,5.0,16,8,6,8,2,5,11,45.5,6,4,0,4,11,27,10,1,Matches,Crystal Palace,2024
+187,Justin Devenny,nir NIR,MF,21-210,4.8,14,9,6,7,1,7,14,50.0,7,3,0,3,0,14,10,0,Matches,Crystal Palace,2024
+188,Odsonne Édouard,fr FRA,"MF,FW",27-113,1.3,1,0,0,1,0,0,2,0.0,2,1,0,1,0,1,1,0,Matches,Crystal Palace,2024
+189,Joachim Andersen,dk DEN,DF,28-343,1.0,1,1,1,0,0,1,2,50.0,1,0,0,0,0,1,7,0,Matches,Crystal Palace,2024
+190,Chadi Riad,ma MAR,DF,21-326,1.0,5,2,2,2,1,2,3,66.7,1,0,0,0,2,7,0,0,Matches,Crystal Palace,2024
+191,Ben Chilwell,eng ENG,DF,28-139,1.5,4,4,2,2,0,0,3,0.0,3,3,1,2,4,8,11,0,Matches,Crystal Palace,2024
+192,Jeffrey Schlupp,gh GHA,"MF,DF",32-137,1.1,2,0,1,0,1,0,3,0.0,3,6,0,6,0,2,2,0,Matches,Crystal Palace,2024
+193,Romain Esse,eng ENG,MF,19-361,0.4,2,2,2,0,0,2,2,100.0,0,1,0,1,1,3,0,0,Matches,Crystal Palace,2024
+194,Matheus França,br BRA,"FW,MF",21-038,0.3,1,0,0,1,0,0,0,,0,0,0,0,0,1,0,0,Matches,Crystal Palace,2024
+195,Jordan Ayew,gh GHA,"FW,MF",33-240,0.2,1,0,0,0,1,0,0,,0,0,0,0,0,1,0,0,Matches,Crystal Palace,2024
+196,Caleb Kporha,eng ENG,DF,18-298,0.1,2,1,2,0,0,2,2,100.0,0,0,0,0,0,2,1,0,Matches,Crystal Palace,2024
+197,Asher Agbinone,eng ENG,MF,19-223,0.1,2,1,0,2,0,0,0,,0,0,0,0,0,2,0,0,Matches,Crystal Palace,2024
+198,Joel Ward,eng ENG,DF,35-192,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Crystal Palace,2024
+199,Jordan Pickford,eng ENG,GK,31-063,35.0,1,0,1,0,0,1,2,50.0,1,0,0,0,1,2,29,2,Matches,Everton,2024
+200,James Tarkowski,eng ENG,DF,32-171,32.5,64,40,39,22,3,24,39,61.5,15,57,42,15,41,105,213,4,Matches,Everton,2024
+201,Vitaliy Mykolenko,ua UKR,DF,25-345,31.2,55,33,33,14,8,26,51,51.0,25,24,9,15,37,92,135,1,Matches,Everton,2024
+202,Idrissa Gana Gueye,sn SEN,MF,35-225,31.0,124,74,57,51,16,54,90,60.0,36,45,9,36,44,168,30,1,Matches,Everton,2024
+203,Abdoulaye Doucouré,ml MLI,MF,32-128,26.9,45,27,20,18,7,13,39,33.3,26,30,6,24,9,54,19,1,Matches,Everton,2024
+204,Iliman Ndiaye,sn SEN,FW,25-064,25.0,48,25,18,15,15,19,45,42.2,26,27,5,22,17,65,24,1,Matches,Everton,2024
+205,Jarrad Branthwaite,eng ENG,DF,22-316,26.1,36,20,26,10,0,20,27,74.1,7,30,22,8,23,59,183,4,Matches,Everton,2024
+206,Jack Harrison,eng ENG,FW,28-170,21.1,30,21,12,11,7,14,40,35.0,26,18,2,16,9,39,32,2,Matches,Everton,2024
+207,Dominic Calvert-Lewin,eng ENG,FW,28-054,17.6,9,7,1,4,4,2,6,33.3,4,6,2,4,6,15,19,0,Matches,Everton,2024
+208,Ashley Young,eng ENG,"DF,FW",39-304,18.0,51,29,23,21,7,32,51,62.7,19,10,3,7,23,74,58,1,Matches,Everton,2024
+209,Jake O'Brien,ie IRL,DF,23-359,15.5,24,16,19,5,0,16,24,66.7,8,16,4,12,4,28,80,0,Matches,Everton,2024
+210,Jesper Lindstrøm,dk DEN,FW,25-069,13.8,45,25,24,19,2,19,55,34.5,36,15,3,12,12,57,17,0,Matches,Everton,2024
+211,James Garner,eng ENG,"MF,DF",24-057,14.7,41,27,24,15,2,19,35,54.3,16,15,3,12,17,58,36,0,Matches,Everton,2024
+212,Dwight McNeil,eng ENG,"MF,FW",25-168,14.0,11,6,5,4,2,8,19,42.1,11,7,0,7,5,16,2,1,Matches,Everton,2024
+213,Orel Mangala,be BEL,MF,27-052,14.0,16,8,3,11,2,5,8,62.5,3,8,3,5,21,37,24,1,Matches,Everton,2024
+214,Beto,gw GNB,FW,27-098,14.1,14,6,2,8,4,5,8,62.5,3,8,1,7,3,17,19,1,Matches,Everton,2024
+215,Michael Keane,eng ENG,DF,32-118,9.5,10,7,7,2,1,7,13,53.8,6,11,7,4,10,20,55,2,Matches,Everton,2024
+216,Carlos Alcaraz,ar ARG,"FW,MF",22-160,6.4,11,5,5,3,3,3,9,33.3,6,6,1,5,4,15,7,0,Matches,Everton,2024
+217,Tim Iroegbunam,eng ENG,MF,21-313,6.3,28,13,13,10,5,14,23,60.9,9,17,4,13,15,43,11,1,Matches,Everton,2024
+218,Armando Broja,al ALB,FW,23-241,3.7,3,1,1,1,1,0,0,,0,3,0,3,1,4,4,0,Matches,Everton,2024
+219,Nathan Patterson,sct SCO,DF,23-205,3.9,11,6,7,4,0,7,14,50.0,7,2,0,2,2,13,7,0,Matches,Everton,2024
+220,Séamus Coleman,ie IRL,DF,36-210,2.2,2,1,1,1,0,2,3,66.7,1,5,3,2,1,3,7,0,Matches,Everton,2024
+221,Roman Dixon,eng ENG,DF,20-134,1.0,5,5,3,2,0,4,4,100.0,0,1,0,1,1,6,3,0,Matches,Everton,2024
+222,Harrison Armstrong,eng ENG,MF,18-110,0.5,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,1,0,Matches,Everton,2024
+223,Youssef Chermiti,pt POR,"FW,MF",20-350,0.5,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,0,0,Matches,Everton,2024
+224,Mason Holgate,eng ENG,"FW,DF",28-199,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Everton,2024
+225,Bernd Leno,de GER,GK,33-066,35.0,2,2,2,0,0,2,2,100.0,0,1,0,1,0,2,9,4,Matches,Fulham,2024
+226,Antonee Robinson,us USA,DF,27-274,33.2,90,57,53,30,7,44,89,49.4,45,37,7,30,57,147,124,2,Matches,Fulham,2024
+227,Alex Iwobi,ng NGA,"FW,MF",29-006,31.1,39,23,13,19,7,19,30,63.3,11,25,1,24,13,52,28,0,Matches,Fulham,2024
+228,Calvin Bassey,ng NGA,DF,25-129,32.2,52,33,34,18,0,21,30,70.0,9,37,17,20,18,70,105,8,Matches,Fulham,2024
+229,Raúl Jiménez,mx MEX,FW,34-004,24.7,33,23,8,17,8,7,20,35.0,13,19,5,14,10,43,19,3,Matches,Fulham,2024
+230,Joachim Andersen,dk DEN,DF,28-343,25.7,25,17,18,6,1,13,20,65.0,7,33,26,7,30,55,162,1,Matches,Fulham,2024
+231,Saša Lukić,rs SRB,MF,28-269,24.1,66,37,21,39,6,21,53,39.6,32,19,7,12,26,92,32,0,Matches,Fulham,2024
+232,Sander Berge,no NOR,MF,27-084,23.2,48,28,22,22,4,25,37,67.6,12,26,8,18,20,68,34,1,Matches,Fulham,2024
+233,Emile Smith Rowe,eng ENG,MF,24-285,21.0,31,18,7,14,10,8,24,33.3,16,20,2,18,11,42,16,0,Matches,Fulham,2024
+234,Andreas Pereira,br BRA,MF,29-128,20.9,22,12,7,11,4,10,40,25.0,30,16,2,14,8,30,15,2,Matches,Fulham,2024
+235,Kenny Tete,nl NED,DF,29-212,16.7,50,34,24,14,12,20,34,58.8,14,22,6,16,29,79,52,0,Matches,Fulham,2024
+236,Timothy Castagne,be BEL,DF,29-155,18.3,46,29,28,15,3,26,45,57.8,19,15,6,9,22,68,83,0,Matches,Fulham,2024
+237,Adama Traoré,es ESP,"FW,MF",29-104,17.7,17,12,8,4,5,5,13,38.5,8,7,0,7,1,18,6,3,Matches,Fulham,2024
+238,Issa Diop,fr FRA,DF,28-120,14.9,26,12,18,8,0,13,18,72.2,5,10,7,3,9,35,72,2,Matches,Fulham,2024
+239,Harry Wilson,wls WAL,"FW,MF",28-048,11.1,14,9,8,3,3,9,15,60.0,6,13,1,12,5,19,7,1,Matches,Fulham,2024
+240,Rodrigo Muniz,br BRA,FW,24-005,10.7,10,5,3,5,2,4,4,100.0,0,9,2,7,5,15,14,0,Matches,Fulham,2024
+241,Ryan Sessegnon,eng ENG,"FW,DF",24-356,5.2,21,11,8,8,5,6,15,40.0,9,11,0,11,3,24,11,0,Matches,Fulham,2024
+242,Reiss Nelson,eng ENG,FW,25-150,5.4,8,6,3,3,2,5,13,38.5,8,11,0,11,5,13,2,0,Matches,Fulham,2024
+243,Jorge Cuenca,es ESP,DF,25-173,2.9,2,2,2,0,0,2,5,40.0,3,3,3,0,2,4,21,0,Matches,Fulham,2024
+244,Tom Cairney,sct SCO,MF,34-109,5.5,11,5,4,2,5,4,7,57.1,3,5,1,4,4,15,1,1,Matches,Fulham,2024
+245,Willian,br BRA,"FW,MF",36-273,2.7,3,1,0,2,1,1,5,20.0,4,0,0,0,1,4,1,0,Matches,Fulham,2024
+246,Joshua King,eng ENG,"MF,FW",18-126,0.9,5,3,2,3,0,0,2,0.0,2,2,0,2,1,6,1,0,Matches,Fulham,2024
+247,Harrison Reed,eng ENG,MF,30-102,1.2,6,3,3,2,1,1,3,33.3,2,1,0,1,1,7,3,0,Matches,Fulham,2024
+248,Martial Godo,eng ENG,FW,22-056,0.2,0,0,0,0,0,0,0,,0,1,0,1,1,1,0,0,Matches,Fulham,2024
+249,Carlos Vinícius,br BRA,"MF,FW",30-045,0.2,0,0,0,0,0,0,1,0.0,1,1,0,1,0,0,0,0,Matches,Fulham,2024
+250,Jay Stansfield,eng ENG,MF,22-166,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Fulham,2024
+251,Dara O'Shea,ie IRL,DF,26-066,31.7,47,30,33,11,3,20,31,64.5,11,59,47,12,31,78,204,4,Matches,Ipswich Town,2024
+252,Liam Delap,eng ENG,FW,22-090,27.7,10,7,3,2,5,2,14,14.3,12,8,0,8,2,12,28,0,Matches,Ipswich Town,2024
+253,Leif Davis,eng ENG,DF,25-117,28.5,45,26,32,9,4,29,46,63.0,17,24,8,16,25,70,72,3,Matches,Ipswich Town,2024
+254,Sam Morsy,eg EGY,MF,33-241,27.6,62,36,35,23,4,26,57,45.6,31,32,13,19,28,90,43,4,Matches,Ipswich Town,2024
+255,Omari Hutchinson,eng ENG,"MF,FW",21-191,25.7,31,12,14,10,7,13,45,28.9,32,25,1,24,10,41,13,1,Matches,Ipswich Town,2024
+256,Jens Cajuste,se SWE,MF,25-272,19.8,39,19,18,20,1,19,47,40.4,28,24,9,15,25,64,33,2,Matches,Ipswich Town,2024
+257,Jacob Greaves,eng ENG,DF,24-239,21.5,36,19,19,16,1,21,33,63.6,12,36,24,12,18,54,127,2,Matches,Ipswich Town,2024
+258,Arijanet Muric,xk KVX,GK,26-183,18.0,0,0,0,0,0,0,2,0.0,2,0,0,0,0,0,10,5,Matches,Ipswich Town,2024
+259,Axel Tuanzebe,cd COD,DF,27-176,16.1,29,17,20,3,6,16,24,66.7,8,18,9,9,21,50,53,1,Matches,Ipswich Town,2024
+260,Cameron Burgess,au AUS,DF,29-200,16.1,15,10,12,3,0,7,9,77.8,2,18,13,5,14,29,116,3,Matches,Ipswich Town,2024
+261,Ben Johnson,eng ENG,"DF,FW",25-105,15.0,38,22,23,12,3,20,41,48.8,21,22,5,17,13,51,54,1,Matches,Ipswich Town,2024
+262,Kalvin Phillips,eng ENG,MF,29-158,13.7,35,19,8,20,7,15,39,38.5,24,35,6,29,19,54,37,2,Matches,Ipswich Town,2024
+263,Sammie Szmodics,ie IRL,"FW,MF",29-227,10.9,15,9,4,9,2,6,23,26.1,17,10,2,8,6,21,14,0,Matches,Ipswich Town,2024
+264,Luke Woolfenden,eng ENG,DF,26-200,13.2,9,6,5,4,0,2,5,40.0,3,21,14,7,19,28,76,0,Matches,Ipswich Town,2024
+265,Wes Burns,wls WAL,"FW,DF",30-167,10.3,13,11,1,9,3,4,10,40.0,6,7,2,5,10,23,13,2,Matches,Ipswich Town,2024
+266,Jack Clarke,eng ENG,"FW,MF",24-167,11.7,28,17,11,9,8,16,32,50.0,16,6,0,6,7,35,29,1,Matches,Ipswich Town,2024
+267,Alex Palmer,eng ENG,GK,28-272,11.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,12,0,Matches,Ipswich Town,2024
+268,Julio Enciso,py PAR,"FW,MF",21-106,7.9,11,8,2,6,3,4,9,44.4,5,3,0,3,1,12,4,0,Matches,Ipswich Town,2024
+269,Conor Chaplin,eng ENG,"MF,FW",28-082,7.9,12,5,4,6,2,6,13,46.2,7,8,1,7,3,15,3,0,Matches,Ipswich Town,2024
+270,Nathan Broadhead,wls WAL,"MF,FW",27-034,6.7,7,3,2,5,0,3,9,33.3,6,6,1,5,4,11,5,0,Matches,Ipswich Town,2024
+271,Christian Walton,eng ENG,GK,29-181,6.0,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,1,1,Matches,Ipswich Town,2024
+272,Jaden Philogene Bidace,eng ENG,"FW,DF",23-090,5.3,14,7,6,6,2,8,15,53.3,7,11,1,10,10,24,9,1,Matches,Ipswich Town,2024
+273,Harry Clarke,eng ENG,DF,24-068,4.2,5,3,3,2,0,3,6,50.0,3,5,4,1,4,9,14,3,Matches,Ipswich Town,2024
+274,Jack Taylor,ie IRL,MF,26-320,8.5,20,10,6,11,3,12,23,52.2,11,10,3,7,9,29,23,0,Matches,Ipswich Town,2024
+275,George Hirst,sct SCO,FW,26-083,5.5,3,3,1,0,2,1,3,33.3,2,1,1,0,2,5,9,0,Matches,Ipswich Town,2024
+276,Conor Townsend,eng ENG,DF,32-066,3.7,11,8,9,2,0,8,11,72.7,3,8,6,2,4,15,16,0,Matches,Ipswich Town,2024
+277,Chiedozie Ogbene,ie IRL,FW,28-008,2.6,7,3,1,2,4,2,4,50.0,2,1,0,1,1,8,3,0,Matches,Ipswich Town,2024
+278,Massimo Luongo,au AUS,MF,32-226,2.2,8,5,6,1,1,4,7,57.1,3,4,2,2,2,10,2,0,Matches,Ipswich Town,2024
+279,Ben Godfrey,eng ENG,DF,27-114,1.8,1,0,1,0,0,1,1,100.0,0,1,1,0,2,3,3,0,Matches,Ipswich Town,2024
+280,Ali Al Hamadi,iq IRQ,FW,23-069,1.5,1,0,0,0,1,0,2,0.0,2,0,0,0,0,1,2,0,Matches,Ipswich Town,2024
+281,Marcus Harness,eng ENG,MF,29-074,0.5,1,0,0,0,1,0,3,0.0,3,2,1,1,0,1,1,0,Matches,Ipswich Town,2024
+282,George Edmundson,eng ENG,DF,27-251,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Ipswich Town,2024
+283,Jamie Vardy,eng ENG,FW,38-118,29.5,18,13,6,7,5,4,13,30.8,9,8,4,4,5,23,23,0,Matches,Leicester City,2024
+284,James Justin,eng ENG,DF,27-075,29.7,49,29,25,19,5,28,51,54.9,23,41,14,27,44,93,129,3,Matches,Leicester City,2024
+285,Victor Bernth Kristiansen,dk DEN,DF,22-144,26.4,85,50,54,26,5,47,87,54.0,40,37,14,23,40,125,72,3,Matches,Leicester City,2024
+286,Wout Faes,be BEL,DF,27-036,28.3,39,23,25,12,2,23,43,53.5,20,45,33,12,26,65,160,4,Matches,Leicester City,2024
+287,Mads Hermansen,dk DEN,GK,24-302,26.5,1,1,1,0,0,1,1,100.0,0,1,0,1,0,1,13,4,Matches,Leicester City,2024
+288,Wilfred Ndidi,ng NGA,MF,28-144,23.9,81,50,45,29,7,27,54,50.0,27,47,19,28,26,107,72,0,Matches,Leicester City,2024
+289,Bilal El Khannouss,ma MAR,MF,20-364,22.3,46,26,15,26,5,15,28,53.6,13,21,4,17,6,52,9,3,Matches,Leicester City,2024
+290,Boubakary Soumaré,fr FRA,MF,26-071,21.8,33,18,21,11,1,18,30,60.0,12,20,8,12,24,57,31,3,Matches,Leicester City,2024
+291,Harry Winks,eng ENG,MF,29-096,17.1,24,11,12,10,2,13,30,43.3,17,19,7,12,9,33,20,0,Matches,Leicester City,2024
+292,Stephy Mavididi,eng ENG,FW,26-343,17.9,34,19,16,10,8,14,42,33.3,28,26,2,24,11,45,15,0,Matches,Leicester City,2024
+293,Conor Coady,eng ENG,DF,32-073,16.0,12,8,6,5,1,3,6,50.0,3,27,20,7,13,25,62,2,Matches,Leicester City,2024
+294,Jordan Ayew,gh GHA,"FW,MF",33-240,15.8,24,13,7,12,5,6,19,31.6,13,16,0,16,12,36,17,0,Matches,Leicester City,2024
+295,Jannik Vestergaard,dk DEN,DF,32-279,15.5,22,10,16,6,0,9,15,60.0,6,21,14,7,16,38,74,1,Matches,Leicester City,2024
+296,Facundo Buonanotte,ar ARG,"FW,MF",20-137,16.4,53,32,17,22,14,21,67,31.3,46,32,6,26,11,64,14,0,Matches,Leicester City,2024
+297,Caleb Okoli,it ITA,DF,23-300,12.5,25,14,8,15,2,11,18,61.1,7,24,14,10,15,40,79,3,Matches,Leicester City,2024
+298,Luke Thomas,eng ENG,DF,23-333,9.7,25,20,19,4,2,18,32,56.3,14,13,5,8,18,43,39,1,Matches,Leicester City,2024
+299,Bobby De Cordova-Reid,jm JAM,FW,32-096,8.3,9,4,3,6,0,4,14,28.6,10,6,1,5,0,9,10,0,Matches,Leicester City,2024
+300,Oliver Skipp,eng ENG,MF,24-235,11.1,20,4,5,12,3,9,15,60.0,6,17,4,13,10,30,10,1,Matches,Leicester City,2024
+301,Jakub Stolarczyk,pl POL,GK,24-141,7.0,2,1,2,0,0,1,2,50.0,1,0,0,0,0,2,5,0,Matches,Leicester City,2024
+302,Kasey McAteer,ie IRL,"FW,MF",23-168,6.8,14,11,7,4,3,9,21,42.9,12,13,1,12,3,17,11,0,Matches,Leicester City,2024
+303,Abdul Fatawu Issahaku,gh GHA,FW,21-062,6.4,21,15,13,2,6,11,19,57.9,8,7,0,7,4,25,12,0,Matches,Leicester City,2024
+304,Patson Daka,zm ZAM,"FW,MF",26-212,7.3,17,9,4,9,4,7,17,41.2,10,7,1,6,1,18,10,0,Matches,Leicester City,2024
+305,Ricardo Pereira,pt POR,DF,31-215,3.8,11,6,4,4,3,6,12,50.0,6,6,2,4,2,13,10,0,Matches,Leicester City,2024
+306,Danny Ward,wls WAL,GK,31-321,1.5,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches,Leicester City,2024
+307,Hamza Choudhury,bd BAN,"MF,DF",27-220,1.5,1,1,1,0,0,1,3,33.3,2,4,2,2,5,6,2,0,Matches,Leicester City,2024
+308,Woyo Coulibaly,fr FRA,DF,25-354,1.2,6,4,4,2,0,2,2,100.0,0,3,1,2,5,11,1,0,Matches,Leicester City,2024
+309,Jeremy Monga,,"FW,MF",,0.6,1,1,0,1,0,1,1,100.0,0,3,2,1,0,1,1,0,Matches,Leicester City,2024
+310,Odsonne Édouard,fr FRA,FW,27-113,0.3,1,1,1,0,0,0,0,,0,0,0,0,0,1,1,0,Matches,Leicester City,2024
+311,Jake Evans,,FW,,0.1,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,1,0,Matches,Leicester City,2024
+312,Will Alves,eng ENG,FW,20-095,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Leicester City,2024
+313,Michael Golding,eng ENG,MF,18-351,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Leicester City,2024
+314,Virgil van Dijk,nl NED,DF,33-305,35.0,35,17,17,16,2,11,20,55.0,9,25,14,11,54,89,179,4,Matches,Liverpool,2024
+315,Mohamed Salah,eg EGY,FW,32-328,34.5,20,11,7,5,8,7,16,43.8,9,11,0,11,7,27,5,0,Matches,Liverpool,2024
+316,Ryan Gravenberch,nl NED,MF,22-358,32.5,65,34,25,29,11,30,51,58.8,21,34,10,24,57,122,56,1,Matches,Liverpool,2024
+317,Alexis Mac Allister,ar ARG,MF,26-136,28.6,95,58,28,51,16,55,104,52.9,49,61,6,55,22,117,29,1,Matches,Liverpool,2024
+318,Trent Alexander-Arnold,eng ENG,DF,26-214,25.5,70,49,43,18,9,48,103,46.6,55,26,9,17,30,100,54,4,Matches,Liverpool,2024
+319,Ibrahima Konaté,fr FRA,DF,25-349,25.8,36,25,24,11,1,24,34,70.6,10,27,15,12,12,48,124,2,Matches,Liverpool,2024
+320,Andrew Robertson,sct SCO,DF,31-059,25.6,38,22,24,10,4,30,47,63.8,17,9,4,5,20,58,51,2,Matches,Liverpool,2024
+321,Dominik Szoboszlai,hu HUN,MF,24-196,25.3,31,20,10,16,5,15,39,38.5,24,36,4,32,9,40,17,2,Matches,Liverpool,2024
+322,Luis Díaz,co COL,FW,28-116,24.7,33,21,10,17,6,13,34,38.2,21,18,0,18,7,40,7,1,Matches,Liverpool,2024
+323,Alisson,br BRA,GK,32-219,24.9,1,0,1,0,0,0,1,0.0,1,0,0,0,0,1,13,1,Matches,Liverpool,2024
+324,Cody Gakpo,nl NED,FW,26-002,19.1,26,14,5,12,9,11,23,47.8,12,19,2,17,11,37,16,1,Matches,Liverpool,2024
+325,Curtis Jones,eng ENG,"MF,DF",24-099,17.0,36,20,6,22,8,17,25,68.0,8,16,7,9,6,42,8,2,Matches,Liverpool,2024
+326,Diogo Jota,pt POR,FW,28-156,12.8,14,8,2,8,4,7,19,36.8,12,9,0,9,7,21,6,0,Matches,Liverpool,2024
+327,Caoimhín Kelleher,ie IRL,GK,26-167,10.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,2,Matches,Liverpool,2024
+328,Darwin Núñez,uy URU,FW,25-319,11.7,19,16,11,3,5,6,16,37.5,10,6,0,6,3,22,12,0,Matches,Liverpool,2024
+329,Kostas Tsimikas,gr GRE,DF,28-362,8.3,29,18,13,11,5,13,20,65.0,7,5,2,3,10,39,20,0,Matches,Liverpool,2024
+330,Joe Gomez,eng ENG,DF,27-351,5.8,13,10,5,7,1,11,16,68.8,5,9,6,3,7,20,20,2,Matches,Liverpool,2024
+331,Conor Bradley,nir NIR,DF,21-304,6.3,11,8,5,4,2,8,17,47.1,9,4,0,4,3,14,21,0,Matches,Liverpool,2024
+332,Jarell Quansah,eng ENG,DF,22-100,4.5,11,8,8,3,0,6,8,75.0,2,8,7,1,6,17,18,1,Matches,Liverpool,2024
+333,Harvey Elliott,eng ENG,"MF,FW",22-035,3.0,4,3,2,1,1,1,5,20.0,4,5,1,4,1,5,2,0,Matches,Liverpool,2024
+334,Wataru Endo,jp JPN,MF,32-089,2.6,11,8,6,5,0,6,10,60.0,4,7,1,6,3,14,7,0,Matches,Liverpool,2024
+335,Federico Chiesa,it ITA,FW,27-196,0.5,0,0,0,0,0,0,2,0.0,2,1,0,1,0,0,0,1,Matches,Liverpool,2024
+336,Vitezslav Jaros,cz CZE,GK,23-290,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Liverpool,2024
+337,Jayden Danns,eng ENG,MF,19-113,0.1,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,0,0,Matches,Liverpool,2024
+338,Joško Gvardiol,hr CRO,DF,23-106,33.4,51,34,24,17,10,19,37,51.4,18,40,20,20,38,89,117,8,Matches,Manchester City,2024
+339,Erling Haaland,no NOR,FW,24-292,27.6,9,5,3,3,3,2,6,33.3,4,11,1,10,5,14,23,0,Matches,Manchester City,2024
+340,Bernardo Silva,pt POR,"MF,FW",30-272,26.7,52,34,15,28,9,24,52,46.2,28,33,7,26,20,72,28,3,Matches,Manchester City,2024
+341,Ederson,br BRA,GK,31-265,22.8,0,0,0,0,0,0,2,0.0,2,0,0,0,1,1,9,2,Matches,Manchester City,2024
+342,İlkay Gündoğan,de GER,MF,34-197,22.8,24,13,4,15,5,10,23,43.5,13,14,0,14,13,37,22,0,Matches,Manchester City,2024
+343,Mateo Kovačić,hr CRO,MF,31-003,22.8,67,38,22,38,7,30,63,47.6,33,20,0,20,20,87,20,1,Matches,Manchester City,2024
+344,Rúben Dias,pt POR,DF,27-360,22.2,16,10,6,9,1,7,11,63.6,4,17,14,3,18,34,59,3,Matches,Manchester City,2024
+345,Sávio,br BRA,"FW,MF",21-029,19.3,22,16,5,10,7,9,18,50.0,9,13,2,11,6,28,9,1,Matches,Manchester City,2024
+346,Rico Lewis,eng ENG,"DF,MF",20-169,20.2,29,19,13,12,4,13,21,61.9,8,28,7,21,13,42,43,1,Matches,Manchester City,2024
+347,Manuel Akanji,ch SUI,DF,29-294,19.4,16,11,9,4,3,8,13,61.5,5,11,8,3,7,23,57,3,Matches,Manchester City,2024
+348,Phil Foden,eng ENG,"MF,FW",24-346,18.8,12,5,5,4,3,7,17,41.2,10,12,1,11,9,21,7,1,Matches,Manchester City,2024
+349,Kevin De Bruyne,be BEL,"MF,FW",33-315,17.1,17,9,7,5,5,5,23,21.7,18,8,0,8,7,24,10,1,Matches,Manchester City,2024
+350,Matheus Nunes,pt POR,"DF,MF",26-255,16.6,32,21,13,13,6,15,34,44.1,19,14,3,11,13,45,35,1,Matches,Manchester City,2024
+351,Jeremy Doku,be BEL,"FW,MF",22-347,15.5,28,19,9,12,7,7,14,50.0,7,10,1,9,4,32,2,0,Matches,Manchester City,2024
+352,Stefan Ortega,de GER,GK,32-184,12.2,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,11,1,Matches,Manchester City,2024
+353,Omar Marmoush,eg EGY,"FW,MF",26-091,11.1,11,6,2,7,2,7,15,46.7,8,15,1,14,5,16,3,0,Matches,Manchester City,2024
+354,Kyle Walker,eng ENG,DF,34-346,10.8,17,10,7,7,3,14,26,53.8,12,13,4,9,3,20,13,1,Matches,Manchester City,2024
+355,Nathan Aké,nl NED,DF,30-080,7.5,9,7,7,2,0,4,6,66.7,2,7,2,5,3,12,22,1,Matches,Manchester City,2024
+356,Nicolás González,es ESP,MF,23-126,7.2,15,6,5,6,4,6,11,54.5,5,9,0,9,5,20,17,0,Matches,Manchester City,2024
+357,Jack Grealish,eng ENG,"FW,MF",29-241,8.0,9,5,4,2,3,2,5,40.0,3,12,2,10,2,11,5,1,Matches,Manchester City,2024
+358,John Stones,eng ENG,"DF,MF",30-346,6.1,6,2,3,2,1,5,5,100.0,0,5,3,2,4,10,19,1,Matches,Manchester City,2024
+359,Nico O’Reilly,eng ENG,DF,20-049,5.7,9,4,3,3,3,4,8,50.0,4,5,1,4,4,13,12,0,Matches,Manchester City,2024
+360,Abdukodir Khusanov,uz UZB,DF,21-069,5.6,5,4,4,1,0,2,3,66.7,1,5,4,1,3,8,29,1,Matches,Manchester City,2024
+361,James Mcatee,eng ENG,"MF,FW",22-203,3.4,4,2,0,4,0,1,7,14.3,6,8,0,8,2,6,1,0,Matches,Manchester City,2024
+362,Jahmai Simpson-Pusey,eng ENG,DF,19-186,1.1,1,0,1,0,0,0,1,0.0,1,1,1,0,0,1,2,0,Matches,Manchester City,2024
+363,Rodri,es ESP,MF,28-321,0.7,2,1,1,1,0,0,0,,0,1,0,1,1,3,0,0,Matches,Manchester City,2024
+364,Divin Mubama,eng ENG,FW,20-196,0.3,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Manchester City,2024
+365,Oscar Bobb,no NOR,FW,21-301,0.2,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Manchester City,2024
+366,Vitor Reis,br BRA,DF,19-117,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches,Manchester City,2024
+367,André Onana,cm CMR,GK,29-037,33.0,1,1,1,0,0,1,3,33.3,2,0,0,0,0,1,11,4,Matches,Manchester United,2024
+368,Bruno Fernandes,pt POR,MF,30-243,30.6,76,47,24,37,15,29,75,38.7,46,32,4,28,25,101,34,2,Matches,Manchester United,2024
+369,Diogo Dalot,pt POR,DF,26-052,31.0,67,39,39,22,6,34,52,65.4,18,22,9,13,37,104,72,0,Matches,Manchester United,2024
+370,Noussair Mazraoui,ma MAR,DF,27-176,29.3,102,60,53,36,13,51,85,60.0,34,33,8,25,34,136,88,1,Matches,Manchester United,2024
+371,Matthijs de Ligt,nl NED,DF,25-270,23.6,30,22,17,12,1,23,32,71.9,9,29,21,8,33,63,96,0,Matches,Manchester United,2024
+372,Alejandro Garnacho,ar ARG,"MF,FW",20-312,23.8,29,18,10,6,13,12,36,33.3,24,19,0,19,13,42,11,2,Matches,Manchester United,2024
+373,Manuel Ugarte Ribeiro,uy URU,MF,24-028,19.0,74,46,32,34,8,28,66,42.4,38,31,4,27,26,100,16,1,Matches,Manchester United,2024
+374,Lisandro Martínez,ar ARG,DF,27-111,19.5,40,24,25,12,3,21,36,58.3,15,22,8,14,32,72,57,1,Matches,Manchester United,2024
+375,Rasmus Højlund,dk DEN,FW,22-094,19.4,3,1,0,2,1,0,4,0.0,4,5,0,5,1,4,6,0,Matches,Manchester United,2024
+376,Kobbie Mainoo,eng ENG,MF,20-020,16.7,42,25,16,13,13,22,36,61.1,14,16,2,14,19,61,12,1,Matches,Manchester United,2024
+377,Amad Diallo,ci CIV,"FW,MF",22-302,18.2,35,28,7,19,9,17,28,60.7,11,11,0,11,11,46,16,0,Matches,Manchester United,2024
+378,Harry Maguire,eng ENG,DF,32-065,17.1,26,13,20,5,1,13,18,72.2,5,14,12,2,37,63,72,1,Matches,Manchester United,2024
+379,Casemiro,br BRA,MF,33-075,14.8,77,46,45,23,9,41,66,62.1,25,33,10,23,12,89,48,3,Matches,Manchester United,2024
+380,Joshua Zirkzee,nl NED,"FW,MF",23-352,15.6,14,8,3,8,3,5,10,50.0,5,15,4,11,6,20,8,1,Matches,Manchester United,2024
+381,Marcus Rashford,eng ENG,"FW,MF",27-190,10.9,7,4,2,2,3,3,9,33.3,6,8,0,8,4,11,7,0,Matches,Manchester United,2024
+382,Leny Yoro,fr FRA,DF,19-177,12.4,26,11,17,8,1,11,17,64.7,6,5,3,2,18,44,43,0,Matches,Manchester United,2024
+383,Christian Eriksen,dk DEN,MF,33-084,11.4,19,9,4,12,3,11,26,42.3,15,14,4,10,7,26,7,0,Matches,Manchester United,2024
+384,Patrick Dorgu,dk DEN,DF,20-195,7.0,23,17,12,9,2,12,17,70.6,5,9,0,9,4,27,19,2,Matches,Manchester United,2024
+385,Mason Mount,eng ENG,"MF,FW",26-119,4.8,10,4,5,5,0,8,10,80.0,2,8,1,7,3,13,1,0,Matches,Manchester United,2024
+386,Victor Lindelöf,se SWE,DF,30-296,5.4,5,1,5,0,0,2,3,66.7,1,4,2,2,7,12,33,1,Matches,Manchester United,2024
+387,Jonny Evans,nir NIR,DF,37-126,3.2,7,5,4,3,0,2,4,50.0,2,2,1,1,4,11,13,0,Matches,Manchester United,2024
+388,Harry Amass,eng ENG,DF,18-054,2.8,6,2,5,1,0,2,6,33.3,4,6,1,5,2,8,10,0,Matches,Manchester United,2024
+389,Luke Shaw,eng ENG,DF,29-301,2.4,4,3,2,2,0,2,2,100.0,0,2,1,1,2,6,6,0,Matches,Manchester United,2024
+390,Altay Bayındır,tr TUR,GK,27-025,2.0,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,5,1,Matches,Manchester United,2024
+391,Tyler Fredricson,eng ENG,DF,20-075,1.8,5,3,3,2,0,1,2,50.0,1,2,0,2,1,6,11,0,Matches,Manchester United,2024
+392,Tyrell Malacia,nl NED,DF,25-265,1.1,2,1,2,0,0,1,2,50.0,1,0,0,0,1,3,1,1,Matches,Manchester United,2024
+393,Chidozie Obi-Martin,dk DEN,FW,17-161,1.7,2,1,0,0,2,2,2,100.0,0,0,0,0,0,2,1,0,Matches,Manchester United,2024
+394,Ayden Heaven,eng ENG,DF,18-229,1.1,3,3,1,2,0,2,2,100.0,0,2,2,0,1,4,6,0,Matches,Manchester United,2024
+395,Toby Collyer,eng ENG,MF,21-126,2.0,12,9,6,6,0,5,6,83.3,1,2,1,1,2,14,3,0,Matches,Manchester United,2024
+396,Antony,br BRA,"DF,MF",25-074,1.6,6,3,4,2,0,2,5,40.0,3,2,0,2,2,8,0,0,Matches,Manchester United,2024
+397,Scott McTominay,sct SCO,MF,28-152,0.2,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,1,0,Matches,Manchester United,2024
+398,Bruno Guimarães,br BRA,MF,27-174,33.4,75,43,36,28,11,31,64,48.4,33,34,9,25,27,102,41,4,Matches,Newcastle United,2024
+399,Dan Burn,eng ENG,DF,33-000,34.0,34,19,20,12,2,17,32,53.1,15,32,23,9,25,59,180,3,Matches,Newcastle United,2024
+400,Alexander Isak,se SWE,FW,25-230,28.6,12,5,2,3,7,5,13,38.5,8,18,2,16,3,15,17,1,Matches,Newcastle United,2024
+401,Fabian Schär,ch SUI,DF,33-140,29.6,34,21,15,17,2,14,34,41.2,20,37,24,13,41,75,116,3,Matches,Newcastle United,2024
+402,Valentino Livramento,eng ENG,DF,22-178,28.6,52,34,33,15,4,30,56,53.6,26,34,10,24,21,73,99,1,Matches,Newcastle United,2024
+403,Joelinton,br BRA,"MF,FW",28-268,26.6,57,35,23,23,11,25,44,56.8,19,37,7,30,23,80,47,2,Matches,Newcastle United,2024
+404,Jacob Murphy,eng ENG,FW,30-074,23.8,22,15,7,9,6,16,31,51.6,15,31,0,31,11,33,26,1,Matches,Newcastle United,2024
+405,Sandro Tonali,it ITA,MF,25-001,26.2,47,30,20,22,5,22,44,50.0,22,32,10,22,33,80,32,2,Matches,Newcastle United,2024
+406,Nick Pope,eng ENG,GK,33-020,25.0,0,0,0,0,0,0,0,,0,1,0,1,1,1,30,5,Matches,Newcastle United,2024
+407,Anthony Gordon,eng ENG,FW,24-074,24.8,31,17,9,18,4,12,34,35.3,22,24,2,22,6,37,9,2,Matches,Newcastle United,2024
+408,Lewis Hall,eng ENG,DF,20-243,24.3,58,41,28,22,8,40,74,54.1,34,33,18,15,18,76,75,3,Matches,Newcastle United,2024
+409,Harvey Barnes,eng ENG,FW,27-151,16.7,16,9,4,6,6,3,10,30.0,7,7,1,6,6,22,12,1,Matches,Newcastle United,2024
+410,Kieran Trippier,eng ENG,DF,34-232,14.2,37,20,18,13,6,21,35,60.0,14,11,3,8,12,49,49,0,Matches,Newcastle United,2024
+411,Joe Willock,eng ENG,"MF,FW",25-262,11.4,28,16,15,10,3,18,29,62.1,11,24,6,18,6,34,7,0,Matches,Newcastle United,2024
+412,Martin Dúbravka,sk SVK,GK,36-114,10.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,3,0,Matches,Newcastle United,2024
+413,Sean Longstaff,eng ENG,MF,27-191,8.9,27,16,10,9,8,18,27,66.7,9,17,5,12,7,34,8,0,Matches,Newcastle United,2024
+414,Lloyd Kelly,eng ENG,DF,26-215,3.4,5,4,4,1,0,1,1,100.0,0,6,4,2,1,6,17,0,Matches,Newcastle United,2024
+415,Sven Botman,nl NED,DF,25-117,2.6,6,4,3,3,0,2,3,66.7,1,2,1,1,4,10,16,0,Matches,Newcastle United,2024
+416,Emil Krafth,se SWE,DF,30-280,3.2,4,2,2,1,1,2,3,66.7,1,5,4,1,2,6,11,0,Matches,Newcastle United,2024
+417,Callum Wilson,eng ENG,FW,33-071,3.2,2,2,0,1,1,0,2,0.0,2,2,0,2,1,3,1,0,Matches,Newcastle United,2024
+418,Lewis Miley,eng ENG,MF,19-008,2.8,11,9,4,6,1,6,11,54.5,5,5,1,4,2,13,5,2,Matches,Newcastle United,2024
+419,Miguel Almirón,py PAR,FW,31-088,1.7,3,2,2,0,1,2,3,66.7,1,2,0,2,0,3,0,0,Matches,Newcastle United,2024
+420,William Osula,dk DEN,FW,21-278,1.2,1,0,0,0,1,0,2,0.0,2,0,0,0,4,5,2,0,Matches,Newcastle United,2024
+421,Matt Targett,eng ENG,DF,29-233,0.2,0,0,0,0,0,0,1,0.0,1,0,0,0,1,1,1,0,Matches,Newcastle United,2024
+422,Matz Sels,be BEL,GK,33-072,35.0,1,1,1,0,0,1,1,100.0,0,0,0,0,0,1,23,1,Matches,Nottingham Forest,2024
+423,Nikola Milenković,rs SRB,DF,27-209,34.0,43,26,30,11,2,21,27,77.8,6,40,24,16,25,68,192,1,Matches,Nottingham Forest,2024
+424,Murillo,br BRA,DF,22-309,33.4,53,36,38,12,3,27,46,58.7,19,67,44,23,32,85,236,3,Matches,Nottingham Forest,2024
+425,Ola Aina,ng NGA,DF,28-213,30.4,54,41,39,14,1,35,63,55.6,28,32,12,20,31,85,103,3,Matches,Nottingham Forest,2024
+426,Chris Wood,nz NZL,FW,33-153,29.9,5,4,1,2,2,2,9,22.2,7,11,7,4,5,10,26,1,Matches,Nottingham Forest,2024
+427,Morgan Gibbs-White,eng ENG,MF,25-102,28.2,40,19,14,20,6,15,30,50.0,15,16,4,12,20,60,28,1,Matches,Nottingham Forest,2024
+428,Elliot Anderson,eng ENG,MF,22-184,27.4,84,52,50,27,7,43,100,43.0,57,44,9,35,30,114,67,4,Matches,Nottingham Forest,2024
+429,Anthony Elanga,se SWE,"FW,MF",23-012,24.8,18,13,8,8,2,5,17,29.4,12,11,1,10,6,24,25,0,Matches,Nottingham Forest,2024
+430,Neco Williams,wls WAL,DF,24-026,25.8,75,45,56,14,5,45,73,61.6,28,40,9,31,25,100,126,2,Matches,Nottingham Forest,2024
+431,Callum Hudson-Odoi,eng ENG,"FW,MF",24-183,23.9,20,14,7,8,5,11,17,64.7,6,11,0,11,13,33,11,1,Matches,Nottingham Forest,2024
+432,Nicolás Domínguez,ar ARG,"MF,FW",26-315,19.3,76,40,35,30,11,30,66,45.5,36,34,11,23,27,103,48,1,Matches,Nottingham Forest,2024
+433,Ryan Yates,eng ENG,MF,27-169,20.8,41,21,23,14,4,17,37,45.9,20,35,9,26,26,67,61,1,Matches,Nottingham Forest,2024
+434,Álex Moreno,es ESP,"DF,MF",31-335,10.6,25,18,20,5,0,15,39,38.5,24,11,5,6,15,40,43,0,Matches,Nottingham Forest,2024
+435,Jota Silva,pt POR,"FW,MF",25-281,9.4,25,13,12,11,2,5,25,20.0,20,9,1,8,12,37,17,0,Matches,Nottingham Forest,2024
+436,Morato,br BRA,DF,23-313,9.0,21,13,18,2,1,13,20,65.0,7,12,4,8,10,31,71,2,Matches,Nottingham Forest,2024
+437,James Ward-Prowse,eng ENG,MF,30-189,4.4,4,1,1,3,0,2,2,100.0,0,3,2,1,5,9,8,0,Matches,Nottingham Forest,2024
+438,Danilo,br BRA,"MF,FW",24-010,3.0,6,3,5,1,0,2,4,50.0,2,2,1,1,3,9,3,0,Matches,Nottingham Forest,2024
+439,Ibrahim Sangaré,ci CIV,MF,27-158,4.1,19,11,5,13,1,4,12,33.3,8,8,3,5,3,22,6,1,Matches,Nottingham Forest,2024
+440,Taiwo Awoniyi,ng NGA,FW,27-270,4.5,6,3,0,3,3,4,5,80.0,1,1,0,1,0,6,7,0,Matches,Nottingham Forest,2024
+441,Ramón Sosa,py PAR,"FW,MF",25-251,3.3,5,3,3,0,2,1,5,20.0,4,9,0,9,4,9,5,0,Matches,Nottingham Forest,2024
+442,Willy Boly,ci CIV,DF,34-095,1.7,6,1,5,1,0,4,4,100.0,0,4,2,2,3,9,12,0,Matches,Nottingham Forest,2024
+443,Harry Toffolo,eng ENG,DF,29-263,1.5,5,3,3,1,1,3,4,75.0,1,2,2,0,2,7,12,0,Matches,Nottingham Forest,2024
+444,Eric da Silva Moreira,de GER,"MF,DF",19-006,0.3,2,2,2,0,0,2,6,33.3,4,0,0,0,1,3,0,0,Matches,Nottingham Forest,2024
+445,Kyle Walker-Peters,eng ENG,DF,28-026,32.4,44,29,22,15,7,16,35,45.7,19,27,15,12,19,63,90,1,Matches,Southampton,2024
+446,Mateus Fernandes,pt POR,MF,20-303,29.3,86,46,43,28,15,33,64,51.6,31,40,6,34,21,107,31,6,Matches,Southampton,2024
+447,Taylor Harwood-Bellis,eng ENG,DF,23-099,29.5,27,19,13,11,3,19,34,55.9,15,60,38,22,30,57,133,6,Matches,Southampton,2024
+448,Jan Bednarek,pl POL,DF,29-027,27.1,35,18,22,13,0,15,30,50.0,15,44,33,11,54,89,177,5,Matches,Southampton,2024
+449,Aaron Ramsdale,eng ENG,GK,26-360,27.0,0,0,0,0,0,0,2,0.0,2,0,0,0,2,2,8,2,Matches,Southampton,2024
+450,Flynn Downes,eng ENG,MF,26-109,20.9,44,24,19,20,5,14,32,43.8,18,24,6,18,30,74,38,4,Matches,Southampton,2024
+451,Joe Aribo,ng NGA,"MF,DF",28-292,21.2,44,30,15,23,6,17,34,50.0,17,24,9,15,20,64,29,3,Matches,Southampton,2024
+452,Tyler Dibling,eng ENG,"FW,MF",19-058,19.4,34,20,13,18,3,16,26,61.5,10,19,5,14,8,42,15,1,Matches,Southampton,2024
+453,Ryan Manning,ie IRL,"DF,MF",28-329,16.2,28,17,16,10,2,14,26,53.8,12,20,11,9,17,45,45,0,Matches,Southampton,2024
+454,Lesley Ugochukwu,fr FRA,MF,21-044,16.9,49,24,15,30,4,18,33,54.5,15,26,9,17,14,63,21,1,Matches,Southampton,2024
+455,Yukinari Sugawara,jp JPN,"DF,MF",24-315,16.3,29,16,14,14,1,18,30,60.0,12,17,7,10,10,39,46,3,Matches,Southampton,2024
+456,Adam Armstrong,eng ENG,"FW,MF",28-088,13.9,12,3,2,7,3,3,14,21.4,11,6,1,5,3,15,8,0,Matches,Southampton,2024
+457,Jack Stephens,eng ENG,DF,31-102,13.4,32,19,23,9,0,15,27,55.6,12,15,10,5,11,43,44,2,Matches,Southampton,2024
+458,Kamaldeen Sulemana,gh GHA,"FW,MF",23-083,13.1,16,14,6,4,6,8,13,61.5,5,9,0,9,6,22,9,0,Matches,Southampton,2024
+459,Cameron Archer,eng ENG,FW,23-292,15.3,11,7,6,3,2,2,9,22.2,7,5,1,4,2,13,9,0,Matches,Southampton,2024
+460,Paul Onuachu,ng NGA,FW,30-346,11.4,7,2,1,5,1,3,7,42.9,4,7,2,5,1,8,16,1,Matches,Southampton,2024
+461,James Bree,eng ENG,DF,27-210,9.9,15,10,5,9,1,7,17,41.2,10,8,3,5,8,23,24,0,Matches,Southampton,2024
+462,Nathan Wood-Gordon,eng ENG,DF,22-343,6.9,10,7,6,3,1,5,8,62.5,3,8,5,3,4,14,26,2,Matches,Southampton,2024
+463,William Smallbone,ie IRL,MF,25-077,7.2,18,11,8,8,2,7,21,33.3,14,8,0,8,2,20,12,2,Matches,Southampton,2024
+464,Alex McCarthy,eng ENG,GK,35-157,5.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,4,Matches,Southampton,2024
+465,Adam Lallana,eng ENG,MF,36-364,4.0,8,5,4,4,0,2,12,16.7,10,4,1,3,5,13,5,0,Matches,Southampton,2024
+466,Ben Brereton,cl CHI,FW,26-021,5.0,3,2,0,2,1,1,9,11.1,8,2,1,1,0,3,4,0,Matches,Southampton,2024
+467,Ryan Fraser,sct SCO,"FW,DF",31-074,3.4,6,2,2,4,0,4,6,66.7,2,1,1,0,1,7,9,0,Matches,Southampton,2024
+468,Ross Stewart,sct SCO,FW,28-302,3.2,3,2,1,0,2,2,6,33.3,4,3,0,3,0,3,6,0,Matches,Southampton,2024
+469,Joe Lumley,eng ENG,GK,30-083,3.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,3,3,Matches,Southampton,2024
+470,Welington,br BRA,"DF,MF",24-079,2.4,13,5,9,3,1,7,12,58.3,5,3,1,2,3,16,12,0,Matches,Southampton,2024
+471,Armel Bella Kotchap,de GER,DF,23-149,3.7,7,5,5,2,0,3,6,50.0,3,2,2,0,5,12,21,1,Matches,Southampton,2024
+472,Charlie Taylor,eng ENG,DF,31-233,3.0,7,5,4,3,0,5,6,83.3,1,5,3,2,3,10,22,1,Matches,Southampton,2024
+473,Albert Grønbaek,dk DEN,"FW,MF",23-351,1.6,4,1,1,1,2,3,10,30.0,7,1,1,0,0,4,1,0,Matches,Southampton,2024
+474,Maxwel Cornet,ci CIV,FW,28-224,0.8,5,5,1,4,0,0,4,0.0,4,0,0,0,0,5,2,0,Matches,Southampton,2024
+475,Samuel Edozie,eng ENG,"DF,FW",22-101,0.7,3,1,0,1,2,2,2,100.0,0,0,0,0,0,3,0,0,Matches,Southampton,2024
+476,Jay Robinson,eng ENG,"MF,FW",18-055,0.4,2,1,2,0,0,0,0,,0,0,0,0,0,2,0,0,Matches,Southampton,2024
+477,Samuel Amo-Ameyaw,eng ENG,"FW,DF",18-295,0.3,1,0,0,1,0,1,1,100.0,0,0,0,0,0,1,0,0,Matches,Southampton,2024
+478,Ronnie Edwards,eng ENG,DF,22-042,0.1,0,0,0,0,0,0,0,,0,1,1,0,0,0,0,0,Matches,Southampton,2024
+479,Carlos Alcaraz,ar ARG,MF,22-160,0.1,0,0,0,0,0,0,0,,0,0,0,0,1,1,0,0,Matches,Southampton,2024
+480,Pedro Porro,es ESP,DF,25-238,27.4,63,46,31,22,10,42,73,57.5,31,44,17,27,34,97,80,1,Matches,Tottenham Hotspur,2024
+481,Dejan Kulusevski,se SWE,"MF,FW",25-014,26.3,45,23,17,13,15,19,51,37.3,32,34,5,29,13,58,10,1,Matches,Tottenham Hotspur,2024
+482,Dominic Solanke,eng ENG,FW,27-237,23.5,18,11,1,12,5,4,14,28.6,10,18,7,11,0,18,22,0,Matches,Tottenham Hotspur,2024
+483,Brennan Johnson,wls WAL,FW,23-351,23.1,39,26,9,20,10,16,31,51.6,15,25,3,22,4,43,11,0,Matches,Tottenham Hotspur,2024
+484,Guglielmo Vicario,it ITA,GK,28-214,23.0,0,0,0,0,0,0,0,,0,0,0,0,1,1,14,6,Matches,Tottenham Hotspur,2024
+485,Son Heung-min,kr KOR,FW,32-305,22.3,17,9,3,8,6,5,23,21.7,18,10,0,10,5,22,16,1,Matches,Tottenham Hotspur,2024
+486,Destiny Udogie,it ITA,DF,22-162,20.4,74,47,41,26,7,33,47,70.2,14,40,6,34,21,95,35,1,Matches,Tottenham Hotspur,2024
+487,James Maddison,eng ENG,MF,28-167,20.1,31,19,8,16,7,9,29,31.0,20,15,4,11,12,43,19,1,Matches,Tottenham Hotspur,2024
+488,Pape Matar Sarr,sn SEN,MF,22-237,19.2,44,32,17,22,5,11,23,47.8,12,23,9,14,26,70,20,1,Matches,Tottenham Hotspur,2024
+489,Rodrigo Bentancur,uy URU,MF,27-318,16.9,38,20,17,17,4,19,39,48.7,20,24,8,16,36,74,33,1,Matches,Tottenham Hotspur,2024
+490,Cristian Romero,ar ARG,DF,27-012,15.7,35,29,26,8,1,21,30,70.0,9,18,3,15,21,56,57,2,Matches,Tottenham Hotspur,2024
+491,Djed Spence,eng ENG,DF,24-273,17.8,40,30,22,12,6,20,27,74.1,7,24,9,15,18,58,64,1,Matches,Tottenham Hotspur,2024
+492,Archie Gray,eng ENG,"DF,MF",19-058,16.5,13,7,4,6,3,7,17,41.2,10,19,10,9,13,26,42,2,Matches,Tottenham Hotspur,2024
+493,Yves Bissouma,ml MLI,MF,28-252,14.4,47,29,19,25,3,18,33,54.5,15,9,6,3,16,63,35,4,Matches,Tottenham Hotspur,2024
+494,Radu Drăgușin,ro ROU,DF,23-095,13.9,10,6,8,2,0,6,12,50.0,6,22,16,6,15,25,49,4,Matches,Tottenham Hotspur,2024
+495,Ben Davies,wls WAL,DF,32-015,12.5,14,10,6,8,0,7,14,50.0,7,24,16,8,12,26,65,1,Matches,Tottenham Hotspur,2024
+496,Lucas Bergvall,se SWE,MF,19-096,13.5,39,19,14,20,5,17,32,53.1,15,18,8,10,24,63,22,3,Matches,Tottenham Hotspur,2024
+497,Micky van de Ven,nl NED,DF,24-020,10.6,10,6,5,4,1,8,14,57.1,6,9,6,3,10,20,36,1,Matches,Tottenham Hotspur,2024
+498,Mathys Tel,fr FRA,FW,20-012,7.2,8,3,0,4,4,2,9,22.2,7,6,0,6,0,8,2,2,Matches,Tottenham Hotspur,2024
+499,Fraser Forster,eng ENG,GK,37-053,7.0,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,7,3,Matches,Tottenham Hotspur,2024
+500,Wilson Odobert,fr FRA,FW,20-162,7.0,9,3,4,3,2,6,11,54.5,5,4,0,4,3,12,3,1,Matches,Tottenham Hotspur,2024
+501,Kevin Danso,at AUT,DF,26-232,6.4,6,5,3,3,0,5,8,62.5,3,7,7,0,3,9,44,1,Matches,Tottenham Hotspur,2024
+502,Timo Werner,de GER,"FW,MF",29-064,5.7,6,4,3,3,0,3,13,23.1,10,10,1,9,1,7,7,0,Matches,Tottenham Hotspur,2024
+503,Richarlison,br BRA,FW,27-364,5.3,4,3,0,3,1,0,2,0.0,2,1,1,0,0,4,8,0,Matches,Tottenham Hotspur,2024
+504,Antonín Kinský,cz CZE,GK,22-057,4.0,3,1,3,0,0,1,1,100.0,0,0,0,0,0,3,5,1,Matches,Tottenham Hotspur,2024
+505,Mikey Moore,eng ENG,FW,17-271,2.3,0,0,0,0,0,0,1,0.0,1,1,0,1,1,1,1,0,Matches,Tottenham Hotspur,2024
+506,Brandon Austin,eng ENG,GK,26-121,1.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches,Tottenham Hotspur,2024
+507,Sergio Reguilón,es ESP,DF,28-144,1.4,4,3,1,3,0,2,3,66.7,1,4,0,4,2,6,3,0,Matches,Tottenham Hotspur,2024
+508,Dane Scarlett,eng ENG,"FW,MF",21-046,0.4,1,0,0,1,0,0,0,,0,0,0,0,0,1,1,0,Matches,Tottenham Hotspur,2024
+509,Alfie Dorrington,eng ENG,DF,20-019,0.2,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Tottenham Hotspur,2024
+510,Will Lankshear,eng ENG,"FW,MF",20-019,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Tottenham Hotspur,2024
+511,Max Kilman,eng ENG,DF,27-351,34.2,33,20,13,17,3,21,25,84.0,4,55,37,18,38,71,196,5,Matches,West Ham United,2024
+512,Aaron Wan-Bissaka,eng ENG,DF,27-164,32.0,64,45,29,30,5,20,27,74.1,7,32,9,23,60,124,116,0,Matches,West Ham United,2024
+513,Jarrod Bowen,eng ENG,"FW,MF",28-140,30.2,37,24,13,10,14,17,37,45.9,20,21,3,18,16,53,23,0,Matches,West Ham United,2024
+514,Mohammed Kudus,gh GHA,"FW,MF",24-280,26.9,35,21,7,17,11,10,27,37.0,17,24,1,23,4,39,8,2,Matches,West Ham United,2024
+515,Lucas Paquetá,br BRA,"MF,FW",27-255,26.0,66,37,25,30,11,27,54,50.0,27,28,4,24,17,83,37,6,Matches,West Ham United,2024
+516,Tomáš Souček,cz CZE,MF,30-071,25.9,42,19,19,20,3,22,39,56.4,17,35,17,18,18,60,74,1,Matches,West Ham United,2024
+517,Emerson Palmieri,it ITA,DF,30-279,23.4,60,31,37,18,5,27,48,56.3,21,32,8,24,21,81,59,0,Matches,West Ham United,2024
+518,Alphonse Areola,fr FRA,GK,32-071,23.1,2,2,2,0,0,2,3,66.7,1,0,0,0,0,2,15,2,Matches,West Ham United,2024
+519,Konstantinos Mavropanos,gr GRE,DF,27-149,21.6,32,22,22,9,1,14,25,56.0,11,23,17,6,38,70,117,1,Matches,West Ham United,2024
+520,Edson Álvarez,mx MEX,MF,27-197,18.1,44,23,24,12,8,15,33,45.5,18,21,8,13,16,60,39,1,Matches,West Ham United,2024
+521,Jean-Clair Todibo,fr FRA,DF,25-130,17.4,40,24,26,13,1,25,33,75.8,8,24,12,12,21,61,70,3,Matches,West Ham United,2024
+522,Carlos Soler,es ESP,"MF,FW",28-127,15.1,15,11,8,6,1,7,23,30.4,16,19,6,13,8,23,21,2,Matches,West Ham United,2024
+523,Guido Rodríguez,ar ARG,MF,31-027,11.3,30,16,19,11,0,14,30,46.7,16,21,9,12,12,42,28,1,Matches,West Ham United,2024
+524,Łukasz Fabiański,pl POL,GK,40-021,11.9,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,5,1,Matches,West Ham United,2024
+525,Michail Antonio,jm JAM,FW,35-042,9.3,2,2,0,1,1,2,3,66.7,1,6,0,6,0,2,2,0,Matches,West Ham United,2024
+526,Vladimír Coufal,cz CZE,DF,32-260,9.7,17,11,10,5,2,7,18,38.9,11,13,11,2,8,25,37,1,Matches,West Ham United,2024
+527,James Ward-Prowse,eng ENG,MF,30-189,9.0,15,10,7,5,3,4,13,30.8,9,6,3,3,5,20,13,0,Matches,West Ham United,2024
+528,Aaron Cresswell,eng ENG,DF,35-145,7.5,9,5,4,4,1,7,9,77.8,2,9,4,5,8,17,34,0,Matches,West Ham United,2024
+529,Crysencio Summerville,nl NED,"FW,MF",23-191,8.7,13,7,2,8,3,3,9,33.3,6,13,4,9,0,13,7,0,Matches,West Ham United,2024
+530,Oliver Scarles,eng ENG,DF,19-148,6.6,17,11,13,3,1,13,21,61.9,8,14,2,12,10,27,24,0,Matches,West Ham United,2024
+531,Niclas Füllkrug,de GER,FW,32-089,7.4,2,2,0,1,1,2,3,66.7,1,1,0,1,0,2,12,0,Matches,West Ham United,2024
+532,Danny Ings,eng ENG,"FW,MF",32-290,3.2,4,2,2,2,0,1,3,33.3,2,5,0,5,1,5,4,0,Matches,West Ham United,2024
+533,Andy Irving,sct SCO,MF,24-361,1.8,7,4,3,3,1,1,5,20.0,4,5,1,4,1,8,5,0,Matches,West Ham United,2024
+534,Evan Ferguson,ie IRL,FW,20-202,1.7,3,1,0,1,2,0,0,,0,2,1,1,1,4,1,0,Matches,West Ham United,2024
+535,Luis Guilherme,br BRA,"MF,FW",19-089,1.5,1,0,1,0,0,0,3,0.0,3,7,0,7,3,4,2,0,Matches,West Ham United,2024
+536,Lewis Orford,eng ENG,MF,19-080,0.5,0,0,0,0,0,0,0,,0,1,0,1,1,1,0,0,Matches,West Ham United,2024
+537,Kaelan Casey,eng ENG,DF,20-193,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches,West Ham United,2024
+538,Rayan Aït-Nouri,dz ALG,DF,23-337,31.8,82,52,50,25,7,41,67,61.2,26,40,6,34,24,106,67,1,Matches,Wolverhampton Wanderers,2024
+539,João Gomes,br BRA,MF,24-086,30.9,105,62,53,48,4,42,102,41.2,60,42,4,38,25,130,32,0,Matches,Wolverhampton Wanderers,2024
+540,Nélson Semedo,pt POR,DF,31-174,29.6,58,34,31,20,7,30,53,56.6,23,28,10,18,23,81,100,3,Matches,Wolverhampton Wanderers,2024
+541,Jørgen Strand Larsen,no NOR,FW,25-092,27.4,9,6,2,3,4,4,27,14.8,23,18,4,14,5,14,27,0,Matches,Wolverhampton Wanderers,2024
+542,André,br BRA,MF,23-297,25.0,80,48,36,37,7,32,57,56.1,25,41,8,33,32,112,27,1,Matches,Wolverhampton Wanderers,2024
+543,José Sá,pt POR,GK,32-112,27.0,2,2,2,0,0,2,2,100.0,0,0,0,0,0,2,14,1,Matches,Wolverhampton Wanderers,2024
+544,Matheus Cunha,br BRA,"MF,FW",25-347,26.9,35,21,16,15,4,11,36,30.6,25,19,1,18,17,52,23,0,Matches,Wolverhampton Wanderers,2024
+545,Toti Gomes,pt POR,DF,26-113,26.0,53,38,37,14,2,30,37,81.1,7,28,17,11,23,76,134,5,Matches,Wolverhampton Wanderers,2024
+546,Matt Doherty,ie IRL,DF,33-113,21.8,37,20,25,12,0,16,24,66.7,8,26,15,11,21,58,91,3,Matches,Wolverhampton Wanderers,2024
+547,Jean-Ricner Bellegarde,fr FRA,"MF,FW",26-316,17.2,37,22,17,17,3,13,19,68.4,6,19,3,16,10,47,17,1,Matches,Wolverhampton Wanderers,2024
+548,Santiago Bueno,uy URU,DF,26-181,18.7,40,21,21,18,1,17,22,77.3,5,35,20,15,15,55,70,0,Matches,Wolverhampton Wanderers,2024
+549,Mario Lemina,ga GAB,"MF,DF",31-250,15.2,51,31,27,19,5,20,29,69.0,9,12,7,5,27,78,50,3,Matches,Wolverhampton Wanderers,2024
+550,Emmanuel Agbadou,ci CIV,DF,27-326,12.7,27,18,18,9,0,11,17,64.7,6,16,12,4,9,36,77,0,Matches,Wolverhampton Wanderers,2024
+551,Craig Dawson,eng ENG,DF,35-003,10.8,15,3,8,6,1,12,15,80.0,3,16,11,5,9,24,52,1,Matches,Wolverhampton Wanderers,2024
+552,Marshall Munetsi,zw ZIM,"MF,FW",28-321,9.8,21,10,6,9,6,12,20,60.0,8,12,1,11,6,27,15,0,Matches,Wolverhampton Wanderers,2024
+553,Gonçalo Guedes,pt POR,"MF,FW",28-161,8.7,14,4,2,5,7,3,15,20.0,12,9,0,9,5,19,3,0,Matches,Wolverhampton Wanderers,2024
+554,Sam Johnstone,eng ENG,GK,32-045,7.0,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,7,0,Matches,Wolverhampton Wanderers,2024
+555,Pablo Sarabia,es ESP,"MF,FW",32-363,8.0,15,8,4,8,3,9,14,64.3,5,10,0,10,4,19,7,1,Matches,Wolverhampton Wanderers,2024
+556,Rodrigo Gomes,pt POR,"DF,FW",21-306,7.5,21,13,12,9,0,10,19,52.6,9,8,1,7,5,26,20,1,Matches,Wolverhampton Wanderers,2024
+557,Hwang Hee-chan,kr KOR,"MF,FW",29-103,7.2,6,4,2,1,3,2,6,33.3,4,9,0,9,2,8,11,0,Matches,Wolverhampton Wanderers,2024
+558,Yerson Mosquera,co COL,DF,24-007,4.9,11,7,9,2,0,9,14,64.3,5,13,10,3,10,21,14,0,Matches,Wolverhampton Wanderers,2024
+559,Tommy Doyle,eng ENG,MF,23-204,5.4,11,6,6,3,2,6,15,40.0,9,11,5,6,5,16,11,1,Matches,Wolverhampton Wanderers,2024
+560,Carlos Forbs,pt POR,"MF,FW",21-051,2.7,8,5,5,2,1,4,6,66.7,2,3,0,3,1,9,2,1,Matches,Wolverhampton Wanderers,2024
+561,Daniel Bentley,eng ENG,GK,31-300,1.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Wolverhampton Wanderers,2024
+562,Pedro Lima,br BRA,DF,18-312,0.8,1,0,0,0,1,1,3,33.3,2,0,0,0,2,3,5,0,Matches,Wolverhampton Wanderers,2024
+563,Daniel Podence,pt POR,"MF,FW",29-200,0.5,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,0,0,Matches,Wolverhampton Wanderers,2024
+564,Nasser Djiga,bf BFA,"DF,FW",22-175,0.2,0,0,0,0,0,0,0,,0,0,0,0,2,2,3,1,Matches,Wolverhampton Wanderers,2024
+565,Chiquinho,pt POR,MF,25-093,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Wolverhampton Wanderers,2024
+566,Alfie Pond,eng ENG,DF,21-069,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches,Wolverhampton Wanderers,2024
+567,Boubacar Traoré,ml MLI,MF,23-262,0.0,2,0,0,2,0,1,1,100.0,0,0,0,0,0,2,0,0,Matches,Wolverhampton Wanderers,2024
