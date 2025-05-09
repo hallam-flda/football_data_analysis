@@ -25,7 +25,7 @@ def squad_data_update():
         "https://fbref.com/en/squads/b8fd03ef/Manchester-City-Stats",
         "https://fbref.com/en/squads/19538871/Manchester-United-Stats",
         "https://fbref.com/en/squads/b2b47a98/Newcastle-United-Stats",
-        "https://fbref.com/en/squads/a2d435b3/Nottingham-Forest-Stats",
+        "https://fbref.com/en/squads/e4a775cb/Nottingham-Forest-Stats",
         "https://fbref.com/en/squads/33c895d4/Southampton-Stats",
         "https://fbref.com/en/squads/361ca564/Tottenham-Hotspur-Stats",
         "https://fbref.com/en/squads/7c21e445/West-Ham-United-Stats",

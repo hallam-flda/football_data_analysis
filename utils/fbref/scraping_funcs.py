@@ -42,7 +42,7 @@ def get_team_data(url):
     team_name = match.group(1).replace('-', ' ') if match else None
     season = squad_tables[1]["Date"][0][:4]
 
-    # useful for joining later
+    # for joining later
     league_squad_df['Team'] = team_name
     league_squad_df['Season'] = season
 

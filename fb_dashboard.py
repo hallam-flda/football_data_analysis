@@ -260,13 +260,7 @@ with graph_tab:
 
 
 with lineup_tab:
-    
-    # game_week_selector = st.selectbox(
-    #     "Game Week",
-    #     [34,35,36,37,38],
-    #     index = None,
-    #     placeholder="Select Game Week..."
-    # )
+
     lineups_copy = lineups.copy()
     historic_fixture_list = historic_fixture_list[['Wk','Home','Away']]
     lineups_copy = lineups_copy.merge(historic_fixture_list, left_on = ['home_team','away_team'], right_on = ['Home','Away'], how = 'left')
@@ -289,6 +283,8 @@ with lineup_tab:
 
         historic_lineups = st.toggle("Show Historic Lineups", value=False)   
 
+        # an improvement here would be to add these columns to the dataframe from the start rather than re-calculate every
+        # time a new game week is selected
         if historic_lineups:
             home_week, away_week = st.columns([1, 1])
             with home_week:
@@ -308,8 +304,3 @@ with lineup_tab:
             
                  
         st.pyplot(fig)
-
-
-
-    # today = date.today()
-    # st.write(today)  # e.g. 2025-05-05
